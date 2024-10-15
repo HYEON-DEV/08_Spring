@@ -30,6 +30,7 @@ public class HellospringApplication {
 
 	// 이 메서드가 연결될 URL 경로 지정
 	@GetMapping("/hellospring")
+	// 메서드 이름은 맘대로
 	public String hello() {
 		String message = "<h1> Hello SpringBoot </h1>";
 		message += "<p> 안녕하세요 스프링 </p>";
