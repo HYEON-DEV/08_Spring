@@ -1,4 +1,4 @@
-package com.hyeon.interceptor.interceptors;
+package com.hyeon.params.interceptors;
 
 import java.util.Map;
 
@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.hyeon.interceptor.helpers.UtilHelper;
+import com.hyeon.params.helpers.UtilHelper;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -17,7 +17,7 @@ import ua_parser.Parser;
 
 @Slf4j
 @Component
-//@SuppressWarnings("null")
+@SuppressWarnings("null")
 public class MyInterceptor implements HandlerInterceptor {
     // 페이지의 실행 시작 시각을 저장할 변수
     long startTime = 0;
