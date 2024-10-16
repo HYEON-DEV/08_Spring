@@ -1,0 +1,39 @@
+[INFO ] 24-10-16 10:22:54 [CookieSessionApplication:50] - Starting CookieSessionApplication using Java 17.0.2 with PID 17164 (D:\hyeon\08_Spring\05_cookie_session\build\classes\java\main started by user in D:\hyeon\08_Spring\05_cookie_session)
+[DEBUG] 24-10-16 10:22:54 [CookieSessionApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-16 10:22:54 [CookieSessionApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-16 10:22:57 [CookieSessionApplication:56] - Started CookieSessionApplication in 2.782 seconds (process running for 3.605)
+[INFO ] 24-10-16 10:25:35 [CookieSessionApplication:50] - Starting CookieSessionApplication using Java 17.0.2 with PID 17164 (D:\hyeon\08_Spring\05_cookie_session\build\classes\java\main started by user in D:\hyeon\08_Spring\05_cookie_session)
+[DEBUG] 24-10-16 10:25:35 [CookieSessionApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-16 10:25:35 [CookieSessionApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-16 10:25:36 [CookieSessionApplication:56] - Started CookieSessionApplication in 1.761 seconds (process running for 163.562)
+[INFO ] 24-10-16 12:33:30 [CookieSessionApplication:50] - Starting CookieSessionApplication using Java 17.0.2 with PID 8436 (D:\hyeon\08_Spring\05_cookie_session\build\classes\java\main started by user in D:\hyeon\08_Spring\05_cookie_session)
+[DEBUG] 24-10-16 12:33:30 [CookieSessionApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-16 12:33:30 [CookieSessionApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-16 12:33:39 [CookieSessionApplication:56] - Started CookieSessionApplication in 10.532 seconds (process running for 11.934)
+[INFO ] 24-10-16 12:36:56 [CookieSessionApplication:50] - Starting CookieSessionApplication using Java 17.0.2 with PID 932 (D:\hyeon\08_Spring\05_cookie_session\build\classes\java\main started by user in D:\hyeon\08_Spring\05_cookie_session)
+[DEBUG] 24-10-16 12:36:56 [CookieSessionApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-16 12:36:56 [CookieSessionApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-16 12:36:58 [CookieSessionApplication:56] - Started CookieSessionApplication in 2.916 seconds (process running for 3.676)
+[WARN ] 24-10-16 12:38:58 [DefaultHandlerExceptionResolver:247] - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "sh"]
+[WARN ] 24-10-16 12:39:05 [DefaultHandlerExceptionResolver:247] - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "sh"]
+[WARN ] 24-10-16 12:39:08 [DefaultHandlerExceptionResolver:247] - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "sh"]
+[WARN ] 24-10-16 12:39:20 [DefaultHandlerExceptionResolver:247] - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "sh"]
+[INFO ] 24-10-16 12:39:45 [CookieSessionApplication:50] - Starting CookieSessionApplication using Java 17.0.2 with PID 17068 (D:\hyeon\08_Spring\05_cookie_session\build\classes\java\main started by user in D:\hyeon\08_Spring\05_cookie_session)
+[DEBUG] 24-10-16 12:39:45 [CookieSessionApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-16 12:39:45 [CookieSessionApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-16 12:39:47 [CookieSessionApplication:56] - Started CookieSessionApplication in 3.143 seconds (process running for 4.317)
+[WARN ] 24-10-16 12:40:08 [DefaultHandlerExceptionResolver:247] - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "sh"]
+[INFO ] 24-10-16 12:45:47 [CookieSessionApplication:50] - Starting CookieSessionApplication using Java 17.0.2 with PID 13148 (D:\hyeon\08_Spring\05_cookie_session\build\classes\java\main started by user in D:\hyeon\08_Spring\05_cookie_session)
+[DEBUG] 24-10-16 12:45:47 [CookieSessionApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-16 12:45:47 [CookieSessionApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-16 12:45:49 [CookieSessionApplication:56] - Started CookieSessionApplication in 2.908 seconds (process running for 4.074)
+[WARN ] 24-10-16 12:46:06 [DefaultHandlerExceptionResolver:247] - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "cookie"]
+[WARN ] 24-10-16 12:47:13 [DefaultHandlerExceptionResolver:247] - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "cookie"]
+[INFO ] 24-10-16 12:50:45 [CookieSessionApplication:50] - Starting CookieSessionApplication using Java 17.0.2 with PID 13608 (D:\hyeon\08_Spring\05_cookie_session\build\classes\java\main started by user in D:\hyeon\08_Spring\05_cookie_session)
+[DEBUG] 24-10-16 12:50:45 [CookieSessionApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-16 12:50:45 [CookieSessionApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-16 12:50:48 [CookieSessionApplication:56] - Started CookieSessionApplication in 3.101 seconds (process running for 4.223)
+[INFO ] 24-10-16 15:42:34 [CookieSessionApplication:50] - Starting CookieSessionApplication using Java 17.0.2 with PID 19924 (D:\hyeon\08_Spring\05_cookie_session\build\classes\java\main started by user in D:\hyeon\08_Spring\05_cookie_session)
+[DEBUG] 24-10-16 15:42:34 [CookieSessionApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-16 15:42:34 [CookieSessionApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-16 15:42:36 [CookieSessionApplication:56] - Started CookieSessionApplication in 2.956 seconds (process running for 4.097)
