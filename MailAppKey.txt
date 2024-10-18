@@ -1,0 +1,8 @@
+구글 앱 비밀번호
+jsia bckf czme npwq
+
+네이버 앱 비밀번호
+8TTSCCZ6JXQM
+SMTP 서버명 : smtp.naver.com
+SMTP 포트 : 587, 보안 연결(TLS) 필요
+(TLS가 없는 경우 SSL로 연결)

@@ -1,0 +1,484 @@
+[INFO ] 24-10-18 11:52:21 [MailerApplication:50] - Starting MailerApplication using Java 17.0.2 with PID 20732 (D:\hyeon\08_Spring\07_mailer\build\classes\java\main started by user in D:\hyeon\08_Spring\07_mailer)
+[DEBUG] 24-10-18 11:52:21 [MailerApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-18 11:52:21 [MailerApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-18 11:52:24 [MailerApplication:56] - Started MailerApplication in 2.954 seconds (process running for 4.514)
+[INFO ] 24-10-18 11:52:33 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-18 11:52:33 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 129.0
+[INFO ] 24-10-18 11:52:33 [MyInterceptor:80] - [GET] http://localhost:8080/
+[INFO ] 24-10-18 11:52:33 [MyInterceptor:125] - running time : 174(ms)
+[INFO ] 24-10-18 11:53:07 [MailerApplication:50] - Starting MailerApplication using Java 17.0.2 with PID 20732 (D:\hyeon\08_Spring\07_mailer\build\classes\java\main started by user in D:\hyeon\08_Spring\07_mailer)
+[DEBUG] 24-10-18 11:53:07 [MailerApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-18 11:53:07 [MailerApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-18 11:53:09 [MailerApplication:56] - Started MailerApplication in 2.317 seconds (process running for 49.897)
+[INFO ] 24-10-18 11:53:29 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-18 11:53:29 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 129.0
+[INFO ] 24-10-18 11:53:30 [MyInterceptor:80] - [GET] http://localhost:8080/
+[INFO ] 24-10-18 11:53:30 [MyInterceptor:125] - running time : 255(ms)
+[WARN ] 24-10-18 11:54:11 [DefaultHandlerExceptionResolver:247] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+[INFO ] 24-10-18 12:54:55 [MailerApplication:50] - Starting MailerApplication using Java 17.0.2 with PID 2820 (D:\hyeon\08_Spring\07_mailer\build\classes\java\main started by user in D:\hyeon\08_Spring\07_mailer)
+[DEBUG] 24-10-18 12:54:55 [MailerApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-18 12:54:55 [MailerApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-18 12:55:05 [MailerApplication:56] - Started MailerApplication in 11.694 seconds (process running for 13.024)
+[INFO ] 24-10-18 12:59:09 [MailerApplication:50] - Starting MailerApplication using Java 17.0.2 with PID 7904 (D:\hyeon\08_Spring\07_mailer\build\classes\java\main started by user in D:\hyeon\08_Spring\07_mailer)
+[DEBUG] 24-10-18 12:59:09 [MailerApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-18 12:59:09 [MailerApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-18 12:59:11 [MailerApplication:56] - Started MailerApplication in 2.86 seconds (process running for 3.635)
+[INFO ] 24-10-18 12:59:22 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-18 12:59:22 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 129.0
+[INFO ] 24-10-18 12:59:22 [MyInterceptor:80] - [GET] http://localhost:8080/
+[INFO ] 24-10-18 12:59:22 [MyInterceptor:125] - running time : 205(ms)
+[INFO ] 24-10-18 13:00:25 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-18 13:00:25 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 129.0
+[INFO ] 24-10-18 13:00:25 [MyInterceptor:80] - [POST] http://localhost:8080/sendmail
+[INFO ] 24-10-18 13:00:25 [MyInterceptor:88] - (param) <-- sender-name = h
+[INFO ] 24-10-18 13:00:25 [MyInterceptor:88] - (param) <-- sender-email = hyeon970315@gmail.com
+[INFO ] 24-10-18 13:00:25 [MyInterceptor:88] - (param) <-- receiver-name = hyeon
+[INFO ] 24-10-18 13:00:25 [MyInterceptor:88] - (param) <-- receiver-email = hyeon97315@naver.com
+[INFO ] 24-10-18 13:00:25 [MyInterceptor:88] - (param) <-- subject = lg
+[INFO ] 24-10-18 13:00:25 [MyInterceptor:88] - (param) <-- content = <h2><strong>‘낮 12시&nbsp;물폭탄, 밤까지 쏟아진다’ 염갈량과 엘동원 웃나, 4차전 우천 취소되면 KS 일정은 어떻게 되나</strong></h2><p>입력<i>2024.10.18. 오전 11:41</i></p><p><a href="http://www.osen.co.kr/article/G1112438898">기사원문</a></p><p><a href="https://media.naver.com/journalist/talk/109/74321"><img src="https://mimgnews.pstatic.net/image/upload/journalist/2020/08/05/20200804_121.jpg?type=nf112_112" alt=""></a></p><p><a href="https://media.naver.com/journalist/talk/109/74321"><i>한용섭 기자</i></a></p><p>공감197</p><p>텍스트 음성 변환 서비스</p><p>글자 크기 변경</p><p>공유하기</p><p><img src="https://imgnews.pstatic.net/image/109/2024/10/18/0005177915_001_20241018114114693.jpg?type=w647" alt=""><i>[OSEN=잠실, 이대선 기자] 프로야구 LG 트윈스가 삼성 라이온즈에 반격했다. 2연패 후 1승을 거뒀다.&nbsp;LG는&nbsp;17일 서울 잠실구장에서 열린 2024&nbsp;KBO리그 포스트시즌 플레이오프(5전 3선승제) 3차전에서&nbsp;삼성에 1-0으로 승리했다.&nbsp;2연패로 탈락 위기에 몰렸던 LG는 3차전을 승리하며 반격했다.경기 종료 후 LG 에르난데스가 염경엽 감독과 승리의 기쁨을 나누고 있다. 2024.10.17 / sunday@osen.co.kr</i><br><br>[OSEN=잠실, 한용섭 기자] 또 다시 가을비로 포스트시즌 경기가 우천 취소될 전망이다. 비로 인해 누가 웃을까. 한국시리즈 일정에도 영향을 미칠 수 있다.&nbsp;<br><br>프로야구 LG 트윈스와 삼성 라이온즈는 18일 서울 잠실구장에서 2024 KBO리그 플레이오프(5전 3선승제) 4차전을 펼친다.LG는 전날(17일) 벼랑 끝 탈락 위기에서 기사회생했다. LG는&nbsp;17일 잠실구장에서 열린 플레이오프 3차전에서 삼성에 1-0 승리를 거뒀다.&nbsp;<br><br>임찬규와 에르난데스 투수2명으로 경기를 끝냈다. 선발 임찬규는&nbsp;1-0으로 앞선 6회 1아웃까지 84구를 던지며 3피안타 1볼넷 4탈삼진 무실점으로 호투했다. 이후 에르난데스가 구원투수로 나와 60구를 던지며&nbsp;3⅔이닝 2피안타 1볼넷 4탈삼진 무실점으로 1점 차 승리를 지켰다.&nbsp;<br><br>이로써&nbsp;대구 원정에서 1~2차전을 모두 패배한 LG는 잠실 홈에서 반격에 성공했다. 1승 2패, LG는 남은 4~5차전에서 모두 승리해야 한국시리즈에 진출할 수 있다.<br><br><img src="https://imgnews.pstatic.net/image/109/2024/10/18/0005177915_002_20241018114114716.jpg?type=w647" alt=""></p>
+[INFO ] 24-10-18 13:00:25 [MyInterceptor:99] - - REFERER : time=63523, url=http://localhost:8080/
+[DEBUG] 24-10-18 13:00:25 [MailControllers:40] - ------------------------------
+[DEBUG] 24-10-18 13:00:25 [MailControllers:41] - SenderName : h
+[DEBUG] 24-10-18 13:00:25 [MailControllers:42] - SenderEmail : hyeon970315@gmail.com
+[DEBUG] 24-10-18 13:00:25 [MailControllers:43] - ReceiverName : hyeon
+[DEBUG] 24-10-18 13:00:25 [MailControllers:44] - ReceiverEmail : hyeon
+[DEBUG] 24-10-18 13:00:25 [MailControllers:45] - Subject : lg
+[DEBUG] 24-10-18 13:00:25 [MailControllers:46] - Content : <h2><strong>‘낮 12시&nbsp;물폭탄, 밤까지 쏟아진다’ 염갈량과 엘동원 웃나, 4차전 우천 취소되면 KS 일정은 어떻게 되나</strong></h2><p>입력<i>2024.10.18. 오전 11:41</i></p><p><a href="http://www.osen.co.kr/article/G1112438898">기사원문</a></p><p><a href="https://media.naver.com/journalist/talk/109/74321"><img src="https://mimgnews.pstatic.net/image/upload/journalist/2020/08/05/20200804_121.jpg?type=nf112_112" alt=""></a></p><p><a href="https://media.naver.com/journalist/talk/109/74321"><i>한용섭 기자</i></a></p><p>공감197</p><p>텍스트 음성 변환 서비스</p><p>글자 크기 변경</p><p>공유하기</p><p><img src="https://imgnews.pstatic.net/image/109/2024/10/18/0005177915_001_20241018114114693.jpg?type=w647" alt=""><i>[OSEN=잠실, 이대선 기자] 프로야구 LG 트윈스가 삼성 라이온즈에 반격했다. 2연패 후 1승을 거뒀다.&nbsp;LG는&nbsp;17일 서울 잠실구장에서 열린 2024&nbsp;KBO리그 포스트시즌 플레이오프(5전 3선승제) 3차전에서&nbsp;삼성에 1-0으로 승리했다.&nbsp;2연패로 탈락 위기에 몰렸던 LG는 3차전을 승리하며 반격했다.경기 종료 후 LG 에르난데스가 염경엽 감독과 승리의 기쁨을 나누고 있다. 2024.10.17 / sunday@osen.co.kr</i><br><br>[OSEN=잠실, 한용섭 기자] 또 다시 가을비로 포스트시즌 경기가 우천 취소될 전망이다. 비로 인해 누가 웃을까. 한국시리즈 일정에도 영향을 미칠 수 있다.&nbsp;<br><br>프로야구 LG 트윈스와 삼성 라이온즈는 18일 서울 잠실구장에서 2024 KBO리그 플레이오프(5전 3선승제) 4차전을 펼친다.LG는 전날(17일) 벼랑 끝 탈락 위기에서 기사회생했다. LG는&nbsp;17일 잠실구장에서 열린 플레이오프 3차전에서 삼성에 1-0 승리를 거뒀다.&nbsp;<br><br>임찬규와 에르난데스 투수2명으로 경기를 끝냈다. 선발 임찬규는&nbsp;1-0으로 앞선 6회 1아웃까지 84구를 던지며 3피안타 1볼넷 4탈삼진 무실점으로 호투했다. 이후 에르난데스가 구원투수로 나와 60구를 던지며&nbsp;3⅔이닝 2피안타 1볼넷 4탈삼진 무실점으로 1점 차 승리를 지켰다.&nbsp;<br><br>이로써&nbsp;대구 원정에서 1~2차전을 모두 패배한 LG는 잠실 홈에서 반격에 성공했다. 1승 2패, LG는 남은 4~5차전에서 모두 승리해야 한국시리즈에 진출할 수 있다.<br><br><img src="https://imgnews.pstatic.net/image/109/2024/10/18/0005177915_002_20241018114114716.jpg?type=w647" alt=""></p>
+[DEBUG] 24-10-18 13:00:25 [MailControllers:47] - ------------------------------
+[ERROR] 24-10-18 13:00:29 [[dispatcherServlet]:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.mail.MailSendException: Failed messages: jakarta.mail.SendFailedException: Invalid Addresses;
+  nested exception is:
+	org.eclipse.angus.mail.smtp.SMTPAddressFailedException: 553-5.1.3 The recipient address <hyeon> is not a valid RFC 5321 address. For
+553-5.1.3 more information, go to
+553-5.1.3  https://support.google.com/a/answer/3221692 and review RFC 5321
+553 5.1.3 specifications. d2e1a72fcca58-71ea333be59sm470776b3a.61 - gsmtp
+; message exceptions (1) are:
+Failed message 1: jakarta.mail.SendFailedException: Invalid Addresses;
+  nested exception is:
+	org.eclipse.angus.mail.smtp.SMTPAddressFailedException: 553-5.1.3 The recipient address <hyeon> is not a valid RFC 5321 address. For
+553-5.1.3 more information, go to
+553-5.1.3  https://support.google.com/a/answer/3221692 and review RFC 5321
+553 5.1.3 specifications. d2e1a72fcca58-71ea333be59sm470776b3a.61 - gsmtp
+] with root cause
+org.springframework.mail.MailSendException: Failed messages: jakarta.mail.SendFailedException: Invalid Addresses;
+  nested exception is:
+	org.eclipse.angus.mail.smtp.SMTPAddressFailedException: 553-5.1.3 The recipient address <hyeon> is not a valid RFC 5321 address. For
+553-5.1.3 more information, go to
+553-5.1.3  https://support.google.com/a/answer/3221692 and review RFC 5321
+553 5.1.3 specifications. d2e1a72fcca58-71ea333be59sm470776b3a.61 - gsmtp
+
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:453)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:350)
+	at org.springframework.mail.javamail.JavaMailSender.send(JavaMailSender.java:101)
+	at com.hyeon.mailer.controllers.MailControllers.postMethodName(MailControllers.java:70)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[INFO ] 24-10-18 13:09:11 [MailerApplication:50] - Starting MailerApplication using Java 17.0.2 with PID 7904 (D:\hyeon\08_Spring\07_mailer\build\classes\java\main started by user in D:\hyeon\08_Spring\07_mailer)
+[DEBUG] 24-10-18 13:09:11 [MailerApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-18 13:09:11 [MailerApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-18 13:09:12 [MailerApplication:56] - Started MailerApplication in 1.685 seconds (process running for 604.895)
+[INFO ] 24-10-18 13:09:14 [MailerApplication:50] - Starting MailerApplication using Java 17.0.2 with PID 7904 (D:\hyeon\08_Spring\07_mailer\build\classes\java\main started by user in D:\hyeon\08_Spring\07_mailer)
+[DEBUG] 24-10-18 13:09:14 [MailerApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-18 13:09:14 [MailerApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-18 13:09:16 [MailerApplication:56] - Started MailerApplication in 2.077 seconds (process running for 608.362)
+[INFO ] 24-10-18 13:09:41 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-18 13:09:42 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 129.0
+[INFO ] 24-10-18 13:09:42 [MyInterceptor:80] - [GET] http://localhost:8080/
+[INFO ] 24-10-18 13:09:42 [MyInterceptor:125] - running time : 178(ms)
+[INFO ] 24-10-18 13:14:33 [MailerApplication:50] - Starting MailerApplication using Java 17.0.2 with PID 13284 (D:\hyeon\08_Spring\07_mailer\build\classes\java\main started by user in D:\hyeon\08_Spring\07_mailer)
+[DEBUG] 24-10-18 13:14:33 [MailerApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-18 13:14:33 [MailerApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-18 13:14:36 [MailerApplication:56] - Started MailerApplication in 3.088 seconds (process running for 3.92)
+[INFO ] 24-10-18 13:15:06 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-18 13:15:06 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 129.0
+[INFO ] 24-10-18 13:15:06 [MyInterceptor:80] - [GET] http://localhost:8080/
+[INFO ] 24-10-18 13:15:06 [MyInterceptor:125] - running time : 216(ms)
+[INFO ] 24-10-18 13:15:32 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-18 13:15:32 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 129.0
+[INFO ] 24-10-18 13:15:32 [MyInterceptor:80] - [POST] http://localhost:8080/sendmail
+[INFO ] 24-10-18 13:15:32 [MyInterceptor:88] - (param) <-- sender-name = h
+[INFO ] 24-10-18 13:15:32 [MyInterceptor:88] - (param) <-- sender-email = hyeon970315@gmail.com
+[INFO ] 24-10-18 13:15:32 [MyInterceptor:88] - (param) <-- receiver-name = hyeon
+[INFO ] 24-10-18 13:15:32 [MyInterceptor:88] - (param) <-- receiver-email = hyeon97315@naver.com
+[INFO ] 24-10-18 13:15:32 [MyInterceptor:88] - (param) <-- subject = lg
+[INFO ] 24-10-18 13:15:32 [MyInterceptor:88] - (param) <-- content = <p><br><br>[OSEN=잠실, 한용섭 기자] 또 다시 가을비로 포스트시즌 경기가 우천 취소될 전망이다. 비로 인해 누가 웃을까. 한국시리즈 일정에도 영향을 미칠 수 있다.&nbsp;<br><br>프로야구 LG 트윈스와 삼성 라이온즈는 18일 서울 잠실구장에서 2024 KBO리그 플레이오프(5전 3선승제) 4차전을 펼친다.<br><br>LG는 전날(17일) 벼랑 끝 탈락 위기에서 기사회생했다. LG는&nbsp;17일 잠실구장에서 열린 플레이오프 3차전에서 삼성에 1-0 승리를 거뒀다.&nbsp;<br><br>임찬규와 에르난데스 투수2명으로 경기를 끝냈다. 선발 임찬규는&nbsp;1-0으로 앞선 6회 1아웃까지 84구를 던지며 3피안타 1볼넷 4탈삼진 무실점으로 호투했다. 이후 에르난데스가 구원투수로 나와 60구를 던지며&nbsp;3⅔이닝 2피안타 1볼넷 4탈삼진 무실점으로 1점 차 승리를 지켰다.&nbsp;<br><br>이로써&nbsp;대구 원정에서 1~2차전을 모두 패배한 LG는 잠실 홈에서 반격에 성공했다. 1승 2패, LG는 남은 4~5차전에서 모두 승리해야 한국시리즈에 진출할 수 있다.<br>&nbsp;</p>
+[INFO ] 24-10-18 13:15:32 [MyInterceptor:99] - - REFERER : time=26201, url=http://localhost:8080/
+[DEBUG] 24-10-18 13:15:32 [MailControllers:40] - ------------------------------
+[DEBUG] 24-10-18 13:15:32 [MailControllers:41] - SenderName : h
+[DEBUG] 24-10-18 13:15:32 [MailControllers:42] - SenderEmail : hyeon970315@gmail.com
+[DEBUG] 24-10-18 13:15:32 [MailControllers:43] - ReceiverName : hyeon
+[DEBUG] 24-10-18 13:15:32 [MailControllers:44] - ReceiverEmail : hyeon97315@naver.com
+[DEBUG] 24-10-18 13:15:32 [MailControllers:45] - Subject : lg
+[DEBUG] 24-10-18 13:15:32 [MailControllers:46] - Content : <p><br><br>[OSEN=잠실, 한용섭 기자] 또 다시 가을비로 포스트시즌 경기가 우천 취소될 전망이다. 비로 인해 누가 웃을까. 한국시리즈 일정에도 영향을 미칠 수 있다.&nbsp;<br><br>프로야구 LG 트윈스와 삼성 라이온즈는 18일 서울 잠실구장에서 2024 KBO리그 플레이오프(5전 3선승제) 4차전을 펼친다.<br><br>LG는 전날(17일) 벼랑 끝 탈락 위기에서 기사회생했다. LG는&nbsp;17일 잠실구장에서 열린 플레이오프 3차전에서 삼성에 1-0 승리를 거뒀다.&nbsp;<br><br>임찬규와 에르난데스 투수2명으로 경기를 끝냈다. 선발 임찬규는&nbsp;1-0으로 앞선 6회 1아웃까지 84구를 던지며 3피안타 1볼넷 4탈삼진 무실점으로 호투했다. 이후 에르난데스가 구원투수로 나와 60구를 던지며&nbsp;3⅔이닝 2피안타 1볼넷 4탈삼진 무실점으로 1점 차 승리를 지켰다.&nbsp;<br><br>이로써&nbsp;대구 원정에서 1~2차전을 모두 패배한 LG는 잠실 홈에서 반격에 성공했다. 1승 2패, LG는 남은 4~5차전에서 모두 승리해야 한국시리즈에 진출할 수 있다.<br>&nbsp;</p>
+[DEBUG] 24-10-18 13:15:32 [MailControllers:47] - ------------------------------
+[INFO ] 24-10-18 13:15:36 [MyInterceptor:125] - running time : 3480(ms)
+[INFO ] 24-10-18 13:15:36 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-18 13:15:36 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 129.0
+[INFO ] 24-10-18 13:15:36 [MyInterceptor:80] - [GET] http://localhost:8080/
+[INFO ] 24-10-18 13:15:36 [MyInterceptor:99] - - REFERER : time=7, url=http://localhost:8080/
+[INFO ] 24-10-18 13:15:36 [MyInterceptor:125] - running time : 58(ms)
+[INFO ] 24-10-18 17:07:11 [MailerApplication:50] - Starting MailerApplication using Java 17.0.2 with PID 17852 (D:\hyeon\08_Spring\07_mailer\build\classes\java\main started by user in D:\hyeon\08_Spring\07_mailer)
+[DEBUG] 24-10-18 17:07:11 [MailerApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-18 17:07:11 [MailerApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-18 17:07:16 [MailerApplication:56] - Started MailerApplication in 5.069 seconds (process running for 6.287)
+[INFO ] 24-10-18 17:32:37 [MailerApplication:50] - Starting MailerApplication using Java 17.0.2 with PID 10848 (D:\hyeon\08_Spring\07_mailer\build\classes\java\main started by user in D:\hyeon\08_Spring\07_mailer)
+[DEBUG] 24-10-18 17:32:37 [MailerApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-18 17:32:37 [MailerApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-18 17:32:39 [MailerApplication:56] - Started MailerApplication in 2.868 seconds (process running for 3.727)
+[INFO ] 24-10-18 17:32:59 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-18 17:32:59 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 129.0
+[INFO ] 24-10-18 17:32:59 [MyInterceptor:80] - [GET] http://localhost:8080/
+[INFO ] 24-10-18 17:32:59 [MyInterceptor:125] - running time : 192(ms)
+[INFO ] 24-10-18 17:32:59 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-18 17:33:00 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 129.0
+[INFO ] 24-10-18 17:33:00 [MyInterceptor:80] - [GET] http://localhost:8080/assets/css/header.css
+[INFO ] 24-10-18 17:33:00 [MyInterceptor:99] - - REFERER : time=250, url=http://localhost:8080/
+[INFO ] 24-10-18 17:33:00 [MyInterceptor:125] - running time : 61(ms)
+[INFO ] 24-10-18 17:33:02 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-18 17:33:02 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 129.0
+[INFO ] 24-10-18 17:33:02 [MyInterceptor:80] - [GET] http://localhost:8080/order
+[INFO ] 24-10-18 17:33:02 [MyInterceptor:99] - - REFERER : time=2587, url=http://localhost:8080/
+[INFO ] 24-10-18 17:33:02 [MyInterceptor:125] - running time : 47(ms)
+[INFO ] 24-10-18 17:33:02 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-18 17:33:02 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 129.0
+[INFO ] 24-10-18 17:33:02 [MyInterceptor:80] - [GET] http://localhost:8080/assets/css/header.css
+[INFO ] 24-10-18 17:33:02 [MyInterceptor:99] - - REFERER : time=25, url=http://localhost:8080/order
+[INFO ] 24-10-18 17:33:02 [MyInterceptor:125] - running time : 40(ms)
+[INFO ] 24-10-18 17:33:24 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-18 17:33:24 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 129.0
+[INFO ] 24-10-18 17:33:24 [MyInterceptor:80] - [POST] http://localhost:8080/order_ok
+[INFO ] 24-10-18 17:33:24 [MyInterceptor:88] - (param) <-- order-name = 임찬규
+[INFO ] 24-10-18 17:33:24 [MyInterceptor:88] - (param) <-- order-email = hyeon970315@gmail.com
+[INFO ] 24-10-18 17:33:24 [MyInterceptor:88] - (param) <-- order-price = 23000
+[INFO ] 24-10-18 17:33:24 [MyInterceptor:99] - - REFERER : time=21527, url=http://localhost:8080/order
+[DEBUG] 24-10-18 17:33:24 [OrderController:66] - 메일 템플릿 경로: src/main/resources/mail_templates/order_result.html
+[DEBUG] 24-10-18 17:33:24 [MailHelper:38] - ------------------------------
+[DEBUG] 24-10-18 17:33:24 [MailHelper:39] - ReceiverName : null
+[DEBUG] 24-10-18 17:33:24 [MailHelper:40] - ReceiverEmail : hyeon970315@gmail.com
+[DEBUG] 24-10-18 17:33:24 [MailHelper:41] - Subject : 임찬규님의 주문이 완료되었습니다
+[DEBUG] 24-10-18 17:33:24 [MailHelper:42] - Content : <!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>결제 완료 알림</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .email-header {
+            background-color: #4CAF50;
+            padding: 20px;
+            text-align: center;
+            color: #ffffff;
+        }
+        .email-body {
+            padding: 20px;
+            color: #333333;
+        }
+        .email-body h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .email-body p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        .order-details {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .order-details h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .order-details p {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+        .email-footer {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .email-footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .logo-img {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .logo-img img {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="email-header">
+            <h1>결제가 완료되었습니다</h1>
+        </div>
+        <div class="email-body">
+            <p class="logo-img">
+                <img src="https://img.megastudyacademy.co.kr/campus/intra/logo/B0002/2022111413335616684004367613.png" />
+            </p>
+            <h1>안녕하세요, 임찬규님!</h1>
+            <p>고객님의 주문이 성공적으로 결제되었습니다. 아래 주문 내역을 확인해 주세요.</p>
+            <div class="order-details">
+                <h2>주문 상세 정보</h2>
+                <p><strong>주문 번호:</strong> 202410180023</p>
+                <p><strong>주문 상품:</strong> 주문한 상품명</p>
+                <p><strong>주문 수량:</strong> 1</p>
+                <p><strong>결제 일자:</strong> 2024년, 10월, 18일</p>
+                <p><strong>총 결제 금액:</strong> 23000원</p>
+            </div>
+            <p>주문 상품은 빠른 시일 내에 발송될 예정입니다. 배송 진행 상황은 별도의 이메일로 알려드리겠습니다.</p>
+            <p>추가 문의 사항이 있으시면 언제든지 저희 고객센터로 연락해 주세요.</p>
+            <p>감사합니다.</p>
+        </div>
+        <div class="email-footer">
+            <p>© 2024 메가스터디 IT 아카데미. All rights reserved.</p>
+            <p><a href="#">이용약관</a> | <a href="#">개인정보처리방침</a></p>
+        </div>
+    </div>
+</body>
+</html>
+[DEBUG] 24-10-18 17:33:24 [MailHelper:43] - ------------------------------
+[INFO ] 24-10-18 17:33:28 [MyInterceptor:125] - running time : 3879(ms)
+[INFO ] 24-10-18 17:33:28 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-18 17:33:28 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 129.0
+[INFO ] 24-10-18 17:33:28 [MyInterceptor:80] - [GET] http://localhost:8080/order_result
+[INFO ] 24-10-18 17:33:28 [MyInterceptor:99] - - REFERER : time=7, url=http://localhost:8080/order
+[INFO ] 24-10-18 17:33:28 [MyInterceptor:125] - running time : 32(ms)
+[INFO ] 24-10-18 17:33:28 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-18 17:33:28 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 129.0
+[INFO ] 24-10-18 17:33:28 [MyInterceptor:80] - [GET] http://localhost:8080/assets/css/header.css
+[INFO ] 24-10-18 17:33:28 [MyInterceptor:99] - - REFERER : time=30, url=http://localhost:8080/order_result
+[INFO ] 24-10-18 17:33:28 [MyInterceptor:125] - running time : 35(ms)
+[INFO ] 24-10-18 17:34:46 [MailerApplication:50] - Starting MailerApplication using Java 17.0.2 with PID 10848 (D:\hyeon\08_Spring\07_mailer\build\classes\java\main started by user in D:\hyeon\08_Spring\07_mailer)
+[DEBUG] 24-10-18 17:34:46 [MailerApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-18 17:34:46 [MailerApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-18 17:34:47 [MailerApplication:56] - Started MailerApplication in 1.794 seconds (process running for 131.985)
+[INFO ] 24-10-18 17:34:49 [MailerApplication:50] - Starting MailerApplication using Java 17.0.2 with PID 10848 (D:\hyeon\08_Spring\07_mailer\build\classes\java\main started by user in D:\hyeon\08_Spring\07_mailer)
+[DEBUG] 24-10-18 17:34:49 [MailerApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-18 17:34:49 [MailerApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-18 17:34:51 [MailerApplication:56] - Started MailerApplication in 1.525 seconds (process running for 135.042)
+[INFO ] 24-10-18 17:35:56 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-18 17:35:56 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 129.0
+[INFO ] 24-10-18 17:35:56 [MyInterceptor:80] - [GET] http://localhost:8080/order_result
+[INFO ] 24-10-18 17:35:56 [MyInterceptor:125] - running time : 234(ms)
+[INFO ] 24-10-18 17:35:56 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-18 17:35:56 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 129.0
+[INFO ] 24-10-18 17:35:56 [MyInterceptor:80] - [GET] http://localhost:8080/assets/css/header.css
+[INFO ] 24-10-18 17:35:56 [MyInterceptor:99] - - REFERER : time=221, url=http://localhost:8080/order_result
+[INFO ] 24-10-18 17:35:56 [MyInterceptor:125] - running time : 188(ms)
+[INFO ] 24-10-18 17:35:58 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-18 17:35:58 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 129.0
+[INFO ] 24-10-18 17:35:58 [MyInterceptor:80] - [GET] http://localhost:8080/order
+[INFO ] 24-10-18 17:35:58 [MyInterceptor:99] - - REFERER : time=1649, url=http://localhost:8080/order_result
+[INFO ] 24-10-18 17:35:58 [MyInterceptor:125] - running time : 70(ms)
+[INFO ] 24-10-18 17:35:58 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-18 17:35:58 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 129.0
+[INFO ] 24-10-18 17:35:58 [MyInterceptor:80] - [GET] http://localhost:8080/assets/css/header.css
+[INFO ] 24-10-18 17:35:58 [MyInterceptor:99] - - REFERER : time=60, url=http://localhost:8080/order
+[INFO ] 24-10-18 17:35:58 [MyInterceptor:125] - running time : 61(ms)
+[INFO ] 24-10-18 17:36:02 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-18 17:36:02 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 129.0
+[INFO ] 24-10-18 17:36:02 [MyInterceptor:80] - [POST] http://localhost:8080/order_ok
+[INFO ] 24-10-18 17:36:02 [MyInterceptor:88] - (param) <-- order-name = 임찬규
+[INFO ] 24-10-18 17:36:02 [MyInterceptor:88] - (param) <-- order-email = hyeon970315@gmail.com
+[INFO ] 24-10-18 17:36:02 [MyInterceptor:88] - (param) <-- order-price = 23000
+[INFO ] 24-10-18 17:36:02 [MyInterceptor:99] - - REFERER : time=4294, url=http://localhost:8080/order
+[DEBUG] 24-10-18 17:36:02 [OrderController:66] - 메일 템플릿 경로: src/main/resources/mail_templates/order_result.html
+[DEBUG] 24-10-18 17:36:02 [MailHelper:38] - ------------------------------
+[DEBUG] 24-10-18 17:36:02 [MailHelper:39] - ReceiverName : null
+[DEBUG] 24-10-18 17:36:02 [MailHelper:40] - ReceiverEmail : hyeon970315@gmail.com
+[DEBUG] 24-10-18 17:36:02 [MailHelper:41] - Subject : 임찬규님의 주문이 완료되었습니다
+[DEBUG] 24-10-18 17:36:02 [MailHelper:42] - Content : <!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>결제 완료 알림</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .email-header {
+            background-color: #4CAF50;
+            padding: 20px;
+            text-align: center;
+            color: #ffffff;
+        }
+        .email-body {
+            padding: 20px;
+            color: #333333;
+        }
+        .email-body h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .email-body p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        .order-details {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .order-details h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .order-details p {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+        .email-footer {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .email-footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .logo-img {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .logo-img img {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <div class="email-header">
+            <h1>결제가 완료되었습니다</h1>
+        </div>
+        <div class="email-body">
+            <p class="logo-img">
+                <img src="https://img.megastudyacademy.co.kr/campus/intra/logo/B0002/2022111413335616684004367613.png" />
+            </p>
+            <h1>안녕하세요, 임찬규님!</h1>
+            <p>고객님의 주문이 성공적으로 결제되었습니다. 아래 주문 내역을 확인해 주세요.</p>
+            <div class="order-details">
+                <h2>주문 상세 정보</h2>
+                <p><strong>주문 번호:</strong> 202410180023</p>
+                <p><strong>주문 상품:</strong> 오스틴 유니폼</p>
+                <p><strong>주문 수량:</strong> 1</p>
+                <p><strong>결제 일자:</strong> 2024년, 10월, 18일</p>
+                <p><strong>총 결제 금액:</strong> 23000원</p>
+            </div>
+            <p>주문 상품은 빠른 시일 내에 발송될 예정입니다. 배송 진행 상황은 별도의 이메일로 알려드리겠습니다.</p>
+            <p>추가 문의 사항이 있으시면 언제든지 저희 고객센터로 연락해 주세요.</p>
+            <p>감사합니다.</p>
+        </div>
+        <div class="email-footer">
+            <p>© 2024 메가스터디 IT 아카데미. All rights reserved.</p>
+            <p><a href="#">이용약관</a> | <a href="#">개인정보처리방침</a></p>
+        </div>
+    </div>
+</body>
+</html>
+[DEBUG] 24-10-18 17:36:02 [MailHelper:43] - ------------------------------
+[INFO ] 24-10-18 17:36:06 [MyInterceptor:125] - running time : 3583(ms)
+[INFO ] 24-10-18 17:36:06 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-18 17:36:06 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 129.0
+[INFO ] 24-10-18 17:36:06 [MyInterceptor:80] - [GET] http://localhost:8080/order_result
+[INFO ] 24-10-18 17:36:06 [MyInterceptor:99] - - REFERER : time=0, url=http://localhost:8080/order
+[INFO ] 24-10-18 17:36:06 [MyInterceptor:125] - running time : 25(ms)
+[INFO ] 24-10-18 17:36:06 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-18 17:36:06 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 129.0
+[INFO ] 24-10-18 17:36:06 [MyInterceptor:80] - [GET] http://localhost:8080/assets/css/header.css
+[INFO ] 24-10-18 17:36:06 [MyInterceptor:99] - - REFERER : time=54, url=http://localhost:8080/order_result
+[INFO ] 24-10-18 17:36:06 [MyInterceptor:125] - running time : 36(ms)
