@@ -76,9 +76,49 @@
         <appender-ref ref="Error" />
     </logger>
     <!-- 프로젝트 패키지 이름을 지정해야 함 -->
-    <logger name="com.hyeon.interceptor" level="DEBUG" additivity="false">
+    <logger name="com.hyeon.database" level="DEBUG" additivity="false">
         <appender-ref ref="CONSOLE" />
         <appender-ref ref="FILE" />
         <appender-ref ref="Error" />
     </logger>
+
+    
+
+    <!-- 데이터베이스 관련 패키지에 대한 로그 레벨 설정 -->
+    <logger name="jdbc.sqlonly" level="INFO" additivity="false">
+        <appender-ref ref="CONSOLE" />
+        <appender-ref ref="FILE" />
+        <appender-ref ref="Error" />
+    </logger>
+    <logger name="jdbc.sqltiming" level="OFF">
+        <appender-ref ref="CONSOLE" />
+        <appender-ref ref="FILE" />
+        <appender-ref ref="Error" />
+    </logger>
+    <logger name="jdbc.audit" level="OFF">
+        <appender-ref ref="CONSOLE" />
+        <appender-ref ref="FILE" />
+        <appender-ref ref="Error" />
+    </logger>
+    <logger name="jdbc.resultset" level="ERROR">
+        <appender-ref ref="CONSOLE" />
+        <appender-ref ref="FILE" />
+        <appender-ref ref="Error" />
+    </logger>
+    <logger name="jdbc.resultsettable" level="DEBUG" additivity="false">
+        <appender-ref ref="CONSOLE" />
+        <appender-ref ref="FILE" />
+        <appender-ref ref="Error" />
+    </logger>
+    <logger name="jdbc.connection" level="ERROR">
+        <appender-ref ref="CONSOLE" />
+        <appender-ref ref="FILE" />
+        <appender-ref ref="Error" />
+    </logger>
+    <logger name="log4jdbc.debug" level="ERROR">
+        <appender-ref ref="CONSOLE" />
+        <appender-ref ref="FILE" />
+        <appender-ref ref="Error" />
+    </logger>
+    
 </configuration>
