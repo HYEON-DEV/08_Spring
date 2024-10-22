@@ -31,7 +31,7 @@ public interface StudentMapper {
      * => keyColumn: 테이블의 Primary Key 컬럼명
      */
     @Options(useGeneratedKeys = true, keyProperty = "studno", keyColumn = "studno")
-    public int insert(Student input);
+    int insert(Student input);
 
 
     /**
@@ -40,7 +40,7 @@ public interface StudentMapper {
      * @return 수정된 데이터 수
      */
     @Update("UPDATE student SET name=#{name}, userid=#{userid}, grade=#{grade}, idnum=#{idnum}, birthdate=#{birthdate}, tel=#{tel}, height=#{height}, weight=#{weight}, height=#{height}, profno=#{profno} WHERE studno=#{studno}")
-    public int update(Student input);
+    int update(Student input);
 
 
     /**
@@ -49,7 +49,16 @@ public interface StudentMapper {
      * @return 
      */
     @Delete("DELETE FROM student WHERE studno = #{studno}")
-    public int delete(Student input);
+    int delete(Student input);
+
+    // 학과를 삭제하기 전에 학과에 소속된 학생 데이터 삭제
+    @Delete("DELETE FROM student WHERE deptno=#{deptno}")
+    int deleteByDeptno(Student input);
+
+    // 교수를 삭제하기 전에 교수에게 소속된 학생들과의 연결 해제
+    // => profno 컬럼이 null 허용으로 설정돼야 함
+    @Update("UPDATE student SET profno=null WHERE profno=#{profno}")
+    int updateByProfno(Student input);
 
 
     @Select("SELECT studno, name, userid, grade, idnum, birthdate, tel, height, weight, height, profno FROM student WHERE studno=#{studno}")
@@ -73,13 +82,13 @@ public interface StudentMapper {
         @Result(property="deptno", column="deptno"),
         @Result(property="profno", column="profno")
     })
-    public Student selectItem(Student input);
+    Student selectItem(Student input);
 
     
     @Select("SELECT studno, name, userid, grade, idnum, DATE_FORMAT(birthdate, '%Y-%m-%d') AS birthdate, tel, height, weight, deptno, profno FROM student")
     // 조회 결과와 MODEL의 맵핑이 이전 규칙과 동일한 경우 id값으로 이전 규칙 재사용
     // @Results 에 id 를 설정하면 다른 조회 메서드에서도 설정한 id 를 통해 @Results를 재사용할 수 있다.
     @ResultMap("studentMap")
-    public List<Student> selectList(Student input);
+    List<Student> selectList(Student input);
 
 }

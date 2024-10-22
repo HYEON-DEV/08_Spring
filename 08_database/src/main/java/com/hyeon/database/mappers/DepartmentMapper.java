@@ -31,7 +31,7 @@ public interface DepartmentMapper {
      * => keyColumn: 테이블의 Primary Key 컬럼명
      */
     @Options(useGeneratedKeys = true, keyProperty = "deptNo", keyColumn = "deptno")
-    public int insert(Department input);
+    int insert(Department input);
 
 
     /**
@@ -40,7 +40,7 @@ public interface DepartmentMapper {
      * @return 수정된 데이터 수
      */
     @Update("UPDATE department SET dname=#{dname}, loc=#{loc} WHERE deptno=#{deptNo}")
-    public int update(Department input);
+    int update(Department input);
 
 
     /**
@@ -49,7 +49,7 @@ public interface DepartmentMapper {
      * @return 
      */
     @Delete("DELETE FROM department WHERE deptno = #{deptNo}")
-    public int delete(Department input);
+    int delete(Department input);
 
 
     @Select("SELECT deptno, dname, loc FROM department WHERE deptno=#{deptNo}")
@@ -65,13 +65,13 @@ public interface DepartmentMapper {
         @Result(property="dname", column="dname"),
         @Result(property="loc", column="loc")
     })
-    public Department selectItem(Department input);
+    Department selectItem(Department input);
 
     
     @Select("SELECT deptno, dname, loc FROM department ORDER BY deptno DESC")
     // 조회 결과와 MODEL의 맵핑이 이전 규칙과 동일한 경우 id값으로 이전 규칙 재사용
     // @Results 에 id 를 설정하면 다른 조회 메서드에서도 설정한 id 를 통해 @Results를 재사용할 수 있다.
     @ResultMap("departmentMap")
-    public List<Department> selectList(Department input);
+    List<Department> selectList(Department input);
 
 }

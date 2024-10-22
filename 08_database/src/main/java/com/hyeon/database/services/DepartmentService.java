@@ -18,41 +18,41 @@ import com.hyeon.database.models.Department;
 public interface DepartmentService {
     /**
      * 학과 정보를 새로 저장하고 저장된 정보를 조회하여 리턴한다
-     * @param params - 저장할 정보를 담고 있는 Beans
+     * @param input - 저장할 정보를 담고 있는 Beans
      * @return Department - 저장된 데이터
      * @throws ServiceNoResultException - 저장된 데이터가 없는 경우
      */
-    public Department addItem(Department params) throws ServiceNoResultException, Exception;
+    public Department addItem(Department input) throws ServiceNoResultException, Exception;
 
     /**
      * 학과 정보를 수정하고 수정된 정보를 조회하여 리턴한다
-     * @param params - 수정할 정보를 담고 있는 Beans
+     * @param input - 수정할 정보를 담고 있는 Beans
      * @return Department - 수정된 데이터
      * @throws ServiceNoResultException
      */
-    public Department editItem(Department params) throws ServiceNoResultException, Exception;
+    public Department editItem(Department input) throws ServiceNoResultException, Exception;
 
     /**
      * 학과 정보를 삭제한다 - 삭제된 데이터의 수가 리턴된다
-     * @param params - 삭제할 조건을 담고 있는 Beans
+     * @param input - 삭제할 조건을 담고 있는 Beans
      * @return int - 삭제된 데이터의 수
      * @throws ServiceNoResultException - 삭제된 데이터가 없는 경우
      */
-    public int deleteItem(Department params) throws ServiceNoResultException, Exception;
+    public int deleteItem(Department input) throws ServiceNoResultException, Exception;
 
     /**
      * 학과 정보를 조회한다. 조회된 데이터가 없는 경우 예외 발생.
-     * @param params - 조회할 학과의 일련번호를 담고 있는 Beans
+     * @param input - 조회할 학과의 일련번호를 담고 있는 Beans
      * @return Department - 조회된 데이터
      * @throws ServiceNoResultException - 조회된 데이터가 없는 경우
      */
-    public Department getItem(Department params) throws ServiceNoResultException, Exception;
+    public Department getItem(Department input) throws ServiceNoResultException, Exception;
 
     /**
      * 학과 정보를 조회한다. 조회된 데이터가 없는 경우 예외 발생.
-     * @param params
+     * @param input
      * @return Department
      * @throws ServiceNoResultException
      */
-    public List<Department> getList(Department params) throws ServiceNoResultException, Exception;
+    public List<Department> getList(Department input) throws ServiceNoResultException, Exception;
 }

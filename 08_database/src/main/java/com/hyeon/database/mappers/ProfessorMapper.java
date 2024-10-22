@@ -33,7 +33,7 @@ public interface ProfessorMapper {
      * => keyColumn: 테이블의 Primary Key 컬럼명
      */
     @Options(useGeneratedKeys = true, keyProperty = "profno", keyColumn = "profno")
-    public int insert(Professor input);
+    int insert(Professor input);
 
 
     /**
@@ -42,7 +42,7 @@ public interface ProfessorMapper {
      * @return 수정된 데이터 수
      */
     @Update("UPDATE professor SET name=#{name}, userid=#{userid}, position=#{position}, sal=#{sal}, hiredate=#{hiredate}, comm=#{comm}, deptno=#{deptno} WHERE profno=#{profno}")
-    public int update(Professor input);
+    int update(Professor input);
 
 
     /**
@@ -51,8 +51,11 @@ public interface ProfessorMapper {
      * @return 
      */
     @Delete("DELETE FROM professor WHERE profno = #{profno}")
-    public int delete(Professor input);
+    int delete(Professor input);
 
+    @Delete("DELETE FROM professor WHERE deptno=#{deptno}")
+    int deleteByDeptno(Professor input);
+    
 
     @Select("SELECT profno, name, userid, position, sal, hiredate, comm, deptno FROM professor WHERE profno=#{profno}")
     /**
@@ -72,13 +75,13 @@ public interface ProfessorMapper {
         @Result(property="comm", column="comm"),
         @Result(property="deptno", column="deptno")
     })
-    public Professor selectItem(Professor input);
+    Professor selectItem(Professor input);
 
     
     @Select("SELECT profno, name, userid, position, sal, hiredate, comm, deptno FROM professor")
     // 조회 결과와 MODEL의 맵핑이 이전 규칙과 동일한 경우 id값으로 이전 규칙 재사용
     // @Results 에 id 를 설정하면 다른 조회 메서드에서도 설정한 id 를 통해 @Results를 재사용할 수 있다.
     @ResultMap("professorMap")
-    public List<Professor> selectList(Professor input);
+    List<Professor> selectList(Professor input);
 
 }

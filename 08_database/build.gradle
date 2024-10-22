@@ -41,9 +41,13 @@ dependencies {
 	// https://mvnrepository.com/artifact/com.github.ua-parser/uap-java
 	implementation 'com.github.ua-parser:uap-java:1.6.1'
 
+	// https://mvnrepository.com/artifact/org.bgee.log4jdbc-log4j2/log4jdbc-log4j2-jdbc4.1
+	implementation 'org.bgee.log4jdbc-log4j2:log4jdbc-log4j2-jdbc4.1:1.16'
+
 	// test 추가
 	testAnnotationProcessor 'org.projectlombok:lombok'
 	testCompileOnly 'org.projectlombok:lombok'
+
 }
 
 tasks.named('test') {

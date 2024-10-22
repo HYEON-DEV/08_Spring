@@ -39,7 +39,7 @@ public interface MemberMapper {
      * @param input - 수정할 데이터에 대한 모델 객체
      * @return 수정된 데이터 수
      */
-    @Update("UPDATE members SET user_id=#{userId}, user_pw=MD5(#{userPw}), user_name=#{userName}, email=#{email}, phone=#{phone}, birthday=#{birthday}, gender=#{gender}, postcode=#{postcode}, addr1=#{addr1}, addr2=#{addr2}, is_out=#{isOut}, is_admin=#{isAdmin}, login_date=#{loginDate}, reg_date=#{regDate}, edit_date=#{editDate} WHERE id=#{id}")
+    @Update("UPDATE members SET user_id=#{userId}, user_pw=MD5(#{userPw}), user_name=#{userName}, email=#{email}, phone=#{phone}, birthday=#{birthday}, gender=#{gender}, postcode=#{postcode}, addr1=#{addr1}, addr2=#{addr2}, edit_date=now() WHERE id=#{id}")
     public int update(Member input);
 
 
@@ -52,7 +52,7 @@ public interface MemberMapper {
     public int delete(Member input);
 
 
-    @Select("SELECT id, user_id, user_pw, user_name, email, phone, birthday, gender, postcode, addr1, addr2, is_out, is_admin, login_date, reg_date, edit_date FROM members WHERE id=#{id}")
+    @Select("SELECT id, user_id, user_pw, user_name, email, phone, DATE_FORMAT(birthday,'%Y-%m-%d') AS birthday, gender, postcode, addr1, addr2, is_out, is_admin, login_date, reg_date, edit_date FROM members WHERE id=#{id}")
     /**
      * 조회 결과와 리턴할 MODEL 객체를 연결하기 위한 규칙 정의
      * => property : MODEL 객체의 멤버변수 이름

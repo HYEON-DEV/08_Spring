@@ -85,7 +85,7 @@
     
 
     <!-- 데이터베이스 관련 패키지에 대한 로그 레벨 설정 -->
-    <logger name="jdbc.sqlonly" level="INFO">
+    <logger name="jdbc.sqlonly" level="INFO" additivity="false">
         <appender-ref ref="CONSOLE" />
         <appender-ref ref="FILE" />
         <appender-ref ref="Error" />
@@ -105,7 +105,7 @@
         <appender-ref ref="FILE" />
         <appender-ref ref="Error" />
     </logger>
-    <logger name="jdbc.resultsettable" level="DEBUG">
+    <logger name="jdbc.resultsettable" level="DEBUG" additivity="false">
         <appender-ref ref="CONSOLE" />
         <appender-ref ref="FILE" />
         <appender-ref ref="Error" />
