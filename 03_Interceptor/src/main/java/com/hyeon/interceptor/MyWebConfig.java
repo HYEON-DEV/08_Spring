@@ -7,6 +7,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import com.hyeon.interceptor.interceptors.MyInterceptor;
 
+@SuppressWarnings("null")
 @Configuration
 public class MyWebConfig implements WebMvcConfigurer {
 

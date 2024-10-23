@@ -17,7 +17,7 @@ import ua_parser.Parser;
 
 @Slf4j
 @Component
-//@SuppressWarnings("null")
+@SuppressWarnings("null")
 public class MyInterceptor implements HandlerInterceptor {
     // 페이지의 실행 시작 시각을 저장할 변수
     long startTime = 0;
