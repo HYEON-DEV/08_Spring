@@ -10,9 +10,12 @@ import java.io.UnsupportedEncodingException;
 
 import org.springframework.stereotype.Component;
 
+import lombok.extern.slf4j.Slf4j;
+
 /**
  * 파일 입출력을 위한 기능을 제공하는 클래스
  */
+@Slf4j
 @Component
 public class FileHelper {
     
@@ -31,26 +34,21 @@ public class FileHelper {
             // 파일 쓰기
             os.write(data);
         } catch (FileNotFoundException e) {
-            System.err.println("[ERROR] " + e.getMessage());
-            System.err.println("--------------------------");
-            e.printStackTrace();
+            log.error("파일을 찾을 수 없습니다",  e);
             throw e;
         } catch (IOException e) {
-            System.err.println("[ERROR] " + e.getMessage());
-            System.err.println("--------------------------");
-            e.printStackTrace();
+            log.error("파일을 쓸 수 없습니다", e);
             throw e;
         } catch (Exception e) {
-            System.err.println("[ERROR] " + e.getMessage());
-            System.err.println("--------------------------");
-            e.printStackTrace();
+            log.error("파일 입출력 오류가 발생했습니다", e);
             throw e;
         } finally {
             if ( os != null ) {
                 try {
                     os.close();
                 } catch (IOException e) {
-                    e.printStackTrace();
+                    log.error("파일을 닫는 중 오류가 발생했습니다", e);
+                    throw e;
                 }
             }
         }
@@ -73,26 +71,21 @@ public class FileHelper {
             // 파일 내용 data에 담기
             is.read(data);
         } catch (FileNotFoundException e) {
-            System.err.println("[ERROR] " + e.getMessage());
-            System.err.println("--------------------------");
-            e.printStackTrace();
+            log.error("파일을 찾을 수 없습니다",  e);
             throw e;
         } catch (IOException e) {
-            System.err.println("[ERROR] " + e.getMessage());
-            System.err.println("--------------------------");
-            e.printStackTrace();
+            log.error("파일을 읽을 수 없습니다", e);
             throw e;
         } catch (Exception e) {
-            System.err.println("[ERROR] " + e.getMessage());
-            System.err.println("--------------------------");
-            e.printStackTrace();
+            log.error("파일 입출력 오류가 발생했습니다", e);
             throw e;
         } finally {
-            if (is != null) {
+            if ( is != null ) {
                 try {
                     is.close();
                 } catch (IOException e) {
-                    e.printStackTrace();
+                    log.error("파일을 닫는 중 오류가 발생했습니다", e);
+                    throw e;
                 }
             }
         }
@@ -110,14 +103,7 @@ public class FileHelper {
         try {
             this.write(filePath, content.getBytes("utf-8"));
         } catch (UnsupportedEncodingException e) {
-            System.err.println("[ERROR] " + e.getMessage());
-            System.err.println("--------------------------");
-            e.printStackTrace();
-            throw e;
-        } catch (Exception e) {
-            System.err.println("[ERROR] " + e.getMessage());
-            System.err.println("--------------------------");
-            e.printStackTrace();
+            log.error("지원하지 않는 인코딩입니다", e);
             throw e;
         }
     }
@@ -135,9 +121,7 @@ public class FileHelper {
             byte[] data = read(filePath);
             content = new String(data, "utf-8");
         } catch (Exception e) {
-            System.err.println("[ERROR] " + e.getMessage());
-            System.err.println("--------------------------");
-            e.printStackTrace();
+            log.error("지원하지 않는 인코딩입니다", e);
             throw e;
         }
 

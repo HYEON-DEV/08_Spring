@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.hyeon.database.helpers.UtilHelper;
+import com.hyeon.database.helpers.WebHelper;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -28,7 +28,7 @@ public class MyInterceptor implements HandlerInterceptor {
 
     //  UtilHelper 객체를 자동 주입 받는다
     @Autowired
-    private UtilHelper utilHelper;
+    private WebHelper webHelper;
 
     /**
      * Controller 실행 전에 수행되는 메서드
@@ -58,7 +58,7 @@ public class MyInterceptor implements HandlerInterceptor {
         Client c = uaParser.parse(ua);
 
         String fmt = "[Client] %s, %s, %s, %s, %s, %s";
-        String ipAddr = utilHelper.getClientIp(request);
+        String ipAddr = webHelper.getClientIp();
         String osVersion = c.os.major + (c.os.minor != null ? "."+c.os.minor : "");
         String uaVersion = c.userAgent.major + (c.userAgent.minor != null ? "."+c.userAgent.minor : "");
         String clientInfo = String.format(fmt, ipAddr, c.device.family, c.os.family, osVersion, c.userAgent.family, uaVersion);
