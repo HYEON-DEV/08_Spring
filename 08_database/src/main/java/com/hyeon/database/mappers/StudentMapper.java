@@ -39,7 +39,7 @@ public interface StudentMapper {
      * @param input - 수정할 데이터에 대한 모델 객체
      * @return 수정된 데이터 수
      */
-    @Update("UPDATE student SET name=#{name}, userid=#{userid}, grade=#{grade}, idnum=#{idnum}, birthdate=#{birthdate}, tel=#{tel}, height=#{height}, weight=#{weight}, height=#{height}, profno=#{profno} WHERE studno=#{studno}")
+    @Update("UPDATE student SET name=#{name}, userid=#{userid}, grade=#{grade}, idnum=#{idnum}, birthdate=#{birthdate}, tel=#{tel}, height=#{height}, weight=#{weight}, deptno=#{deptno}, profno=#{profno} WHERE studno=#{studno}")
     int update(Student input);
 
 
@@ -61,7 +61,7 @@ public interface StudentMapper {
     int updateByProfno(Student input);
 
 
-    @Select("SELECT studno, name, userid, grade, idnum, birthdate, tel, height, weight, height, profno FROM student WHERE studno=#{studno}")
+    @Select("SELECT studno, name, userid, grade, idnum, birthdate, tel, height, weight, deptno, profno FROM student WHERE studno=#{studno}")
     /**
      * 조회 결과와 리턴할 MODEL 객체를 연결하기 위한 규칙 정의
      * => property : MODEL 객체의 멤버변수 이름
