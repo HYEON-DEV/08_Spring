@@ -53,6 +53,7 @@ public class StudentController {
     }
 
 
+    /** 상세 조회 페이지  */
     @GetMapping("/student/detail/{studno}")
     public String detail(Model model, @PathVariable("studno") int studno) {
 
@@ -79,19 +80,14 @@ public class StudentController {
     }
 
 
-    /** 학생 등록 화면
-     * @return 학생 등록 화면 구현한 View 경로
-     */
+    /** 학생 등록 화면 */
     @GetMapping("/student/add")
     public String add() {
         return "/student/add";
     }
 
 
-    /**
-     * 학생 등록 처리
-     * Action 페이지들은 View를 사용하지 않고 다른 페이지로 이동해야 하므로 메서드 상단에 @ResponseBody를 적용하여 View 없이 직접 응답을 구현한다
-     */
+    /** 학생 등록 처리 */
     @ResponseBody  // View를 사용하지 않음 (action페이지에 꼭 적용)
     @PostMapping("/student/add_ok")
     public void addOk( HttpServletRequest request,
@@ -141,11 +137,7 @@ public class StudentController {
     }
 
 
-    /**
-     * 학생 삭제 처리
-     * @param request
-     * @param studno 학생번호
-     */
+    /** 학생 삭제 처리 */
     @ResponseBody
     @GetMapping("/student/delete/{studno}")
     public void delete( HttpServletRequest request,
@@ -173,12 +165,7 @@ public class StudentController {
     }
 
 
-    /**
-     * 학생 수정 페이지
-     * @param model - Model 객체
-     * @param studno - 학생 번호
-     * @return View 페이지 경로
-     */
+    /** 학생 수정 페이지 */
     @GetMapping("/student/edit/{studno}")
     public String edit( Model model, @PathVariable("studno") int studno ) {
 

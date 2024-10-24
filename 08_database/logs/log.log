@@ -4629,3 +4629,489 @@ com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect dat
 [INFO ] 24-10-24 17:38:00 [MyInterceptor:99] - - REFERER : time=28, url=http://localhost:8080/student
 [INFO ] 24-10-24 17:38:00 [MyInterceptor:125] - running time : 20(ms)
 [INFO ] 24-10-24 17:38:00 [MyInterceptor:125] - running time : 20(ms)
+[INFO ] 24-10-24 21:40:18 [DatabaseApplication:50] - Starting DatabaseApplication using Java 17.0.2 with PID 15940 (C:\Users\hyeon\HYEON\08_Spring\08_database\bin\main started by HYEON in C:\Users\hyeon\HYEON\08_Spring\08_database)
+[DEBUG] 24-10-24 21:40:18 [DatabaseApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-24 21:40:18 [DatabaseApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-24 21:40:19 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[INFO ] 24-10-24 21:40:21 [DatabaseApplication:56] - Started DatabaseApplication in 3.453 seconds (process running for 4.075)
+[INFO ] 24-10-24 21:40:33 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-24 21:40:33 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-24 21:40:33 [MyInterceptor:80] - [GET] http://localhost:8080/department
+[DEBUG] 24-10-24 21:40:34 [selectList:135] - ==>  Preparing: SELECT deptno, dname, loc FROM department ORDER BY deptno DESC
+[DEBUG] 24-10-24 21:40:34 [selectList:135] - ==> Parameters: 
+[DEBUG] 24-10-24 21:40:34 [selectList:135] - <==      Total: 4
+[INFO ] 24-10-24 21:40:34 [MyInterceptor:125] - running time : 671(ms)
+[INFO ] 24-10-24 21:40:34 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-24 21:40:34 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-24 21:40:34 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-24 21:40:34 [MyInterceptor:80] - [GET] http://localhost:8080/assets/css/header.css
+[INFO ] 24-10-24 21:40:34 [MyInterceptor:99] - - REFERER : time=388, url=http://localhost:8080/department
+[INFO ] 24-10-24 21:40:34 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-24 21:40:34 [MyInterceptor:80] - [GET] http://localhost:8080/assets/css/common.css
+[INFO ] 24-10-24 21:40:34 [MyInterceptor:99] - - REFERER : time=388, url=http://localhost:8080/department
+[INFO ] 24-10-24 21:40:34 [MyInterceptor:125] - running time : 149(ms)
+[INFO ] 24-10-24 21:40:34 [MyInterceptor:125] - running time : 159(ms)
+[INFO ] 24-10-24 21:40:37 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-24 21:40:37 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-24 21:40:37 [MyInterceptor:80] - [GET] http://localhost:8080/student
+[INFO ] 24-10-24 21:40:37 [MyInterceptor:99] - - REFERER : time=2882, url=http://localhost:8080/department
+[DEBUG] 24-10-24 21:40:37 [selectList:135] - ==>  Preparing: SELECT studno, name, userid, grade, idnum, DATE_FORMAT(birthdate, '%Y-%m-%d') AS birthdate, tel, height, weight, deptno, profno FROM student
+[DEBUG] 24-10-24 21:40:37 [selectList:135] - ==> Parameters: 
+[DEBUG] 24-10-24 21:40:37 [selectList:135] - <==      Total: 16
+[INFO ] 24-10-24 21:40:37 [MyInterceptor:125] - running time : 72(ms)
+[INFO ] 24-10-24 21:40:37 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-24 21:40:37 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-24 21:40:37 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-24 21:40:37 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-24 21:40:37 [MyInterceptor:80] - [GET] http://localhost:8080/assets/css/header.css
+[INFO ] 24-10-24 21:40:37 [MyInterceptor:80] - [GET] http://localhost:8080/assets/css/common.css
+[INFO ] 24-10-24 21:40:37 [MyInterceptor:99] - - REFERER : time=38, url=http://localhost:8080/student
+[INFO ] 24-10-24 21:40:37 [MyInterceptor:99] - - REFERER : time=38, url=http://localhost:8080/student
+[INFO ] 24-10-24 21:40:37 [MyInterceptor:125] - running time : 30(ms)
+[INFO ] 24-10-24 21:40:37 [MyInterceptor:125] - running time : 31(ms)
+[INFO ] 24-10-24 21:41:01 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-24 21:41:01 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-24 21:41:01 [MyInterceptor:80] - [GET] http://localhost:8080/student/edit/20104
+[INFO ] 24-10-24 21:41:01 [MyInterceptor:99] - - REFERER : time=23545, url=http://localhost:8080/student
+[DEBUG] 24-10-24 21:41:01 [selectItem:135] - ==>  Preparing: SELECT studno, name, userid, grade, idnum, birthdate, tel, height, weight, deptno, profno FROM student WHERE studno=?
+[DEBUG] 24-10-24 21:41:01 [selectItem:135] - ==> Parameters: 20104(Integer)
+[DEBUG] 24-10-24 21:41:01 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-24 21:41:01 [MyInterceptor:125] - running time : 34(ms)
+[INFO ] 24-10-24 21:41:01 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-24 21:41:01 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-24 21:41:01 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-24 21:41:01 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-24 21:41:01 [MyInterceptor:80] - [GET] http://localhost:8080/assets/css/common.css
+[INFO ] 24-10-24 21:41:01 [MyInterceptor:80] - [GET] http://localhost:8080/assets/css/header.css
+[INFO ] 24-10-24 21:41:01 [MyInterceptor:99] - - REFERER : time=25, url=http://localhost:8080/student/edit/20104
+[INFO ] 24-10-24 21:41:01 [MyInterceptor:99] - - REFERER : time=25, url=http://localhost:8080/student/edit/20104
+[INFO ] 24-10-24 21:41:01 [MyInterceptor:125] - running time : 24(ms)
+[INFO ] 24-10-24 21:41:01 [MyInterceptor:125] - running time : 24(ms)
+[INFO ] 24-10-24 21:41:16 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-24 21:41:16 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-24 21:41:16 [MyInterceptor:80] - [GET] http://localhost:8080/student
+[INFO ] 24-10-24 21:41:16 [MyInterceptor:99] - - REFERER : time=15358, url=http://localhost:8080/student/edit/20104
+[DEBUG] 24-10-24 21:41:16 [selectList:135] - ==>  Preparing: SELECT studno, name, userid, grade, idnum, DATE_FORMAT(birthdate, '%Y-%m-%d') AS birthdate, tel, height, weight, deptno, profno FROM student
+[DEBUG] 24-10-24 21:41:16 [selectList:135] - ==> Parameters: 
+[DEBUG] 24-10-24 21:41:16 [selectList:135] - <==      Total: 16
+[INFO ] 24-10-24 21:41:16 [MyInterceptor:125] - running time : 23(ms)
+[INFO ] 24-10-24 21:41:16 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-24 21:41:16 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-24 21:41:16 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-24 21:41:16 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-24 21:41:16 [MyInterceptor:80] - [GET] http://localhost:8080/assets/css/common.css
+[INFO ] 24-10-24 21:41:16 [MyInterceptor:80] - [GET] http://localhost:8080/assets/css/header.css
+[INFO ] 24-10-24 21:41:16 [MyInterceptor:99] - - REFERER : time=23, url=http://localhost:8080/student
+[INFO ] 24-10-24 21:41:16 [MyInterceptor:99] - - REFERER : time=23, url=http://localhost:8080/student
+[INFO ] 24-10-24 21:41:16 [MyInterceptor:125] - running time : 18(ms)
+[INFO ] 24-10-24 21:41:16 [MyInterceptor:125] - running time : 18(ms)
+[INFO ] 24-10-24 21:41:24 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-24 21:41:24 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-24 21:41:24 [MyInterceptor:80] - [GET] http://localhost:8080/student/edit/20104
+[INFO ] 24-10-24 21:41:24 [MyInterceptor:99] - - REFERER : time=7248, url=http://localhost:8080/student
+[DEBUG] 24-10-24 21:41:24 [selectItem:135] - ==>  Preparing: SELECT studno, name, userid, grade, idnum, birthdate, tel, height, weight, deptno, profno FROM student WHERE studno=?
+[DEBUG] 24-10-24 21:41:24 [selectItem:135] - ==> Parameters: 20104(Integer)
+[DEBUG] 24-10-24 21:41:24 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-24 21:41:24 [MyInterceptor:125] - running time : 26(ms)
+[INFO ] 24-10-24 21:41:24 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-24 21:41:24 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-24 21:41:24 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-24 21:41:24 [MyInterceptor:80] - [GET] http://localhost:8080/assets/css/header.css
+[INFO ] 24-10-24 21:41:24 [MyInterceptor:99] - - REFERER : time=17, url=http://localhost:8080/student/edit/20104
+[INFO ] 24-10-24 21:41:24 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-24 21:41:24 [MyInterceptor:80] - [GET] http://localhost:8080/assets/css/common.css
+[INFO ] 24-10-24 21:41:24 [MyInterceptor:125] - running time : 18(ms)
+[INFO ] 24-10-24 21:41:24 [MyInterceptor:99] - - REFERER : time=-18, url=http://localhost:8080/student/edit/20104
+[INFO ] 24-10-24 21:41:24 [MyInterceptor:125] - running time : 19(ms)
+[INFO ] 24-10-24 21:41:37 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-24 21:41:37 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-24 21:41:37 [MyInterceptor:80] - [POST] http://localhost:8080/student/edit_ok/20104
+[INFO ] 24-10-24 21:41:37 [MyInterceptor:88] - (param) <-- name = 조명훈
+[INFO ] 24-10-24 21:41:37 [MyInterceptor:88] - (param) <-- userid = rader2145
+[INFO ] 24-10-24 21:41:37 [MyInterceptor:88] - (param) <-- grade = 1
+[INFO ] 24-10-24 21:41:37 [MyInterceptor:88] - (param) <-- idnum = 8412141254963
+[INFO ] 24-10-24 21:41:37 [MyInterceptor:88] - (param) <-- birthdate = 1984-12-14 00:00:00
+[INFO ] 24-10-24 21:41:37 [MyInterceptor:88] - (param) <-- tel = 010-7785-6984
+[INFO ] 24-10-24 21:41:37 [MyInterceptor:88] - (param) <-- height = 184
+[INFO ] 24-10-24 21:41:37 [MyInterceptor:88] - (param) <-- weight = 62
+[INFO ] 24-10-24 21:41:37 [MyInterceptor:88] - (param) <-- deptno = 201
+[INFO ] 24-10-24 21:41:37 [MyInterceptor:88] - (param) <-- profno = 
+[INFO ] 24-10-24 21:41:37 [MyInterceptor:99] - - REFERER : time=13521, url=http://localhost:8080/student/edit/20104
+[DEBUG] 24-10-24 21:41:37 [update:135] - ==>  Preparing: UPDATE student SET name=?, userid=?, grade=?, idnum=?, birthdate=?, tel=?, height=?, weight=?, deptno=?, profno=? WHERE studno=?
+[DEBUG] 24-10-24 21:41:37 [update:135] - ==> Parameters: 조명훈(String), rader2145(String), 1(Integer), 8412141254963(String), 1984-12-14 00:00:00(String), 010-7785-6984(String), 184(Integer), 62(Integer), 201(Integer), null, 0(Integer)
+[DEBUG] 24-10-24 21:41:37 [update:135] - <==    Updates: 0
+[INFO ] 24-10-24 21:41:37 [MyInterceptor:125] - running time : 35(ms)
+[INFO ] 24-10-24 21:42:14 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-24 21:42:14 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-24 21:42:14 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-24 21:42:14 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-24 21:42:14 [MyInterceptor:80] - [GET] http://localhost:8080/assets/css/header.css
+[INFO ] 24-10-24 21:42:14 [MyInterceptor:80] - [GET] http://localhost:8080/assets/css/common.css
+[INFO ] 24-10-24 21:42:14 [MyInterceptor:99] - - REFERER : time=37298, url=http://localhost:8080/student/edit/20104
+[INFO ] 24-10-24 21:42:14 [MyInterceptor:99] - - REFERER : time=37298, url=http://localhost:8080/student/edit/20104
+[INFO ] 24-10-24 21:42:14 [MyInterceptor:125] - running time : 19(ms)
+[INFO ] 24-10-24 21:42:14 [MyInterceptor:125] - running time : 19(ms)
+[INFO ] 24-10-24 21:43:19 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-24 21:43:19 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-24 21:43:19 [MyInterceptor:80] - [POST] http://localhost:8080/student/edit_ok/20104
+[INFO ] 24-10-24 21:43:19 [MyInterceptor:88] - (param) <-- name = 조명훈
+[INFO ] 24-10-24 21:43:19 [MyInterceptor:88] - (param) <-- userid = rader2145
+[INFO ] 24-10-24 21:43:19 [MyInterceptor:88] - (param) <-- grade = 1
+[INFO ] 24-10-24 21:43:19 [MyInterceptor:88] - (param) <-- idnum = 8412141254963
+[INFO ] 24-10-24 21:43:19 [MyInterceptor:88] - (param) <-- birthdate = 1984-12-14 00:00:00
+[INFO ] 24-10-24 21:43:19 [MyInterceptor:88] - (param) <-- tel = 010-7785-6984
+[INFO ] 24-10-24 21:43:19 [MyInterceptor:88] - (param) <-- height = 184
+[INFO ] 24-10-24 21:43:19 [MyInterceptor:88] - (param) <-- weight = 62
+[INFO ] 24-10-24 21:43:19 [MyInterceptor:88] - (param) <-- deptno = 201
+[INFO ] 24-10-24 21:43:19 [MyInterceptor:88] - (param) <-- profno = 
+[INFO ] 24-10-24 21:43:19 [MyInterceptor:99] - - REFERER : time=64589, url=http://localhost:8080/student/edit/20104
+[DEBUG] 24-10-24 21:43:19 [update:135] - ==>  Preparing: UPDATE student SET name=?, userid=?, grade=?, idnum=?, birthdate=?, tel=?, height=?, weight=?, deptno=?, profno=? WHERE studno=?
+[DEBUG] 24-10-24 21:43:19 [update:135] - ==> Parameters: 조명훈(String), rader2145(String), 1(Integer), 8412141254963(String), 1984-12-14 00:00:00(String), 010-7785-6984(String), 184(Integer), 62(Integer), 201(Integer), null, 0(Integer)
+[DEBUG] 24-10-24 21:43:19 [update:135] - <==    Updates: 0
+[INFO ] 24-10-24 21:43:19 [MyInterceptor:125] - running time : 23(ms)
+[INFO ] 24-10-24 21:43:32 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-24 21:43:32 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-24 21:43:32 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-24 21:43:32 [MyInterceptor:80] - [GET] http://localhost:8080/assets/css/header.css
+[INFO ] 24-10-24 21:43:32 [MyInterceptor:99] - - REFERER : time=12671, url=http://localhost:8080/student/edit/20104
+[INFO ] 24-10-24 21:43:32 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-24 21:43:32 [MyInterceptor:80] - [GET] http://localhost:8080/assets/css/common.css
+[INFO ] 24-10-24 21:43:32 [MyInterceptor:99] - - REFERER : time=12671, url=http://localhost:8080/student/edit/20104
+[INFO ] 24-10-24 21:43:32 [MyInterceptor:125] - running time : 22(ms)
+[INFO ] 24-10-24 21:43:32 [MyInterceptor:125] - running time : 24(ms)
+[INFO ] 24-10-24 21:46:14 [DatabaseApplication:50] - Starting DatabaseApplication using Java 17.0.2 with PID 15940 (C:\Users\hyeon\HYEON\08_Spring\08_database\bin\main started by HYEON in C:\Users\hyeon\HYEON\08_Spring\08_database)
+[DEBUG] 24-10-24 21:46:14 [DatabaseApplication:51] - Running with Spring Boot v3.3.4, Spring v6.1.13
+[INFO ] 24-10-24 21:46:14 [DatabaseApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 24-10-24 21:46:15 [DatabaseApplication:56] - Started DatabaseApplication in 0.79 seconds (process running for 358.202)
+[INFO ] 24-10-24 21:47:33 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-24 21:47:33 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-24 21:47:33 [MyInterceptor:80] - [GET] http://localhost:8080/student/edit/20104
+[DEBUG] 24-10-24 21:47:33 [selectItem:135] - ==>  Preparing: SELECT studno, name, userid, grade, idnum, birthdate, tel, height, weight, deptno, profno FROM student WHERE studno=?
+[DEBUG] 24-10-24 21:47:33 [selectItem:135] - ==> Parameters: 20104(Integer)
+[DEBUG] 24-10-24 21:47:33 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-24 21:47:33 [MyInterceptor:125] - running time : 34(ms)
+[INFO ] 24-10-24 21:47:33 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-24 21:47:33 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-24 21:47:33 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-24 21:47:33 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-24 21:47:33 [MyInterceptor:80] - [GET] http://localhost:8080/assets/css/header.css
+[INFO ] 24-10-24 21:47:33 [MyInterceptor:80] - [GET] http://localhost:8080/assets/css/common.css
+[INFO ] 24-10-24 21:47:33 [MyInterceptor:99] - - REFERER : time=21, url=http://localhost:8080/student/edit/20104
+[INFO ] 24-10-24 21:47:33 [MyInterceptor:99] - - REFERER : time=21, url=http://localhost:8080/student/edit/20104
+[INFO ] 24-10-24 21:47:33 [MyInterceptor:125] - running time : 21(ms)
+[INFO ] 24-10-24 21:47:33 [MyInterceptor:125] - running time : 21(ms)
+[INFO ] 24-10-24 21:47:44 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-24 21:47:44 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-24 21:47:44 [MyInterceptor:80] - [POST] http://localhost:8080/student/edit_ok/20104
+[INFO ] 24-10-24 21:47:44 [MyInterceptor:88] - (param) <-- name = 조명훈
+[INFO ] 24-10-24 21:47:44 [MyInterceptor:88] - (param) <-- userid = rader2145
+[INFO ] 24-10-24 21:47:44 [MyInterceptor:88] - (param) <-- grade = 1
+[INFO ] 24-10-24 21:47:44 [MyInterceptor:88] - (param) <-- idnum = 8412141254963
+[INFO ] 24-10-24 21:47:44 [MyInterceptor:88] - (param) <-- birthdate = 1984-12-14 00:00:00
+[INFO ] 24-10-24 21:47:44 [MyInterceptor:88] - (param) <-- tel = 010-7785-6984
+[INFO ] 24-10-24 21:47:44 [MyInterceptor:88] - (param) <-- height = 184
+[INFO ] 24-10-24 21:47:44 [MyInterceptor:88] - (param) <-- weight = 62
+[INFO ] 24-10-24 21:47:44 [MyInterceptor:88] - (param) <-- deptno = 201
+[INFO ] 24-10-24 21:47:44 [MyInterceptor:88] - (param) <-- profno = 
+[INFO ] 24-10-24 21:47:44 [MyInterceptor:99] - - REFERER : time=11603, url=http://localhost:8080/student/edit/20104
+[DEBUG] 24-10-24 21:47:44 [update:135] - ==>  Preparing: UPDATE student SET name=?, userid=?, grade=?, idnum=?, birthdate=?, tel=?, height=?, weight=?, deptno=?, profno=? WHERE studno=?
+[DEBUG] 24-10-24 21:47:44 [update:135] - ==> Parameters: 조명훈(String), rader2145(String), 1(Integer), 8412141254963(String), 1984-12-14 00:00:00(String), 010-7785-6984(String), 184(Integer), 62(Integer), 201(Integer), null, 20104(Integer)
+[DEBUG] 24-10-24 21:47:44 [update:135] - <==    Updates: 1
+[DEBUG] 24-10-24 21:47:44 [selectItem:135] - ==>  Preparing: SELECT studno, name, userid, grade, idnum, birthdate, tel, height, weight, deptno, profno FROM student WHERE studno=?
+[DEBUG] 24-10-24 21:47:44 [selectItem:135] - ==> Parameters: 20104(Integer)
+[DEBUG] 24-10-24 21:47:44 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-24 21:47:44 [MyInterceptor:125] - running time : 34(ms)
+[INFO ] 24-10-24 21:47:45 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-24 21:47:45 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-24 21:47:45 [MyInterceptor:80] - [GET] http://localhost:8080/student/detail/20104
+[INFO ] 24-10-24 21:47:45 [MyInterceptor:99] - - REFERER : time=1009, url=http://localhost:8080/student/edit_ok/20104
+[DEBUG] 24-10-24 21:47:45 [selectItem:135] - ==>  Preparing: SELECT studno, name, userid, grade, idnum, birthdate, tel, height, weight, deptno, profno FROM student WHERE studno=?
+[DEBUG] 24-10-24 21:47:45 [selectItem:135] - ==> Parameters: 20104(Integer)
+[DEBUG] 24-10-24 21:47:45 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-24 21:47:45 [MyInterceptor:125] - running time : 20(ms)
+[INFO ] 24-10-24 21:47:45 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-24 21:47:45 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-24 21:47:45 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-24 21:47:45 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-24 21:47:45 [MyInterceptor:80] - [GET] http://localhost:8080/assets/css/common.css
+[INFO ] 24-10-24 21:47:45 [MyInterceptor:80] - [GET] http://localhost:8080/assets/css/header.css
+[INFO ] 24-10-24 21:47:45 [MyInterceptor:99] - - REFERER : time=14, url=http://localhost:8080/student/detail/20104
+[INFO ] 24-10-24 21:47:45 [MyInterceptor:99] - - REFERER : time=14, url=http://localhost:8080/student/detail/20104
+[INFO ] 24-10-24 21:47:45 [MyInterceptor:125] - running time : 20(ms)
+[INFO ] 24-10-24 21:47:45 [MyInterceptor:125] - running time : 20(ms)
+[INFO ] 24-10-24 21:47:53 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-24 21:47:53 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-24 21:47:53 [MyInterceptor:80] - [GET] http://localhost:8080/student/delete/20104
+[INFO ] 24-10-24 21:47:53 [MyInterceptor:99] - - REFERER : time=7318, url=http://localhost:8080/student/detail/20104
+[DEBUG] 24-10-24 21:47:53 [delete:135] - ==>  Preparing: DELETE FROM student WHERE studno = ?
+[DEBUG] 24-10-24 21:47:53 [delete:135] - ==> Parameters: 20104(Integer)
+[DEBUG] 24-10-24 21:47:53 [delete:135] - <==    Updates: 1
+[INFO ] 24-10-24 21:47:53 [MyInterceptor:125] - running time : 24(ms)
+[INFO ] 24-10-24 21:47:54 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-24 21:47:54 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-24 21:47:54 [MyInterceptor:80] - [GET] http://localhost:8080/student
+[INFO ] 24-10-24 21:47:54 [MyInterceptor:99] - - REFERER : time=1192, url=http://localhost:8080/student/delete/20104
+[DEBUG] 24-10-24 21:47:54 [selectList:135] - ==>  Preparing: SELECT studno, name, userid, grade, idnum, DATE_FORMAT(birthdate, '%Y-%m-%d') AS birthdate, tel, height, weight, deptno, profno FROM student
+[DEBUG] 24-10-24 21:47:54 [selectList:135] - ==> Parameters: 
+[DEBUG] 24-10-24 21:47:54 [selectList:135] - <==      Total: 15
+[INFO ] 24-10-24 21:47:54 [MyInterceptor:125] - running time : 24(ms)
+[INFO ] 24-10-24 21:47:54 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-24 21:47:54 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-24 21:47:54 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-24 21:47:54 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-24 21:47:54 [MyInterceptor:80] - [GET] http://localhost:8080/assets/css/header.css
+[INFO ] 24-10-24 21:47:54 [MyInterceptor:80] - [GET] http://localhost:8080/assets/css/common.css
+[INFO ] 24-10-24 21:47:54 [MyInterceptor:99] - - REFERER : time=18, url=http://localhost:8080/student
+[INFO ] 24-10-24 21:47:54 [MyInterceptor:99] - - REFERER : time=18, url=http://localhost:8080/student
+[INFO ] 24-10-24 21:47:54 [MyInterceptor:125] - running time : 19(ms)
+[INFO ] 24-10-24 21:47:54 [MyInterceptor:125] - running time : 19(ms)
+[INFO ] 24-10-24 21:48:07 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-24 21:48:07 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-24 21:48:07 [MyInterceptor:80] - [GET] http://localhost:8080/student/edit/10202
+[INFO ] 24-10-24 21:48:07 [MyInterceptor:99] - - REFERER : time=13257, url=http://localhost:8080/student
+[DEBUG] 24-10-24 21:48:07 [selectItem:135] - ==>  Preparing: SELECT studno, name, userid, grade, idnum, birthdate, tel, height, weight, deptno, profno FROM student WHERE studno=?
+[DEBUG] 24-10-24 21:48:07 [selectItem:135] - ==> Parameters: 10202(Integer)
+[DEBUG] 24-10-24 21:48:07 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-24 21:48:07 [MyInterceptor:125] - running time : 20(ms)
+[INFO ] 24-10-24 21:48:07 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-24 21:48:07 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-24 21:48:07 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-24 21:48:07 [MyInterceptor:80] - [GET] http://localhost:8080/assets/css/common.css
+[INFO ] 24-10-24 21:48:07 [MyInterceptor:99] - - REFERER : time=21, url=http://localhost:8080/student/edit/10202
+[INFO ] 24-10-24 21:48:07 [MyInterceptor:125] - running time : 16(ms)
+[INFO ] 24-10-24 21:48:07 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-24 21:48:07 [MyInterceptor:80] - [GET] http://localhost:8080/assets/css/header.css
+[INFO ] 24-10-24 21:48:07 [MyInterceptor:99] - - REFERER : time=-16, url=http://localhost:8080/student/edit/10202
+[INFO ] 24-10-24 21:48:07 [MyInterceptor:125] - running time : 18(ms)
+[INFO ] 24-10-24 21:48:10 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-24 21:48:10 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-24 21:48:10 [MyInterceptor:80] - [GET] http://localhost:8080/student/add
+[INFO ] 24-10-24 21:48:10 [MyInterceptor:99] - - REFERER : time=2355, url=http://localhost:8080/student
+[INFO ] 24-10-24 21:48:10 [MyInterceptor:125] - running time : 17(ms)
+[INFO ] 24-10-24 21:48:10 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-24 21:48:10 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-24 21:48:10 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-24 21:48:10 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-24 21:48:10 [MyInterceptor:80] - [GET] http://localhost:8080/assets/css/header.css
+[INFO ] 24-10-24 21:48:10 [MyInterceptor:80] - [GET] http://localhost:8080/assets/css/common.css
+[INFO ] 24-10-24 21:48:10 [MyInterceptor:99] - - REFERER : time=25, url=http://localhost:8080/student/add
+[INFO ] 24-10-24 21:48:10 [MyInterceptor:99] - - REFERER : time=25, url=http://localhost:8080/student/add
+[INFO ] 24-10-24 21:48:10 [MyInterceptor:125] - running time : 18(ms)
+[INFO ] 24-10-24 21:48:10 [MyInterceptor:125] - running time : 18(ms)
+[INFO ] 24-10-24 21:48:41 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-24 21:48:41 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-24 21:48:41 [MyInterceptor:80] - [POST] http://localhost:8080/student/add_ok
+[INFO ] 24-10-24 21:48:41 [MyInterceptor:88] - (param) <-- name = 김범석
+[INFO ] 24-10-24 21:48:41 [MyInterceptor:88] - (param) <-- userid = Beom
+[INFO ] 24-10-24 21:48:41 [MyInterceptor:88] - (param) <-- grade = 1
+[INFO ] 24-10-24 21:48:41 [MyInterceptor:88] - (param) <-- idnum = 9909091111111
+[INFO ] 24-10-24 21:48:41 [MyInterceptor:88] - (param) <-- birthdate = 
+[INFO ] 24-10-24 21:48:41 [MyInterceptor:88] - (param) <-- tel = 010-7785-6984
+[INFO ] 24-10-24 21:48:41 [MyInterceptor:88] - (param) <-- height = 179
+[INFO ] 24-10-24 21:48:41 [MyInterceptor:88] - (param) <-- weight = 90
+[INFO ] 24-10-24 21:48:41 [MyInterceptor:88] - (param) <-- deptno = 101
+[INFO ] 24-10-24 21:48:41 [MyInterceptor:88] - (param) <-- profno = 9901
+[INFO ] 24-10-24 21:48:41 [MyInterceptor:99] - - REFERER : time=31801, url=http://localhost:8080/student/add
+[DEBUG] 24-10-24 21:48:41 [insert:135] - ==>  Preparing: INSERT INTO student (name, userid, grade, idnum, birthdate, tel, height, weight, deptno, profno) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[DEBUG] 24-10-24 21:48:41 [insert:135] - ==> Parameters: 김범석(String), Beom(String), 1(Integer), 9909091111111(String), (String), 010-7785-6984(String), 179(Integer), 90(Integer), 101(Integer), 9901(Integer)
+[ERROR] 24-10-24 21:48:41 [log4j2:186] - 11. PreparedStatement.execute() FAILED! INSERT INTO student (name, userid, grade, idnum, birthdate, tel, height, weight, deptno, profno) 
+VALUES ('김범석', 'Beom', 1, '9909091111111', '', '010-7785-6984', 179, 90, 101, 9901)  {FAILED after 7 ms}
+com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Incorrect datetime value: '' for column 'birthdate' at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:104)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:354)
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.execute(PreparedStatementSpy.java:443)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:58)
+	at jdk.proxy4/jdk.proxy4.$Proxy118.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:48)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:75)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	at jdk.proxy2/jdk.proxy2.$Proxy82.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy5/jdk.proxy5.$Proxy124.insert(Unknown Source)
+	at com.hyeon.database.services.impl.StudentServiceImpl.addItem(StudentServiceImpl.java:24)
+	at com.hyeon.database.controllers.StudentController.addOk(StudentController.java:129)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+[INFO ] 24-10-24 21:48:42 [MyInterceptor:125] - running time : 123(ms)
+[INFO ] 24-10-24 21:48:59 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-24 21:48:59 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-24 21:48:59 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-24 21:48:59 [MyInterceptor:80] - [GET] http://localhost:8080/assets/css/common.css
+[INFO ] 24-10-24 21:48:59 [MyInterceptor:99] - - REFERER : time=17802, url=http://localhost:8080/student/add
+[INFO ] 24-10-24 21:48:59 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-24 21:48:59 [MyInterceptor:80] - [GET] http://localhost:8080/assets/css/header.css
+[INFO ] 24-10-24 21:48:59 [MyInterceptor:125] - running time : 20(ms)
+[INFO ] 24-10-24 21:48:59 [MyInterceptor:99] - - REFERER : time=-20, url=http://localhost:8080/student/add
+[INFO ] 24-10-24 21:48:59 [MyInterceptor:125] - running time : 21(ms)
+[INFO ] 24-10-24 21:49:11 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-24 21:49:11 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-24 21:49:11 [MyInterceptor:80] - [POST] http://localhost:8080/student/add_ok
+[INFO ] 24-10-24 21:49:11 [MyInterceptor:88] - (param) <-- name = 김범석
+[INFO ] 24-10-24 21:49:11 [MyInterceptor:88] - (param) <-- userid = Beom
+[INFO ] 24-10-24 21:49:11 [MyInterceptor:88] - (param) <-- grade = 1
+[INFO ] 24-10-24 21:49:11 [MyInterceptor:88] - (param) <-- idnum = 9909091111111
+[INFO ] 24-10-24 21:49:11 [MyInterceptor:88] - (param) <-- birthdate = 2024-10-24
+[INFO ] 24-10-24 21:49:11 [MyInterceptor:88] - (param) <-- tel = 010-7785-6984
+[INFO ] 24-10-24 21:49:11 [MyInterceptor:88] - (param) <-- height = 179
+[INFO ] 24-10-24 21:49:11 [MyInterceptor:88] - (param) <-- weight = 90
+[INFO ] 24-10-24 21:49:11 [MyInterceptor:88] - (param) <-- deptno = 101
+[INFO ] 24-10-24 21:49:11 [MyInterceptor:88] - (param) <-- profno = 9901
+[INFO ] 24-10-24 21:49:11 [MyInterceptor:99] - - REFERER : time=11650, url=http://localhost:8080/student/add
+[DEBUG] 24-10-24 21:49:11 [insert:135] - ==>  Preparing: INSERT INTO student (name, userid, grade, idnum, birthdate, tel, height, weight, deptno, profno) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[DEBUG] 24-10-24 21:49:11 [insert:135] - ==> Parameters: 김범석(String), Beom(String), 1(Integer), 9909091111111(String), 2024-10-24(String), 010-7785-6984(String), 179(Integer), 90(Integer), 101(Integer), 9901(Integer)
+[DEBUG] 24-10-24 21:49:11 [insert:135] - <==    Updates: 1
+[DEBUG] 24-10-24 21:49:11 [selectItem:135] - ==>  Preparing: SELECT studno, name, userid, grade, idnum, birthdate, tel, height, weight, deptno, profno FROM student WHERE studno=?
+[DEBUG] 24-10-24 21:49:11 [selectItem:135] - ==> Parameters: 20105(Integer)
+[DEBUG] 24-10-24 21:49:11 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-24 21:49:11 [MyInterceptor:125] - running time : 44(ms)
+[INFO ] 24-10-24 21:49:13 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-24 21:49:13 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-24 21:49:13 [MyInterceptor:80] - [GET] http://localhost:8080/student/detail/20105
+[INFO ] 24-10-24 21:49:13 [MyInterceptor:99] - - REFERER : time=1457, url=http://localhost:8080/student/add_ok
+[DEBUG] 24-10-24 21:49:13 [selectItem:135] - ==>  Preparing: SELECT studno, name, userid, grade, idnum, birthdate, tel, height, weight, deptno, profno FROM student WHERE studno=?
+[DEBUG] 24-10-24 21:49:13 [selectItem:135] - ==> Parameters: 20105(Integer)
+[DEBUG] 24-10-24 21:49:13 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-24 21:49:13 [MyInterceptor:125] - running time : 23(ms)
+[INFO ] 24-10-24 21:49:13 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-24 21:49:13 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-24 21:49:13 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-24 21:49:13 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-24 21:49:13 [MyInterceptor:80] - [GET] http://localhost:8080/assets/css/header.css
+[INFO ] 24-10-24 21:49:13 [MyInterceptor:80] - [GET] http://localhost:8080/assets/css/common.css
+[INFO ] 24-10-24 21:49:13 [MyInterceptor:99] - - REFERER : time=12, url=http://localhost:8080/student/detail/20105
+[INFO ] 24-10-24 21:49:13 [MyInterceptor:99] - - REFERER : time=12, url=http://localhost:8080/student/detail/20105
+[INFO ] 24-10-24 21:49:13 [MyInterceptor:125] - running time : 23(ms)
+[INFO ] 24-10-24 21:49:13 [MyInterceptor:125] - running time : 23(ms)
+[INFO ] 24-10-24 21:49:31 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-24 21:49:31 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-24 21:49:31 [MyInterceptor:80] - [GET] http://localhost:8080/student
+[INFO ] 24-10-24 21:49:31 [MyInterceptor:99] - - REFERER : time=18601, url=http://localhost:8080/student/detail/20105
+[DEBUG] 24-10-24 21:49:31 [selectList:135] - ==>  Preparing: SELECT studno, name, userid, grade, idnum, DATE_FORMAT(birthdate, '%Y-%m-%d') AS birthdate, tel, height, weight, deptno, profno FROM student
+[DEBUG] 24-10-24 21:49:31 [selectList:135] - ==> Parameters: 
+[DEBUG] 24-10-24 21:49:31 [selectList:135] - <==      Total: 16
+[INFO ] 24-10-24 21:49:31 [MyInterceptor:125] - running time : 23(ms)
+[INFO ] 24-10-24 21:49:31 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-24 21:49:31 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-24 21:49:31 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-24 21:49:31 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-24 21:49:31 [MyInterceptor:80] - [GET] http://localhost:8080/assets/css/common.css
+[INFO ] 24-10-24 21:49:31 [MyInterceptor:80] - [GET] http://localhost:8080/assets/css/header.css
+[INFO ] 24-10-24 21:49:31 [MyInterceptor:99] - - REFERER : time=18, url=http://localhost:8080/student
+[INFO ] 24-10-24 21:49:31 [MyInterceptor:99] - - REFERER : time=18, url=http://localhost:8080/student
+[INFO ] 24-10-24 21:49:31 [MyInterceptor:125] - running time : 23(ms)
+[INFO ] 24-10-24 21:49:31 [MyInterceptor:125] - running time : 23(ms)
+[INFO ] 24-10-24 21:50:06 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-24 21:50:06 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-24 21:50:06 [MyInterceptor:80] - [GET] http://localhost:8080/student/detail/20105
+[INFO ] 24-10-24 21:50:06 [MyInterceptor:99] - - REFERER : time=34796, url=http://localhost:8080/student
+[DEBUG] 24-10-24 21:50:06 [selectItem:135] - ==>  Preparing: SELECT studno, name, userid, grade, idnum, birthdate, tel, height, weight, deptno, profno FROM student WHERE studno=?
+[DEBUG] 24-10-24 21:50:06 [selectItem:135] - ==> Parameters: 20105(Integer)
+[DEBUG] 24-10-24 21:50:06 [selectItem:135] - <==      Total: 1
+[INFO ] 24-10-24 21:50:06 [MyInterceptor:125] - running time : 22(ms)
+[INFO ] 24-10-24 21:50:06 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-24 21:50:06 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-24 21:50:06 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-24 21:50:06 [MyInterceptor:80] - [GET] http://localhost:8080/assets/css/common.css
+[INFO ] 24-10-24 21:50:06 [MyInterceptor:99] - - REFERER : time=21, url=http://localhost:8080/student/detail/20105
+[INFO ] 24-10-24 21:50:06 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-24 21:50:06 [MyInterceptor:80] - [GET] http://localhost:8080/assets/css/header.css
+[INFO ] 24-10-24 21:50:06 [MyInterceptor:99] - - REFERER : time=21, url=http://localhost:8080/student/detail/20105
+[INFO ] 24-10-24 21:50:06 [MyInterceptor:125] - running time : 19(ms)
+[INFO ] 24-10-24 21:50:06 [MyInterceptor:125] - running time : 20(ms)
+[INFO ] 24-10-24 21:50:14 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-24 21:50:14 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-24 21:50:14 [MyInterceptor:80] - [GET] http://localhost:8080/student/delete/20105
+[INFO ] 24-10-24 21:50:14 [MyInterceptor:99] - - REFERER : time=7955, url=http://localhost:8080/student/detail/20105
+[DEBUG] 24-10-24 21:50:14 [delete:135] - ==>  Preparing: DELETE FROM student WHERE studno = ?
+[DEBUG] 24-10-24 21:50:14 [delete:135] - ==> Parameters: 20105(Integer)
+[DEBUG] 24-10-24 21:50:14 [delete:135] - <==    Updates: 1
+[INFO ] 24-10-24 21:50:14 [MyInterceptor:125] - running time : 27(ms)
+[INFO ] 24-10-24 21:50:15 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-24 21:50:15 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-24 21:50:15 [MyInterceptor:80] - [GET] http://localhost:8080/student
+[INFO ] 24-10-24 21:50:15 [MyInterceptor:99] - - REFERER : time=1070, url=http://localhost:8080/student/delete/20105
+[DEBUG] 24-10-24 21:50:15 [selectList:135] - ==>  Preparing: SELECT studno, name, userid, grade, idnum, DATE_FORMAT(birthdate, '%Y-%m-%d') AS birthdate, tel, height, weight, deptno, profno FROM student
+[DEBUG] 24-10-24 21:50:15 [selectList:135] - ==> Parameters: 
+[DEBUG] 24-10-24 21:50:15 [selectList:135] - <==      Total: 15
+[INFO ] 24-10-24 21:50:15 [MyInterceptor:125] - running time : 29(ms)
+[INFO ] 24-10-24 21:50:15 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-24 21:50:15 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-24 21:50:15 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-24 21:50:15 [MyInterceptor:80] - [GET] http://localhost:8080/assets/css/common.css
+[INFO ] 24-10-24 21:50:15 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-24 21:50:15 [MyInterceptor:80] - [GET] http://localhost:8080/assets/css/header.css
+[INFO ] 24-10-24 21:50:15 [MyInterceptor:99] - - REFERER : time=17, url=http://localhost:8080/student
+[INFO ] 24-10-24 21:50:15 [MyInterceptor:99] - - REFERER : time=17, url=http://localhost:8080/student
+[INFO ] 24-10-24 21:50:15 [MyInterceptor:125] - running time : 23(ms)
+[INFO ] 24-10-24 21:50:15 [MyInterceptor:125] - running time : 23(ms)
