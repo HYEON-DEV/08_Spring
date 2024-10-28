@@ -23,13 +23,12 @@ public interface StudentMapper {
      * @param input - 입력할 학생 정보에 대한 모델 객체
      * @return 입력된 데이터 수
      */
-    @Insert("INSERT INTO student (name, userid, grade, idnum, birthdate, tel, height, weight, deptno, profno) VALUES (#{name}, #{userid}, #{grade}, #{idnum}, #{birthdate}, #{tel}, #{height}, #{weight}, #{deptno}, #{profno})")
-    /**
-     *  INSERT문에서 필요한 PK에 대한 옵션 정의
-     * => useGeneratedKeys: AUTO_INCREMENT가 적용된 테이블인 경우 사용
-     * => KeyProperty: 파라미터로 전달되는 MODEL 객체에서 PK에 대응되는 멤버변수
-     * => keyColumn: 테이블의 Primary Key 컬럼명
-     */
+    @Insert("INSERT INTO student (" +
+        "name, userid, grade, idnum, birthdate, " +
+        "tel, height, weight, deptno, profno) " +
+        "VALUES (" +
+        "#{name}, #{userid}, #{grade}, #{idnum}, #{birthdate}, " +
+        "#{tel}, #{height}, #{weight}, #{deptno}, #{profno})" )
     @Options(useGeneratedKeys = true, keyProperty = "studno", keyColumn = "studno")
     int insert(Student input);
 
@@ -62,8 +61,8 @@ public interface StudentMapper {
 
 
     @Select("SELECT " +
-        "studno, s.name AS name, userid, grade, idnum, " +
-        "DATE_FORMAT(birthdate, '&Y-%m-%d') AS birthdate, " +
+        "studno, s.name AS name, s.userid AS userid, grade, idnum, " +
+        "DATE_FORMAT(birthdate, '%Y-%m-%d') AS birthdate, " +
         "tel, height, weight, dname, p.name AS pname " +
         "FROM student s " +
         "INNER JOIN department d ON s.deptno = d.deptno " +
@@ -82,22 +81,22 @@ public interface StudentMapper {
         @Result(property="deptno", column="deptno"),
         @Result(property="profno", column="profno"),
         @Result(property="dname", column="dname"),
-        @Result(property="pname", column="name")
+        @Result(property="pname", column="pname")
     })
     Student selectItem(Student input);
 
     
     @Select( "<script> " +
         "SELECT " +
-        "studno, s.name AS name, userid, grade, idnum, " +
-        "DATE_FORMAT(birthdate, '&Y-%m-%d') AS birthdate, " +
+        "studno, s.name AS name, s.userid AS userid, grade, idnum, " +
+        "DATE_FORMAT(birthdate, '%Y-%m-%d') AS birthdate, " +
         "tel, height, weight, dname, p.name AS pname " +
         "FROM student s " +
         "INNER JOIN department d ON s.deptno = d.deptno " +
         "INNER JOIN professor p ON s.profno = p.profno " +
         "<where> " +
-        "<if test = 'name != null'> name LIKE conact('%', #{name}, '%') </if> " +
-        "<if test = 'userid != null'> userid LIKE conact('%', #{userid}, '%') </if> " +
+        "<if test = 'name != null'> s.name LIKE concat('%', #{name}, '%') </if> " +
+        "<if test = 'userid != null'> OR s.userid LIKE concat('%', #{userid}, '%') </if> " +
         "</where> " +
         "ORDER BY studno DESC " +
         "<if test = 'listCount > 0'> LIMIT #{offset}, #{listCount} </if> " +       
@@ -105,4 +104,16 @@ public interface StudentMapper {
     @ResultMap("studentMap")
     List<Student> selectList(Student input);
 
+
+    @Select( "<script> " + 
+        "SELECT COUNT(*) AS cnt " +
+        "FROM student s " +
+        "INNER JOIN department d ON s.deptno = d.deptno " +
+        "INNER JOIN professor p ON s.profno = p.profno " +
+        "<where> " + 
+        "<if test = 'name != null'> s.name LIKE concat('%', #{name}, '%') </if> " +
+        "<if test = 'userid != null'> OR s.userid LIKE concat('%', #{userid}, '%') </if> " +
+        "</where> " +
+        "</script>")
+    public int selectCount(Student input);
 }

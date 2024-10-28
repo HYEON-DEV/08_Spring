@@ -70,15 +70,21 @@
                     </td>
                 </tr>
                 <tr>
-                    <th> 학과번호 </th>
+                    <th> 소속학과 </th>
                     <td class="text-left field">
-                        <input type="number" name="deptno" />
+                        <select name="deptno">
+                            <option value=""> ----- 소속학과 선택 ----- </option>
+                            <option th:each="dept : ${departments}" th:value="${dept.deptNo}" th:text="${dept.dname}"></option>
+                        </select>
                     </td>
                 </tr>
                 <tr>
-                    <th> 교수번호 </th>
+                    <th> 교수이름 </th>
                     <td class="text-left field">
-                        <input type="number" name="profno" />
+                        <select name="pname">
+                            <option value=""> ----- 교수 선택 -----</option>
+                            <option th:each="professor : ${professors}" th:value="${professor.profno}" th:text="${professor.name}"></option>
+                        </select>
                     </td>
                 </tr>
             </tbody>

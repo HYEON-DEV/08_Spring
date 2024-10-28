@@ -11,18 +11,29 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.hyeon.database.exceptions.ServiceNoResultException;
+import com.hyeon.database.helpers.PaginationHelper;
 import com.hyeon.database.helpers.WebHelper;
+import com.hyeon.database.models.Department;
+import com.hyeon.database.models.Professor;
 import com.hyeon.database.models.Student;
+import com.hyeon.database.services.DepartmentService;
+import com.hyeon.database.services.ProfessorService;
 import com.hyeon.database.services.StudentService;
 
 import jakarta.servlet.http.HttpServletRequest;
+
 
 @Controller
 public class StudentController {
     
     @Autowired
     private StudentService studentService;
+
+    @Autowired
+    private DepartmentService departmentService;
+
+    @Autowired
+    private ProfessorService professorService;
 
     @Autowired
     private WebHelper webHelper;
@@ -34,20 +45,37 @@ public class StudentController {
      * @return 학생 목록 화면을 구현할 View 경로
      */
     @GetMapping("/student")
-    public String index(Model model) {
+    public String index(Model model,
+        @RequestParam(value="keyword", required = false) String keyword,
+        @RequestParam(value="page", defaultValue = "1") int nowPage ) {
+        
+        int totalCount = 0;
+        int listCount = 5;
+        int pageCount = 3;
+
+        PaginationHelper pagination = null;
+
+        Student input = new Student();
+        input.setName(keyword);
+        input.setUserid(keyword);
+
         List<Student> students = null;
 
         try {
-            students = studentService.getList(null);
-        } catch (ServiceNoResultException e) {
-            webHelper.serverError(e);
-            return null;
+            totalCount = studentService.getCount(input);
+            pagination = new PaginationHelper(nowPage, totalCount, listCount, pageCount);
+            
+            Student.setOffset(pagination.getOffset());
+            Student.setListCount(pagination.getListCount());
+
+            students = studentService.getList(input);
         } catch (Exception e) {
             webHelper.serverError(e);
-            return null;
         }
 
         model.addAttribute("students", students);
+        model.addAttribute("keyword", keyword);
+        model.addAttribute("pagination", pagination);
 
         return "/student/index";
     }
@@ -58,17 +86,15 @@ public class StudentController {
     public String detail(Model model, @PathVariable("studno") int studno) {
 
         // 조회 조건에 사용할 변수를 Beans에 저장
-        Student params = new Student();
-        params.setStudno(studno);
+        Student input = new Student();
+        input.setStudno(studno);
 
         // 조회 결과를 저장할 객체 선언
         Student student = null;
 
         try {
             // 데이터 조회
-            student = studentService.getItem(params);
-        } catch (ServiceNoResultException e) {
-            webHelper.serverError(e);
+            student = studentService.getItem(input);
         } catch (Exception e) {
             webHelper.serverError(e);
         }
@@ -82,7 +108,20 @@ public class StudentController {
 
     /** 학생 등록 화면 */
     @GetMapping("/student/add")
-    public String add() {
+    public String add( Model model ) {
+        List<Department> output = null;
+        List<Professor> output2 = null;
+
+        try {
+            output = departmentService.getList(null);
+            output2 = professorService.getList(null);
+        } catch (Exception e) {
+            webHelper.serverError(e);
+        }
+
+        model.addAttribute("departments", output);
+        model.addAttribute("professors", output2);
+        
         return "/student/add";
     }
 
@@ -109,31 +148,30 @@ public class StudentController {
             return;
         }
         
-        Student student = new Student();
-        student.setName(name);
-        student.setUserid(userid);
-        student.setGrade(grade);
-        student.setIdnum(idnum);
-        student.setBirthdate(birthdate);
-        student.setTel(tel);
-        student.setHeight(height);
-        student.setWeight(weight);
-        student.setDeptno(deptno);
+        Student input = new Student();
+        input.setName(name);
+        input.setUserid(userid);
+        input.setGrade(grade);
+        input.setIdnum(idnum);
+        input.setBirthdate(birthdate);
+        input.setTel(tel);
+        input.setHeight(height);
+        input.setWeight(weight);
+        input.setDeptno(deptno);
+        
         if (profno != null) {
-            student.setProfno(profno);
+            input.setProfno(profno);
         } else {
-            student.setProfno(null);
+            input.setProfno(null);
         }
 
         try {
-            studentService.addItem(student);
-        } catch (ServiceNoResultException e) {
-            webHelper.serverError(e);
+            studentService.addItem(input);
         } catch (Exception e) {
             webHelper.serverError(e);
         }
 
-        webHelper.redirect("/student/detail/" + student.getStudno(), "등록되었습니다");
+        webHelper.redirect("/student/detail/" + input.getStudno(), "등록되었습니다");
     }
 
 
@@ -155,8 +193,6 @@ public class StudentController {
 
         try {
             studentService.deleteItem(student);
-        } catch (ServiceNoResultException e) {
-            webHelper.serverError(e);
         } catch (Exception e) {
             webHelper.serverError(e);
         }
@@ -169,20 +205,24 @@ public class StudentController {
     @GetMapping("/student/edit/{studno}")
     public String edit( Model model, @PathVariable("studno") int studno ) {
 
-        Student params = new Student();
-        params.setStudno(studno);
+        Student input = new Student();
+        input.setStudno(studno);
 
         Student student = null;
+        List<Department> departments = null;
+        List<Professor> professors = null;
 
         try {
-            student = studentService.getItem(params);
-        } catch (ServiceNoResultException e) {
-            webHelper.serverError(e);
+            student = studentService.getItem(input);
+            departments = departmentService.getList(null);
+            professors = professorService.getList(null);
         } catch (Exception e) {
             webHelper.serverError(e);
         }
 
         model.addAttribute("student", student);
+        model.addAttribute("departments", departments);
+        model.addAttribute("professors", professors);
 
         return "/student/edit";
     }
@@ -222,9 +262,7 @@ public class StudentController {
         }
 
         try {
-            student = studentService.editItem(student);
-        } catch (ServiceNoResultException e) {
-            webHelper.serverError(e);
+            studentService.editItem(student);
         } catch (Exception e) {
             webHelper.serverError(e);
         }

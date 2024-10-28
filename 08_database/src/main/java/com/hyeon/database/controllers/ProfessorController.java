@@ -164,8 +164,7 @@ public class ProfessorController {
             webHelper.serverError(e);
         }
 
-        webHelper.redirect("/professor/detail/" + professor.getProfno(), 
-        "등록되었습니다");
+        webHelper.redirect("/professor/detail/" + professor.getProfno(), "등록되었습니다");
     }
 
 
@@ -257,7 +256,7 @@ public class ProfessorController {
         }
 
         try {
-            professor = professorService.editItem(professor);
+            professorService.editItem(professor);
         } catch (Exception e) {
             webHelper.serverError(e);
         }
