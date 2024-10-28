@@ -61,14 +61,14 @@ public interface StudentMapper {
     int updateByProfno(Student input);
 
 
-    @Select("SELECT studno, name, userid, grade, idnum, birthdate, tel, height, weight, deptno, profno FROM student WHERE studno=#{studno}")
-    /**
-     * 조회 결과와 리턴할 MODEL 객체를 연결하기 위한 규칙 정의
-     * => property : MODEL 객체의 멤버변수 이름
-     * => column : SELECT문에 명시된 필드 이름 (AS옵션 사용한 경우 별칭으로 명사)
-     * import org.apache.ibatis.annotations.Result;
-     * import org.apache.ibatis.annotations.Results;
-     */
+    @Select("SELECT " +
+        "studno, s.name AS name, userid, grade, idnum, " +
+        "DATE_FORMAT(birthdate, '&Y-%m-%d') AS birthdate, " +
+        "tel, height, weight, dname, p.name AS pname " +
+        "FROM student s " +
+        "INNER JOIN department d ON s.deptno = d.deptno " +
+        "INNER JOIN professor p ON s.profno = p.profno " +
+        "WHERE studno=#{studno}" )
     @Results(id="studentMap", value={
         @Result(property="studno", column="studno"),
         @Result(property="name", column="name"),
@@ -80,14 +80,28 @@ public interface StudentMapper {
         @Result(property="height", column="height"),
         @Result(property="weight", column="weight"),
         @Result(property="deptno", column="deptno"),
-        @Result(property="profno", column="profno")
+        @Result(property="profno", column="profno"),
+        @Result(property="dname", column="dname"),
+        @Result(property="pname", column="name")
     })
     Student selectItem(Student input);
 
     
-    @Select("SELECT studno, name, userid, grade, idnum, DATE_FORMAT(birthdate, '%Y-%m-%d') AS birthdate, tel, height, weight, deptno, profno FROM student")
-    // 조회 결과와 MODEL의 맵핑이 이전 규칙과 동일한 경우 id값으로 이전 규칙 재사용
-    // @Results 에 id 를 설정하면 다른 조회 메서드에서도 설정한 id 를 통해 @Results를 재사용할 수 있다.
+    @Select( "<script> " +
+        "SELECT " +
+        "studno, s.name AS name, userid, grade, idnum, " +
+        "DATE_FORMAT(birthdate, '&Y-%m-%d') AS birthdate, " +
+        "tel, height, weight, dname, p.name AS pname " +
+        "FROM student s " +
+        "INNER JOIN department d ON s.deptno = d.deptno " +
+        "INNER JOIN professor p ON s.profno = p.profno " +
+        "<where> " +
+        "<if test = 'name != null'> name LIKE conact('%', #{name}, '%') </if> " +
+        "<if test = 'userid != null'> userid LIKE conact('%', #{userid}, '%') </if> " +
+        "</where> " +
+        "ORDER BY studno DESC " +
+        "<if test = 'listCount > 0'> LIMIT #{offset}, #{listCount} </if> " +       
+        "</script>" )
     @ResultMap("studentMap")
     List<Student> selectList(Student input);
 

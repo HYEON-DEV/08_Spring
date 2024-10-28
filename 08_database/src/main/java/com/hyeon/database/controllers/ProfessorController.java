@@ -11,9 +11,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.hyeon.database.exceptions.ServiceNoResultException;
+import com.hyeon.database.helpers.PaginationHelper;
 import com.hyeon.database.helpers.WebHelper;
 import com.hyeon.database.models.Professor;
+import com.hyeon.database.models.Department;
+import com.hyeon.database.services.DepartmentService;
 import com.hyeon.database.services.ProfessorService;
 
 import jakarta.servlet.http.HttpServletRequest;
@@ -25,6 +27,9 @@ public class ProfessorController {
     private ProfessorService professorService;
 
     @Autowired
+    private DepartmentService departmentService;
+
+    @Autowired
     private WebHelper webHelper;
 
 
@@ -34,20 +39,37 @@ public class ProfessorController {
      * @return 교수 목록 화면을 구현할 View 경로
      */
     @GetMapping("/professor")
-    public String index(Model model) {
+    public String index(Model model,
+        @RequestParam(value="keyword", required = false) String keyword,
+        @RequestParam(value="page", defaultValue = "1") int nowPage ) {
+
+        int totalCount = 0;
+        int listCount = 5;
+        int pageCount = 3;
+
+        PaginationHelper pagination = null;
+
+        Professor input = new Professor();
+        input.setName(keyword);
+        input.setUserid(keyword);
+
         List<Professor> professors = null;
 
         try {
-            professors = professorService.getList(null);
-        } catch (ServiceNoResultException e) {
-            webHelper.serverError(e);
-            return null;
+            totalCount = professorService.getCount(input);
+            pagination = new PaginationHelper(nowPage, totalCount, listCount, pageCount);
+            
+            Professor.setOffset(pagination.getOffset());
+            Professor.setListCount(pagination.getListCount());
+
+            professors = professorService.getList(input);
         } catch (Exception e) {
             webHelper.serverError(e);
-            return null;
         }
 
         model.addAttribute("professors", professors);
+        model.addAttribute("keyword", keyword);
+        model.addAttribute("pagination", pagination);
 
         return "/professor/index";
     }
@@ -70,8 +92,6 @@ public class ProfessorController {
         try {
             // 데이터 조회
             professor = professorService.getItem(params);
-        } catch (ServiceNoResultException e) {
-            webHelper.serverError(e);
         } catch (Exception e) {
             webHelper.serverError(e);
         }
@@ -87,7 +107,17 @@ public class ProfessorController {
      * @return 교수 등록 화면 구현한 View 경로
      */
     @GetMapping("/professor/add")
-    public String add() {
+    public String add(Model model) {
+        List<Department> output = null;
+
+        try {
+            output = departmentService.getList(null);
+        } catch (Exception e) {
+            webHelper.serverError(e);
+        }
+
+        model.addAttribute("departments", output);
+        
         return "/professor/add";
     }
 
@@ -100,7 +130,7 @@ public class ProfessorController {
     @PostMapping("/professor/add_ok")
     public void addOk( HttpServletRequest request,
         @RequestParam("name") String name,
-        @RequestParam("user_id") String userid,
+        @RequestParam("userid") String userid,
         @RequestParam("position") String position,
         @RequestParam("sal") int sal,
         @RequestParam("hiredate") String hiredate,
@@ -120,18 +150,22 @@ public class ProfessorController {
         professor.setPosition(position);
         professor.setSal(sal);
         professor.setHiredate(hiredate);
-        professor.setComm(comm);
         professor.setDeptno(deptno);
+
+        if (comm != null) {
+            professor.setComm(comm);
+        } else {
+            professor.setComm(null);
+        }
 
         try {
             professorService.addItem(professor);
-        } catch (ServiceNoResultException e) {
-            webHelper.serverError(e);
         } catch (Exception e) {
             webHelper.serverError(e);
         }
 
-        webHelper.redirect("/professor/detail/" + professor.getProfno(), "등록되었습니다");
+        webHelper.redirect("/professor/detail/" + professor.getProfno(), 
+        "등록되었습니다");
     }
 
 
@@ -157,13 +191,11 @@ public class ProfessorController {
 
         try {
             professorService.deleteItem(professor);
-        } catch (ServiceNoResultException e) {
-            webHelper.serverError(e);
         } catch (Exception e) {
             webHelper.serverError(e);
         }
 
-        webHelper.redirect("/professor", "삭제되었습니다");        
+        webHelper.redirect("/professor", "----- 삭제되었습니다 -----");        
     }
 
 
@@ -180,16 +212,17 @@ public class ProfessorController {
         params.setProfno(profno);
 
         Professor professor = null;
+        List<Department> departments = null;
 
         try {
             professor = professorService.getItem(params);
-        } catch (ServiceNoResultException e) {
-            webHelper.serverError(e);
+            departments = departmentService.getList(null);
         } catch (Exception e) {
             webHelper.serverError(e);
         }
 
         model.addAttribute("professor", professor);
+        model.addAttribute("departments", departments);
 
         return "/professor/edit";
     }
@@ -200,7 +233,7 @@ public class ProfessorController {
     public void edit_ok(
         @PathVariable("profno") int profno,
         @RequestParam("name") String name,
-        @RequestParam("user_id") String userid,
+        @RequestParam("userid") String userid,
         @RequestParam("position") String position,
         @RequestParam("sal") int sal,
         @RequestParam("hiredate") String hiredate,
@@ -225,8 +258,6 @@ public class ProfessorController {
 
         try {
             professor = professorService.editItem(professor);
-        } catch (ServiceNoResultException e) {
-            webHelper.serverError(e);
         } catch (Exception e) {
             webHelper.serverError(e);
         }
@@ -234,7 +265,5 @@ public class ProfessorController {
         // 수정결과 확인을 위해 상세페이지로 이동
         webHelper.redirect("/professor/detail/" + professor.getProfno(), "수정되었습니다");
     }
-
-
 
 }

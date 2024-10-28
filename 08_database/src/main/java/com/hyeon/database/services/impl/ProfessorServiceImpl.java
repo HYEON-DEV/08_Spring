@@ -5,14 +5,16 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.hyeon.database.exceptions.ServiceNoResultException;
 import com.hyeon.database.mappers.ProfessorMapper;
 import com.hyeon.database.mappers.StudentMapper;
 import com.hyeon.database.models.Professor;
 import com.hyeon.database.models.Student;
 import com.hyeon.database.services.ProfessorService;
 
+import lombok.extern.slf4j.Slf4j;
 
+
+@Slf4j
 @Service
 public class ProfessorServiceImpl implements ProfessorService {
 
@@ -25,40 +27,60 @@ public class ProfessorServiceImpl implements ProfessorService {
 
 
     @Override
-    public Professor addItem(Professor input) throws ServiceNoResultException, Exception {
-        int rows = professorMapper.insert(input);
+    public Professor addItem(Professor input) throws Exception {
+        int rows = 0;
 
-        if (rows == 0){
-            throw new ServiceNoResultException("저장된 데이터가 없습니다");
-        }
+        try {
+            rows = professorMapper.insert(input);
+            
+            if (rows == 0){
+                throw new Exception("----- 저장된 데이터가 없습니다 -----");
+            }
+        } catch (Exception e) {
+            log.error("----- 데이터 저장 실패 -----", e);
+            throw e;
+        }       
         
         return professorMapper.selectItem(input);
     }
 
 
     @Override
-    public Professor editItem(Professor input) throws ServiceNoResultException, Exception {
-        int rows = professorMapper.update(input);
+    public Professor editItem(Professor input) throws Exception {
+        int rows = 0;
 
-        if (rows == 0){
-            throw new ServiceNoResultException("수정된 데이터가 없습니다");
-        }
+        try {
+            rows = professorMapper.update(input);
+            
+            if (rows == 0){
+                throw new Exception("----- 수정된 데이터가 없습니다 -----");
+            }
+        } catch (Exception e) {
+            log.error("----- 데이터 수정 실패 -----", e);
+            throw e;
+        }       
         
         return professorMapper.selectItem(input);
     }
 
 
     @Override
-    public int deleteItem(Professor input) throws ServiceNoResultException, Exception {
-        
+    public int deleteItem(Professor input) throws Exception {
+        int rows = 0;
+
         Student student = new Student();
         student.setProfno(input.getProfno());
-        studentMapper.updateByProfno(student);
+        
+        try {
+            studentMapper.deleteByDeptno(student);
+            rows = professorMapper.delete(input);
 
-        int rows = professorMapper.delete(input);
-
-        if (rows==0) {
-            throw new ServiceNoResultException("삭제된 데이터가 없습니다");
+            if (rows==0) {
+                throw new Exception("----- 삭제된 데이터가 없습니다 -----");
+            }
+        } catch (Exception e ) {
+            log.error("----- 데이터 삭제 실패 -----", e);
+            throw e;
         }
 
         return rows;
@@ -66,11 +88,18 @@ public class ProfessorServiceImpl implements ProfessorService {
 
 
     @Override
-    public Professor getItem(Professor input) throws ServiceNoResultException, Exception {
-        Professor output = professorMapper.selectItem(input);
+    public Professor getItem(Professor input) throws Exception {
+        Professor output = null;
 
-        if (output==null) {
-            throw new ServiceNoResultException("조회된 데이터가 없습니다");
+        try {
+            output = professorMapper.selectItem(input);
+
+            if (output == null) {
+                throw new Exception("----- 조회된 데이터가 없습니다 -----");
+            }
+        } catch (Exception e ) {
+            log.error("----- 데이터 삭제 실패 -----", e);
+            throw e;
         }
 
         return output;
@@ -78,8 +107,32 @@ public class ProfessorServiceImpl implements ProfessorService {
 
     
     @Override
-    public List<Professor> getList(Professor input) throws ServiceNoResultException, Exception {
-        return professorMapper.selectList(input);
+    public List<Professor> getList(Professor input) throws Exception {
+        List<Professor> output = null;
+
+        try {
+            output = professorMapper.selectList(input);
+        } catch (Exception e ) {
+            log.error("----- 교수 목록 조회 실패 -----", e);
+            throw e;
+        }
+
+        return output;
     }
+
+
+	@Override
+	public int getCount(Professor input) throws Exception {
+		int output = 0;
+
+        try {
+            output = professorMapper.selectCount(input);
+        } catch (Exception e ) {
+            log.error("----- 데이터 집계 실패 -----", e);
+            throw e;
+        }
+
+        return output;
+	}
     
 }

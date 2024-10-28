@@ -67,11 +67,42 @@ public interface DepartmentMapper {
     })
     Department selectItem(Department input);
 
-    
+    /* 
     @Select("SELECT deptno, dname, loc FROM department ORDER BY deptno DESC")
     // 조회 결과와 MODEL의 맵핑이 이전 규칙과 동일한 경우 id값으로 이전 규칙 재사용
     // @Results 에 id 를 설정하면 다른 조회 메서드에서도 설정한 id 를 통해 @Results를 재사용할 수 있다.
     @ResultMap("departmentMap")
     List<Department> selectList(Department input);
+    */
 
+    /** 다중행 조회를 수행하는 메서드 정의 
+     * @param input - 조회 조건을 담고 있는 객체
+     * @return 조회 결과를 담은 컬렉션
+     */
+    @Select( "<script>" +
+        "SELECT deptno, dname, loc FROM department " +
+        "<where>" +
+        "<if test='dname != null'> dname LIKE concat('%',#{dname},'%')</if> " +
+        "<if test='loc != null'> OR loc LIKE concat('%',#{loc}, '%')</if> " +
+        "</where> " +
+        "ORDER BY deptno DESC " +
+        "<if test='listCount > 0'> LIMIT #{offset}, #{listCount} </if> " +
+        "</script>" )
+    @ResultMap("departmentMap")
+    public List<Department> selectList(Department input);
+    
+
+    /** 검색 결과의 수를 조회하는 메서드
+     * 목록 조회와 동일한 검색 조건을 적용해야 한다
+     * @param input - 조회 조건을 담고 있는 객체
+     * @return 조회 결과 수
+     */
+    @Select( "<script> " +
+        "SELECT COUNT(*) AS cnt FROM department " +
+        "<where> " +
+        "<if test='dname != null'> dname LIKE concat('%',#{dname},'%') </if> " +
+        "<if test='loc != null'> OR loc LIKE concat('%',#{loc},'%') </if> " +
+        "</where> " +
+        "</script>" )
+    public int selectCount(Department input);
 }

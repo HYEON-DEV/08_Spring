@@ -30,19 +30,30 @@
                 <tr>
                     <th> 아이디 </th>
                     <td class="text-left field">
-                        <input type="text" name="user_id" th:value="${professor.userid}"/>
+                        <input type="text" name="userid" th:value="${professor.userid}"/>
                     </td>
                 </tr>
                 <tr>
                     <th> 직급 </th>
                     <td class="text-left field">
-                        <input type="text" name="position" th:value="${professor.position}"/>
+                        <label>
+                            <input type="radio" name="position" value="교수" th:checked="${professor.position=='교수'}"/> 교수
+                        </label>
+                        <label>
+                            <input type="radio" name="position" value="부교수" th:checked="${professor.position=='부교수'}" /> 부교수
+                        </label>                        
+                        <label>
+                            <input type="radio" name="position" value="전임강사" th:checked="${professor.position=='전임강사'}" /> 전임강사
+                        </label>
+                        <label>
+                            <input type="radio" name="position" value="조교" th:checked="${professor.position=='조교'}" /> 조교
+                        </label>
                     </td>
                 </tr>
                 <tr>
                     <th> 급여 </th>
                     <td class="text-left field">
-                        <input type="number" name="sal" th:value="${professor.sal}"/>
+                        <input type="number" name="sal" step="1" min="0" th:value="${professor.sal}"/>
                     </td>
                 </tr>
                 <tr>
@@ -54,13 +65,16 @@
                 <tr>
                     <th> 보직수당 </th>
                     <td class="text-left field">
-                        <input type="number" name="comm" th:value="${professor.comm}"/>
+                        <input type="number" name="comm" step="1" min="0" th:value="${professor.comm}"/>
                     </td>
                 </tr>
                 <tr>
-                    <th> 학과번호 </th>
+                    <th> 소속학과 </th>
                     <td class="text-left field">
-                        <input type="number" name="deptno" th:value="${professor.deptno}"/>
+                        <select name="deptno">
+                            <option value=""> ----- 소속학과 선택 -----</option>
+                            <option th:each="dept : ${departments}" th:value="${dept.deptNo}" th:text="${dept.dname}" th:selected="${dept.deptNo==professor.deptno}"></option>
+                        </select>
                     </td>
                 </tr>
             </tbody>
