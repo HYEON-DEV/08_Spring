@@ -59,7 +59,7 @@ public class StudentController {
         input.setName(keyword);
         input.setUserid(keyword);
 
-        List<Student> students = null;
+        List<Student> output = null;
 
         try {
             totalCount = studentService.getCount(input);
@@ -68,12 +68,12 @@ public class StudentController {
             Student.setOffset(pagination.getOffset());
             Student.setListCount(pagination.getListCount());
 
-            students = studentService.getList(input);
+            output = studentService.getList(input);
         } catch (Exception e) {
             webHelper.serverError(e);
         }
 
-        model.addAttribute("students", students);
+        model.addAttribute("students", output);
         model.addAttribute("keyword", keyword);
         model.addAttribute("pagination", pagination);
 

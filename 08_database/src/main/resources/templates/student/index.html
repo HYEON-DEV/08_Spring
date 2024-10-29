@@ -69,7 +69,7 @@
             <a th:href="@{/student( keyword=${keyword}, page=${pagination.prevPage} )}"> &laquo; </a>
         </li>
         <li th:unless="${pagination.prevPage > 0}">
-            <!-- <a> &laquo; </a> -->
+            <a> &laquo; </a>
         </li>
 
         <!-- 페이지 번호 링크 -->
@@ -83,7 +83,9 @@
         <li th:if="${pagination.nextPage > 0}">
             <a th:href="@{/student (keyword=${keyword}, page=${pagination.nextPage})}"> &raquo; </a>
         </li>
-        <li th:unless="${pagination.nextPage > 0}"></li>
+        <li th:unless="${pagination.nextPage > 0}">
+            <a> &raquo; </a>
+        </li>
     </ul>
 
 </body>

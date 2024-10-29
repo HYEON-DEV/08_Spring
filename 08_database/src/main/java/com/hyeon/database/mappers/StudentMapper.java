@@ -63,7 +63,8 @@ public interface StudentMapper {
     @Select("SELECT " +
         "studno, s.name AS name, s.userid AS userid, grade, idnum, " +
         "DATE_FORMAT(birthdate, '%Y-%m-%d') AS birthdate, " +
-        "tel, height, weight, dname, p.name AS pname " +
+        "tel, height, weight, s.deptno AS deptno, s.profno AS profno, " +
+        "dname, p.name AS pname " +
         "FROM student s " +
         "INNER JOIN department d ON s.deptno = d.deptno " +
         "INNER JOIN professor p ON s.profno = p.profno " +
@@ -90,10 +91,11 @@ public interface StudentMapper {
         "SELECT " +
         "studno, s.name AS name, s.userid AS userid, grade, idnum, " +
         "DATE_FORMAT(birthdate, '%Y-%m-%d') AS birthdate, " +
-        "tel, height, weight, dname, p.name AS pname " +
+        "tel, height, weight, s.deptno AS deptno, s.profno AS profno, " +
+        "dname, p.name AS pname " +
         "FROM student s " +
-        "INNER JOIN department d ON s.deptno = d.deptno " +
-        "INNER JOIN professor p ON s.profno = p.profno " +
+        // "INNER JOIN department d ON s.deptno = d.deptno " +
+        // "INNER JOIN professor p ON s.profno = p.profno " +
         "<where> " +
         "<if test = 'name != null'> s.name LIKE concat('%', #{name}, '%') </if> " +
         "<if test = 'userid != null'> OR s.userid LIKE concat('%', #{userid}, '%') </if> " +
@@ -109,7 +111,7 @@ public interface StudentMapper {
         "SELECT COUNT(*) AS cnt " +
         "FROM student s " +
         "INNER JOIN department d ON s.deptno = d.deptno " +
-        "INNER JOIN professor p ON s.profno = p.profno " +
+        // "INNER JOIN professor p ON s.profno = p.profno " +
         "<where> " + 
         "<if test = 'name != null'> s.name LIKE concat('%', #{name}, '%') </if> " +
         "<if test = 'userid != null'> OR s.userid LIKE concat('%', #{userid}, '%') </if> " +
