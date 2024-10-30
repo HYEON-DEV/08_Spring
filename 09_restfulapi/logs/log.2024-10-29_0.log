@@ -1,0 +1,256 @@
+[INFO ] 24-10-29 15:01:13 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 15784 (D:\hyeon\08_Spring\09_restfulapi\bin\main started by user in D:\hyeon\08_Spring\09_restfulapi)
+[DEBUG] 24-10-29 15:01:13 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-29 15:01:13 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-29 15:01:14 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-29 15:01:14 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[com.hyeon.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-29 15:01:16 [RestfulapiApplication:56] - Started RestfulapiApplication in 3.518 seconds (process running for 4.285)
+[INFO ] 24-10-29 15:01:29 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-29 15:01:29 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-29 15:01:29 [MyInterceptor:80] - [GET] http://localhost:8080/simple_department
+[INFO ] 24-10-29 15:01:29 [MyInterceptor:125] - running time : 218(ms)
+[INFO ] 24-10-29 15:01:37 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-29 15:01:37 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-29 15:01:37 [MyInterceptor:80] - [GET] http://localhost:8080/simple_department_list
+[INFO ] 24-10-29 15:01:37 [MyInterceptor:125] - running time : 74(ms)
+[INFO ] 24-10-29 15:19:12 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 10580 (D:\hyeon\08_Spring\09_restfulapi\bin\main started by user in D:\hyeon\08_Spring\09_restfulapi)
+[DEBUG] 24-10-29 15:19:12 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-29 15:19:12 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-29 15:19:13 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-29 15:19:13 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[com.hyeon.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-29 15:19:15 [RestfulapiApplication:56] - Started RestfulapiApplication in 3.433 seconds (process running for 4.18)
+[INFO ] 24-10-29 15:21:45 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 11976 (D:\hyeon\08_Spring\09_restfulapi\bin\main started by user in D:\hyeon\08_Spring\09_restfulapi)
+[DEBUG] 24-10-29 15:21:45 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-29 15:21:45 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-29 15:21:46 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-29 15:21:46 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[com.hyeon.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-29 15:21:48 [RestfulapiApplication:56] - Started RestfulapiApplication in 3.372 seconds (process running for 4.082)
+[INFO ] 24-10-29 15:22:00 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-29 15:22:00 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-29 15:22:00 [MyInterceptor:80] - [GET] http://localhost:8080/mail_form
+[INFO ] 24-10-29 15:22:00 [MyInterceptor:125] - running time : 184(ms)
+[INFO ] 24-10-29 15:41:01 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 18420 (D:\hyeon\08_Spring\09_restfulapi\bin\main started by user in D:\hyeon\08_Spring\09_restfulapi)
+[DEBUG] 24-10-29 15:41:01 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-29 15:41:01 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-29 15:41:02 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-29 15:41:02 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[com.hyeon.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-29 15:41:04 [RestfulapiApplication:56] - Started RestfulapiApplication in 3.649 seconds (process running for 4.525)
+[INFO ] 24-10-29 15:41:10 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-29 15:41:10 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-29 15:41:10 [MyInterceptor:80] - [GET] http://localhost:8080/mail_form
+[INFO ] 24-10-29 15:41:10 [MyInterceptor:125] - running time : 239(ms)
+[INFO ] 24-10-29 15:41:37 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-29 15:41:37 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-29 15:41:37 [MyInterceptor:80] - [POST] http://localhost:8080/@%7B/sendmail%7D
+[INFO ] 24-10-29 15:41:37 [MyInterceptor:88] - (param) <-- sender-name = h
+[INFO ] 24-10-29 15:41:37 [MyInterceptor:88] - (param) <-- sender-email = hyeon970315@gmail.com
+[INFO ] 24-10-29 15:41:37 [MyInterceptor:88] - (param) <-- receiver-name = hyeon
+[INFO ] 24-10-29 15:41:37 [MyInterceptor:88] - (param) <-- receiver-email = hyeon970315@gmail.com
+[INFO ] 24-10-29 15:41:37 [MyInterceptor:88] - (param) <-- subject = hhhh
+[INFO ] 24-10-29 15:41:37 [MyInterceptor:88] - (param) <-- content = <p>[스포티비뉴스=신원철 기자] LG 오른손투수 임찬규가 삼성 오른손투수 원태인 대신 '2024 WBSC(세계야구소프트볼연맹) 프리미어12'에 참가한다. 임찬규는 30일부터 대표팀 훈련에 합류할 예정이다.<br><br>KBO 전력강화위원회는29일 "부상으로 출전이 어려워진 삼성 원태인을 대체 할 선수로 LG 임찬규를 확정했다. 대표팀 코칭스태프와 전력강화위원회는 선발 투수 대체 선수가 필요하다고 판단했고, 논의 끝에 임찬규를 최종 선발하기로 했다"고 밝혔다. 이번 대표팀은 28인 최종 명단보다 7명 많은 35명의 소집 명단을 발표한 상태다. 대체 선수 결정은 이번이 처음이다.<br><br>원태인은 한국시리즈를 치르는 과정에서 어깨를 다쳤다. 26일 대구 삼성라이온즈파크에서 열린 한국시리즈 4차전에 선발 등판해 2⅓이닝 만에 마운드에서 내려갔다. 부진보다 부상이 문제였다. 삼성 구단 관계자는 "원태인은 어깨 쪽에 약간의 불편감이 있어 선수 보호 차원에서 교체됐다"고 알렸다.<br><br>경기 도중 삼성 구단 관계자는 "원태인이 어깨 쪽에 약간의 불편함이 있어 선수 보호 차원에서 교체됐다. 병원 진료 계획은 없다"고 발표했다.<br><br>그런데 경기 종료 후 상황이 나빠졌다. 원태인은 병원 검진 결과 오른쪽 어깨 관절 와순 손상 소견을 받았다. 또 관절 안에 약간의 출혈과 붓기가 있는 상태인데다, 어깨 회전근개 힘줄염을 동반해 4~6주간 재활이 필요하다는 진단을 받았다. 프리미어 12는 당연히 출전할 수 없었다.</p>
+[INFO ] 24-10-29 15:41:37 [MyInterceptor:99] - - REFERER : time=27041, url=http://localhost:8080/mail_form
+[INFO ] 24-10-29 15:50:09 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-29 15:50:09 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-29 15:50:09 [MyInterceptor:80] - [GET] http://localhost:8080/mail_form
+[INFO ] 24-10-29 15:50:09 [MyInterceptor:125] - running time : 49(ms)
+[INFO ] 24-10-29 15:50:17 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-29 15:50:17 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-29 15:50:17 [MyInterceptor:80] - [POST] http://localhost:8080/@%7B/sendmail%7D
+[INFO ] 24-10-29 15:50:17 [MyInterceptor:88] - (param) <-- sender-name = h
+[INFO ] 24-10-29 15:50:17 [MyInterceptor:88] - (param) <-- sender-email = hyeon970315@gmail.com
+[INFO ] 24-10-29 15:50:17 [MyInterceptor:88] - (param) <-- receiver-name = hyeon
+[INFO ] 24-10-29 15:50:17 [MyInterceptor:88] - (param) <-- receiver-email = hyeon970315@gmail.com
+[INFO ] 24-10-29 15:50:17 [MyInterceptor:88] - (param) <-- subject = hhhh
+[INFO ] 24-10-29 15:50:17 [MyInterceptor:88] - (param) <-- content = <p>sfsafasgsaaf</p>
+[INFO ] 24-10-29 15:50:17 [MyInterceptor:99] - - REFERER : time=7747, url=http://localhost:8080/mail_form
+[INFO ] 24-10-29 15:54:42 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-29 15:54:42 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-29 15:54:42 [MyInterceptor:80] - [GET] http://localhost:8080/simple_department_list
+[INFO ] 24-10-29 15:54:42 [MyInterceptor:125] - running time : 99(ms)
+[INFO ] 24-10-29 15:56:30 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 14068 (D:\hyeon\08_Spring\09_restfulapi\bin\main started by user in D:\hyeon\08_Spring\09_restfulapi)
+[DEBUG] 24-10-29 15:56:30 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-29 15:56:30 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-29 15:56:31 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-29 15:56:31 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[com.hyeon.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-29 15:56:33 [RestfulapiApplication:56] - Started RestfulapiApplication in 3.392 seconds (process running for 4.103)
+[INFO ] 24-10-29 15:56:40 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-29 15:56:40 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-29 15:56:40 [MyInterceptor:80] - [GET] http://localhost:8080/mail_form
+[INFO ] 24-10-29 15:56:40 [MyInterceptor:125] - running time : 180(ms)
+[INFO ] 24-10-29 15:56:51 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-29 15:56:51 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-29 15:56:51 [MyInterceptor:80] - [POST] http://localhost:8080/@%7B/sendmail%7D
+[INFO ] 24-10-29 15:56:51 [MyInterceptor:88] - (param) <-- sender-name = h
+[INFO ] 24-10-29 15:56:51 [MyInterceptor:88] - (param) <-- sender-email = hyeon970315@gmail.com
+[INFO ] 24-10-29 15:56:51 [MyInterceptor:88] - (param) <-- receiver-name = hyeon
+[INFO ] 24-10-29 15:56:51 [MyInterceptor:88] - (param) <-- receiver-email = hyeon970315@gmail.com
+[INFO ] 24-10-29 15:56:51 [MyInterceptor:88] - (param) <-- subject = hhhh
+[INFO ] 24-10-29 15:56:51 [MyInterceptor:88] - (param) <-- content = <p>dfvsdvdfgeagerg</p>
+[INFO ] 24-10-29 15:56:51 [MyInterceptor:99] - - REFERER : time=11373, url=http://localhost:8080/mail_form
+[INFO ] 24-10-29 15:57:14 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-29 15:57:14 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-29 15:57:14 [MyInterceptor:80] - [POST] http://localhost:8080/@%7B/sendmail%7D
+[INFO ] 24-10-29 15:57:14 [MyInterceptor:88] - (param) <-- sender-name = h
+[INFO ] 24-10-29 15:57:14 [MyInterceptor:88] - (param) <-- sender-email = hyeon970315@gmail.com
+[INFO ] 24-10-29 15:57:14 [MyInterceptor:88] - (param) <-- receiver-name = hyeon
+[INFO ] 24-10-29 15:57:14 [MyInterceptor:88] - (param) <-- receiver-email = hyeon97315@naver.com
+[INFO ] 24-10-29 15:57:14 [MyInterceptor:88] - (param) <-- subject = hhhh
+[INFO ] 24-10-29 15:57:14 [MyInterceptor:88] - (param) <-- content = <p>dfvsdvdfgeagerg</p>
+[INFO ] 24-10-29 15:57:14 [MyInterceptor:99] - - REFERER : time=34408, url=http://localhost:8080/mail_form
+[INFO ] 24-10-29 15:58:45 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-29 15:58:45 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-29 15:58:45 [MyInterceptor:80] - [POST] http://localhost:8080/@%7B/sendmail%7D
+[INFO ] 24-10-29 15:58:45 [MyInterceptor:88] - (param) <-- sender-name = h
+[INFO ] 24-10-29 15:58:45 [MyInterceptor:88] - (param) <-- sender-email = hyeon970315@gmail.com
+[INFO ] 24-10-29 15:58:45 [MyInterceptor:88] - (param) <-- receiver-name = hyeon
+[INFO ] 24-10-29 15:58:45 [MyInterceptor:88] - (param) <-- receiver-email = hyeon97315@naver.com
+[INFO ] 24-10-29 15:58:45 [MyInterceptor:88] - (param) <-- subject = hhhh
+[INFO ] 24-10-29 15:58:45 [MyInterceptor:88] - (param) <-- content = <p>dfvsdvdfgeagerg</p>
+[INFO ] 24-10-29 15:58:45 [MyInterceptor:99] - - REFERER : time=124986, url=http://localhost:8080/mail_form
+[INFO ] 24-10-29 15:59:59 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-29 16:00:00 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-29 16:00:00 [MyInterceptor:80] - [GET] http://localhost:8080/mail_form
+[INFO ] 24-10-29 16:00:00 [MyInterceptor:125] - running time : 124(ms)
+[INFO ] 24-10-29 16:00:11 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-29 16:00:11 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-29 16:00:11 [MyInterceptor:80] - [GET] http://localhost:8080/mail_form
+[INFO ] 24-10-29 16:00:11 [MyInterceptor:125] - running time : 25(ms)
+[INFO ] 24-10-29 16:00:19 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-29 16:00:19 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-29 16:00:19 [MyInterceptor:80] - [POST] http://localhost:8080/sendmail
+[INFO ] 24-10-29 16:00:19 [MyInterceptor:88] - (param) <-- sender-name = h
+[INFO ] 24-10-29 16:00:19 [MyInterceptor:88] - (param) <-- sender-email = hyeon970315@gmail.com
+[INFO ] 24-10-29 16:00:19 [MyInterceptor:88] - (param) <-- receiver-name = hyeon
+[INFO ] 24-10-29 16:00:19 [MyInterceptor:88] - (param) <-- receiver-email = hyeon970315@gmail.com
+[INFO ] 24-10-29 16:00:19 [MyInterceptor:88] - (param) <-- subject = 
+[INFO ] 24-10-29 16:00:19 [MyInterceptor:88] - (param) <-- content = <p>sdfafasfs</p>
+[INFO ] 24-10-29 16:00:19 [MyInterceptor:99] - - REFERER : time=7863, url=http://localhost:8080/mail_form
+[DEBUG] 24-10-29 16:00:19 [SimpleRestfulController:126] - ------------------------------
+[DEBUG] 24-10-29 16:00:19 [SimpleRestfulController:127] - SenderName : h
+[DEBUG] 24-10-29 16:00:19 [SimpleRestfulController:128] - SenderEmail : hyeon970315@gmail.com
+[DEBUG] 24-10-29 16:00:19 [SimpleRestfulController:129] - ReceiverName : hyeon
+[DEBUG] 24-10-29 16:00:19 [SimpleRestfulController:130] - ReceiverEmail : hyeon970315@gmail.com
+[DEBUG] 24-10-29 16:00:19 [SimpleRestfulController:131] - Subject : 
+[DEBUG] 24-10-29 16:00:19 [SimpleRestfulController:132] - Content : <p>sdfafasfs</p>
+[DEBUG] 24-10-29 16:00:19 [SimpleRestfulController:133] - ------------------------------
+[INFO ] 24-10-29 16:00:23 [MyInterceptor:125] - running time : 3817(ms)
+[INFO ] 24-10-29 16:01:37 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-29 16:01:37 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-29 16:01:37 [MyInterceptor:80] - [POST] http://localhost:8080/sendmail
+[INFO ] 24-10-29 16:01:37 [MyInterceptor:88] - (param) <-- sender-name = h
+[INFO ] 24-10-29 16:01:37 [MyInterceptor:88] - (param) <-- sender-email = hyeon970315@gmail.com
+[INFO ] 24-10-29 16:01:37 [MyInterceptor:88] - (param) <-- receiver-name = hyeon
+[INFO ] 24-10-29 16:01:37 [MyInterceptor:88] - (param) <-- receiver-email = hyeon970315@gmail.com
+[INFO ] 24-10-29 16:01:37 [MyInterceptor:88] - (param) <-- subject = dcdcd
+[INFO ] 24-10-29 16:01:37 [MyInterceptor:88] - (param) <-- content = <h2><strong>[공식발표] '빅게임 피처 변신' 임찬규, PS 3승 찍고 태극마크…"원태인 대체 선수 필요" 대표팀 발탁</strong></h2><p>입력<i>2024.10.29. 오후 2:26</i></p><p><a href="https://www.spotvnews.co.kr/news/articleView.html?idxno=712168">기사원문</a></p><p>공감29</p><p>텍스트 음성 변환 서비스</p><p>글자 크기 변경</p><p>공유하기</p><p><img src="https://imgnews.pstatic.net/image/477/2024/10/29/0000519474_001_20241029142612049.jpg?type=w647" alt=""></p>
+[INFO ] 24-10-29 16:01:37 [MyInterceptor:99] - - REFERER : time=74052, url=http://localhost:8080/mail_form
+[DEBUG] 24-10-29 16:01:37 [SimpleRestfulController:126] - ------------------------------
+[DEBUG] 24-10-29 16:01:37 [SimpleRestfulController:127] - SenderName : h
+[DEBUG] 24-10-29 16:01:37 [SimpleRestfulController:128] - SenderEmail : hyeon970315@gmail.com
+[DEBUG] 24-10-29 16:01:37 [SimpleRestfulController:129] - ReceiverName : hyeon
+[DEBUG] 24-10-29 16:01:37 [SimpleRestfulController:130] - ReceiverEmail : hyeon970315@gmail.com
+[DEBUG] 24-10-29 16:01:37 [SimpleRestfulController:131] - Subject : dcdcd
+[DEBUG] 24-10-29 16:01:37 [SimpleRestfulController:132] - Content : <h2><strong>[공식발표] '빅게임 피처 변신' 임찬규, PS 3승 찍고 태극마크…"원태인 대체 선수 필요" 대표팀 발탁</strong></h2><p>입력<i>2024.10.29. 오후 2:26</i></p><p><a href="https://www.spotvnews.co.kr/news/articleView.html?idxno=712168">기사원문</a></p><p>공감29</p><p>텍스트 음성 변환 서비스</p><p>글자 크기 변경</p><p>공유하기</p><p><img src="https://imgnews.pstatic.net/image/477/2024/10/29/0000519474_001_20241029142612049.jpg?type=w647" alt=""></p>
+[DEBUG] 24-10-29 16:01:37 [SimpleRestfulController:133] - ------------------------------
+[INFO ] 24-10-29 16:01:40 [MyInterceptor:125] - running time : 3649(ms)
+[INFO ] 24-10-29 16:26:47 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 18204 (D:\hyeon\08_Spring\09_restfulapi\bin\main started by user in D:\hyeon\08_Spring\09_restfulapi)
+[DEBUG] 24-10-29 16:26:47 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-29 16:26:47 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-29 16:26:49 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-29 16:26:49 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[com.hyeon.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-29 16:26:50 [RestfulapiApplication:56] - Started RestfulapiApplication in 3.542 seconds (process running for 4.317)
+[INFO ] 24-10-29 16:26:53 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-29 16:26:53 [MyInterceptor:66] - [Client] 127.0.0.1, Other, Other, null, Other, null
+[INFO ] 24-10-29 16:26:53 [MyInterceptor:80] - [GET] http://localhost:8080/my_calc?x=123&y=345
+[INFO ] 24-10-29 16:26:53 [MyInterceptor:88] - (param) <-- x = 123,123
+[INFO ] 24-10-29 16:26:53 [MyInterceptor:88] - (param) <-- y = 234,345
+[INFO ] 24-10-29 16:26:53 [MyInterceptor:125] - running time : 213(ms)
+[INFO ] 24-10-29 16:27:09 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-29 16:27:09 [MyInterceptor:66] - [Client] 127.0.0.1, Other, Other, null, Other, null
+[INFO ] 24-10-29 16:27:09 [MyInterceptor:80] - [POST] http://localhost:8080/my_calc?x=123&y=345
+[INFO ] 24-10-29 16:27:09 [MyInterceptor:88] - (param) <-- x = 123,123
+[INFO ] 24-10-29 16:27:09 [MyInterceptor:88] - (param) <-- y = 234,345
+[INFO ] 24-10-29 16:27:09 [MyInterceptor:125] - running time : 48(ms)
+[INFO ] 24-10-29 16:27:14 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-29 16:27:14 [MyInterceptor:66] - [Client] 127.0.0.1, Other, Other, null, Other, null
+[INFO ] 24-10-29 16:27:14 [MyInterceptor:80] - [PUT] http://localhost:8080/my_calc?x=123&y=345
+[INFO ] 24-10-29 16:27:14 [MyInterceptor:88] - (param) <-- x = 123,123
+[INFO ] 24-10-29 16:27:14 [MyInterceptor:88] - (param) <-- y = 234,345
+[INFO ] 24-10-29 16:27:14 [MyInterceptor:125] - running time : 46(ms)
+[INFO ] 24-10-29 16:27:21 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-29 16:27:21 [MyInterceptor:66] - [Client] 127.0.0.1, Other, Other, null, Other, null
+[INFO ] 24-10-29 16:27:21 [MyInterceptor:80] - [DELETE] http://localhost:8080/my_calc?x=123&y=345
+[INFO ] 24-10-29 16:27:21 [MyInterceptor:88] - (param) <-- x = 123,123
+[INFO ] 24-10-29 16:27:21 [MyInterceptor:88] - (param) <-- y = 234,345
+[INFO ] 24-10-29 16:27:21 [MyInterceptor:125] - running time : 45(ms)
+[INFO ] 24-10-29 16:27:31 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-29 16:27:31 [MyInterceptor:66] - [Client] 127.0.0.1, Other, Other, null, Other, null
+[INFO ] 24-10-29 16:27:31 [MyInterceptor:80] - [DELETE] http://localhost:8080/my_calc?x=123&y=345
+[INFO ] 24-10-29 16:27:31 [MyInterceptor:88] - (param) <-- x = 123,123
+[INFO ] 24-10-29 16:27:31 [MyInterceptor:88] - (param) <-- y = 0,345
+[INFO ] 24-10-29 16:27:31 [MyInterceptor:125] - running time : 45(ms)
+[INFO ] 24-10-29 16:27:43 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-29 16:27:43 [MyInterceptor:66] - [Client] 127.0.0.1, Other, Other, null, Other, null
+[INFO ] 24-10-29 16:27:43 [MyInterceptor:80] - [GET] http://localhost:8080/my_calc?x=123&y=345
+[INFO ] 24-10-29 16:27:43 [MyInterceptor:88] - (param) <-- x = 123,123
+[INFO ] 24-10-29 16:27:43 [MyInterceptor:88] - (param) <-- y = 0,345
+[INFO ] 24-10-29 16:27:43 [MyInterceptor:125] - running time : 36(ms)
+[INFO ] 24-10-29 16:28:21 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-29 16:28:21 [MyInterceptor:66] - [Client] 127.0.0.1, Other, Other, null, Other, null
+[INFO ] 24-10-29 16:28:21 [MyInterceptor:80] - [POST] http://localhost:8080/my_calc?x=123&y=345
+[INFO ] 24-10-29 16:28:21 [MyInterceptor:88] - (param) <-- x = 123,123
+[INFO ] 24-10-29 16:28:21 [MyInterceptor:88] - (param) <-- y = 0,345
+[INFO ] 24-10-29 16:28:21 [MyInterceptor:125] - running time : 22(ms)
+[INFO ] 24-10-29 16:28:49 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-29 16:28:49 [MyInterceptor:66] - [Client] 127.0.0.1, Other, Other, null, Other, null
+[INFO ] 24-10-29 16:28:49 [MyInterceptor:80] - [POST] http://localhost:8080/my_calc?x=123&y=345
+[INFO ] 24-10-29 16:28:49 [MyInterceptor:88] - (param) <-- x = 123,123
+[INFO ] 24-10-29 16:28:49 [MyInterceptor:88] - (param) <-- y = 234,345
+[INFO ] 24-10-29 16:28:49 [MyInterceptor:125] - running time : 22(ms)
+[INFO ] 24-10-29 16:29:17 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-29 16:29:17 [MyInterceptor:66] - [Client] 127.0.0.1, Other, Other, null, Other, null
+[INFO ] 24-10-29 16:29:17 [MyInterceptor:80] - [PUT] http://localhost:8080/my_calc?x=123&y=345
+[INFO ] 24-10-29 16:29:17 [MyInterceptor:88] - (param) <-- x = 123,123
+[INFO ] 24-10-29 16:29:17 [MyInterceptor:88] - (param) <-- y = 234,345
+[INFO ] 24-10-29 16:29:17 [MyInterceptor:125] - running time : 25(ms)
+[INFO ] 24-10-29 16:29:46 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-29 16:29:46 [MyInterceptor:66] - [Client] 127.0.0.1, Other, Other, null, Other, null
+[INFO ] 24-10-29 16:29:46 [MyInterceptor:80] - [DELETE] http://localhost:8080/my_calc?x=123&y=345
+[INFO ] 24-10-29 16:29:46 [MyInterceptor:88] - (param) <-- x = 123,123
+[INFO ] 24-10-29 16:29:46 [MyInterceptor:88] - (param) <-- y = 234,345
+[INFO ] 24-10-29 16:29:46 [MyInterceptor:125] - running time : 26(ms)
+[INFO ] 24-10-29 16:30:10 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-29 16:30:10 [MyInterceptor:66] - [Client] 127.0.0.1, Other, Other, null, Other, null
+[INFO ] 24-10-29 16:30:10 [MyInterceptor:80] - [DELETE] http://localhost:8080/my_calc?x=123&y=345
+[INFO ] 24-10-29 16:30:10 [MyInterceptor:88] - (param) <-- x = 123,123
+[INFO ] 24-10-29 16:30:10 [MyInterceptor:88] - (param) <-- y = 0,345
+[INFO ] 24-10-29 16:30:10 [MyInterceptor:125] - running time : 21(ms)
+[INFO ] 24-10-29 16:30:35 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-29 16:30:35 [MyInterceptor:66] - [Client] 127.0.0.1, Other, Other, null, Other, null
+[INFO ] 24-10-29 16:30:35 [MyInterceptor:80] - [GET] http://localhost:8080/my_calc?x=123&y=345
+[INFO ] 24-10-29 16:30:35 [MyInterceptor:88] - (param) <-- x = 123,123
+[INFO ] 24-10-29 16:30:35 [MyInterceptor:88] - (param) <-- y = 0,345
+[INFO ] 24-10-29 16:30:35 [MyInterceptor:125] - running time : 21(ms)
+[INFO ] 24-10-29 16:31:55 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 11152 (D:\hyeon\08_Spring\09_restfulapi\bin\main started by user in D:\hyeon\08_Spring\09_restfulapi)
+[DEBUG] 24-10-29 16:31:55 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-29 16:31:55 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-29 16:31:57 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-29 16:31:57 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[com.hyeon.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-29 16:31:58 [RestfulapiApplication:56] - Started RestfulapiApplication in 3.614 seconds (process running for 4.411)
+[INFO ] 24-10-29 16:31:59 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-29 16:31:59 [MyInterceptor:66] - [Client] 127.0.0.1, Other, Other, null, Other, null
+[INFO ] 24-10-29 16:31:59 [MyInterceptor:80] - [GET] http://localhost:8080/my_calc?x=123&y=345
+[INFO ] 24-10-29 16:31:59 [MyInterceptor:88] - (param) <-- x = 123,123
+[INFO ] 24-10-29 16:31:59 [MyInterceptor:88] - (param) <-- y = 0,345
+[INFO ] 24-10-29 16:31:59 [MyInterceptor:125] - running time : 208(ms)
+[INFO ] 24-10-29 16:32:11 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-29 16:32:11 [MyInterceptor:66] - [Client] 127.0.0.1, Other, Other, null, Other, null
+[INFO ] 24-10-29 16:32:11 [MyInterceptor:80] - [GET] http://localhost:8080/my_calc?x=123&y=345
+[INFO ] 24-10-29 16:32:11 [MyInterceptor:88] - (param) <-- x = 123,123
+[INFO ] 24-10-29 16:32:11 [MyInterceptor:88] - (param) <-- y = 234,345
+[INFO ] 24-10-29 16:32:11 [MyInterceptor:125] - running time : 47(ms)
+[INFO ] 24-10-29 16:32:18 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-29 16:32:18 [MyInterceptor:66] - [Client] 127.0.0.1, Other, Other, null, Other, null
+[INFO ] 24-10-29 16:32:18 [MyInterceptor:80] - [GET] http://localhost:8080/my_calc?x=123&y=234
+[INFO ] 24-10-29 16:32:18 [MyInterceptor:88] - (param) <-- x = 123,123
+[INFO ] 24-10-29 16:32:18 [MyInterceptor:88] - (param) <-- y = 234,234
+[INFO ] 24-10-29 16:32:18 [MyInterceptor:125] - running time : 47(ms)

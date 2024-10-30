@@ -1,256 +1,609 @@
-[INFO ] 24-10-29 15:01:13 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 15784 (D:\hyeon\08_Spring\09_restfulapi\bin\main started by user in D:\hyeon\08_Spring\09_restfulapi)
-[DEBUG] 24-10-29 15:01:13 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
-[INFO ] 24-10-29 15:01:13 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
-[DEBUG] 24-10-29 15:01:14 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-[WARN ] 24-10-29 15:01:14 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[com.hyeon.restfulapi]' package. Please check your configuration.
-[INFO ] 24-10-29 15:01:16 [RestfulapiApplication:56] - Started RestfulapiApplication in 3.518 seconds (process running for 4.285)
-[INFO ] 24-10-29 15:01:29 [MyInterceptor:47] - ---------- new client connect ----------
-[INFO ] 24-10-29 15:01:29 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
-[INFO ] 24-10-29 15:01:29 [MyInterceptor:80] - [GET] http://localhost:8080/simple_department
-[INFO ] 24-10-29 15:01:29 [MyInterceptor:125] - running time : 218(ms)
-[INFO ] 24-10-29 15:01:37 [MyInterceptor:47] - ---------- new client connect ----------
-[INFO ] 24-10-29 15:01:37 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
-[INFO ] 24-10-29 15:01:37 [MyInterceptor:80] - [GET] http://localhost:8080/simple_department_list
-[INFO ] 24-10-29 15:01:37 [MyInterceptor:125] - running time : 74(ms)
-[INFO ] 24-10-29 15:19:12 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 10580 (D:\hyeon\08_Spring\09_restfulapi\bin\main started by user in D:\hyeon\08_Spring\09_restfulapi)
-[DEBUG] 24-10-29 15:19:12 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
-[INFO ] 24-10-29 15:19:12 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
-[DEBUG] 24-10-29 15:19:13 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-[WARN ] 24-10-29 15:19:13 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[com.hyeon.restfulapi]' package. Please check your configuration.
-[INFO ] 24-10-29 15:19:15 [RestfulapiApplication:56] - Started RestfulapiApplication in 3.433 seconds (process running for 4.18)
-[INFO ] 24-10-29 15:21:45 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 11976 (D:\hyeon\08_Spring\09_restfulapi\bin\main started by user in D:\hyeon\08_Spring\09_restfulapi)
-[DEBUG] 24-10-29 15:21:45 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
-[INFO ] 24-10-29 15:21:45 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
-[DEBUG] 24-10-29 15:21:46 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-[WARN ] 24-10-29 15:21:46 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[com.hyeon.restfulapi]' package. Please check your configuration.
-[INFO ] 24-10-29 15:21:48 [RestfulapiApplication:56] - Started RestfulapiApplication in 3.372 seconds (process running for 4.082)
-[INFO ] 24-10-29 15:22:00 [MyInterceptor:47] - ---------- new client connect ----------
-[INFO ] 24-10-29 15:22:00 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
-[INFO ] 24-10-29 15:22:00 [MyInterceptor:80] - [GET] http://localhost:8080/mail_form
-[INFO ] 24-10-29 15:22:00 [MyInterceptor:125] - running time : 184(ms)
-[INFO ] 24-10-29 15:41:01 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 18420 (D:\hyeon\08_Spring\09_restfulapi\bin\main started by user in D:\hyeon\08_Spring\09_restfulapi)
-[DEBUG] 24-10-29 15:41:01 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
-[INFO ] 24-10-29 15:41:01 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
-[DEBUG] 24-10-29 15:41:02 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-[WARN ] 24-10-29 15:41:02 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[com.hyeon.restfulapi]' package. Please check your configuration.
-[INFO ] 24-10-29 15:41:04 [RestfulapiApplication:56] - Started RestfulapiApplication in 3.649 seconds (process running for 4.525)
-[INFO ] 24-10-29 15:41:10 [MyInterceptor:47] - ---------- new client connect ----------
-[INFO ] 24-10-29 15:41:10 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
-[INFO ] 24-10-29 15:41:10 [MyInterceptor:80] - [GET] http://localhost:8080/mail_form
-[INFO ] 24-10-29 15:41:10 [MyInterceptor:125] - running time : 239(ms)
-[INFO ] 24-10-29 15:41:37 [MyInterceptor:47] - ---------- new client connect ----------
-[INFO ] 24-10-29 15:41:37 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
-[INFO ] 24-10-29 15:41:37 [MyInterceptor:80] - [POST] http://localhost:8080/@%7B/sendmail%7D
-[INFO ] 24-10-29 15:41:37 [MyInterceptor:88] - (param) <-- sender-name = h
-[INFO ] 24-10-29 15:41:37 [MyInterceptor:88] - (param) <-- sender-email = hyeon970315@gmail.com
-[INFO ] 24-10-29 15:41:37 [MyInterceptor:88] - (param) <-- receiver-name = hyeon
-[INFO ] 24-10-29 15:41:37 [MyInterceptor:88] - (param) <-- receiver-email = hyeon970315@gmail.com
-[INFO ] 24-10-29 15:41:37 [MyInterceptor:88] - (param) <-- subject = hhhh
-[INFO ] 24-10-29 15:41:37 [MyInterceptor:88] - (param) <-- content = <p>[스포티비뉴스=신원철 기자] LG 오른손투수 임찬규가 삼성 오른손투수 원태인 대신 '2024 WBSC(세계야구소프트볼연맹) 프리미어12'에 참가한다. 임찬규는 30일부터 대표팀 훈련에 합류할 예정이다.<br><br>KBO 전력강화위원회는29일 "부상으로 출전이 어려워진 삼성 원태인을 대체 할 선수로 LG 임찬규를 확정했다. 대표팀 코칭스태프와 전력강화위원회는 선발 투수 대체 선수가 필요하다고 판단했고, 논의 끝에 임찬규를 최종 선발하기로 했다"고 밝혔다. 이번 대표팀은 28인 최종 명단보다 7명 많은 35명의 소집 명단을 발표한 상태다. 대체 선수 결정은 이번이 처음이다.<br><br>원태인은 한국시리즈를 치르는 과정에서 어깨를 다쳤다. 26일 대구 삼성라이온즈파크에서 열린 한국시리즈 4차전에 선발 등판해 2⅓이닝 만에 마운드에서 내려갔다. 부진보다 부상이 문제였다. 삼성 구단 관계자는 "원태인은 어깨 쪽에 약간의 불편감이 있어 선수 보호 차원에서 교체됐다"고 알렸다.<br><br>경기 도중 삼성 구단 관계자는 "원태인이 어깨 쪽에 약간의 불편함이 있어 선수 보호 차원에서 교체됐다. 병원 진료 계획은 없다"고 발표했다.<br><br>그런데 경기 종료 후 상황이 나빠졌다. 원태인은 병원 검진 결과 오른쪽 어깨 관절 와순 손상 소견을 받았다. 또 관절 안에 약간의 출혈과 붓기가 있는 상태인데다, 어깨 회전근개 힘줄염을 동반해 4~6주간 재활이 필요하다는 진단을 받았다. 프리미어 12는 당연히 출전할 수 없었다.</p>
-[INFO ] 24-10-29 15:41:37 [MyInterceptor:99] - - REFERER : time=27041, url=http://localhost:8080/mail_form
-[INFO ] 24-10-29 15:50:09 [MyInterceptor:47] - ---------- new client connect ----------
-[INFO ] 24-10-29 15:50:09 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
-[INFO ] 24-10-29 15:50:09 [MyInterceptor:80] - [GET] http://localhost:8080/mail_form
-[INFO ] 24-10-29 15:50:09 [MyInterceptor:125] - running time : 49(ms)
-[INFO ] 24-10-29 15:50:17 [MyInterceptor:47] - ---------- new client connect ----------
-[INFO ] 24-10-29 15:50:17 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
-[INFO ] 24-10-29 15:50:17 [MyInterceptor:80] - [POST] http://localhost:8080/@%7B/sendmail%7D
-[INFO ] 24-10-29 15:50:17 [MyInterceptor:88] - (param) <-- sender-name = h
-[INFO ] 24-10-29 15:50:17 [MyInterceptor:88] - (param) <-- sender-email = hyeon970315@gmail.com
-[INFO ] 24-10-29 15:50:17 [MyInterceptor:88] - (param) <-- receiver-name = hyeon
-[INFO ] 24-10-29 15:50:17 [MyInterceptor:88] - (param) <-- receiver-email = hyeon970315@gmail.com
-[INFO ] 24-10-29 15:50:17 [MyInterceptor:88] - (param) <-- subject = hhhh
-[INFO ] 24-10-29 15:50:17 [MyInterceptor:88] - (param) <-- content = <p>sfsafasgsaaf</p>
-[INFO ] 24-10-29 15:50:17 [MyInterceptor:99] - - REFERER : time=7747, url=http://localhost:8080/mail_form
-[INFO ] 24-10-29 15:54:42 [MyInterceptor:47] - ---------- new client connect ----------
-[INFO ] 24-10-29 15:54:42 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
-[INFO ] 24-10-29 15:54:42 [MyInterceptor:80] - [GET] http://localhost:8080/simple_department_list
-[INFO ] 24-10-29 15:54:42 [MyInterceptor:125] - running time : 99(ms)
-[INFO ] 24-10-29 15:56:30 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 14068 (D:\hyeon\08_Spring\09_restfulapi\bin\main started by user in D:\hyeon\08_Spring\09_restfulapi)
-[DEBUG] 24-10-29 15:56:30 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
-[INFO ] 24-10-29 15:56:30 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
-[DEBUG] 24-10-29 15:56:31 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-[WARN ] 24-10-29 15:56:31 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[com.hyeon.restfulapi]' package. Please check your configuration.
-[INFO ] 24-10-29 15:56:33 [RestfulapiApplication:56] - Started RestfulapiApplication in 3.392 seconds (process running for 4.103)
-[INFO ] 24-10-29 15:56:40 [MyInterceptor:47] - ---------- new client connect ----------
-[INFO ] 24-10-29 15:56:40 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
-[INFO ] 24-10-29 15:56:40 [MyInterceptor:80] - [GET] http://localhost:8080/mail_form
-[INFO ] 24-10-29 15:56:40 [MyInterceptor:125] - running time : 180(ms)
-[INFO ] 24-10-29 15:56:51 [MyInterceptor:47] - ---------- new client connect ----------
-[INFO ] 24-10-29 15:56:51 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
-[INFO ] 24-10-29 15:56:51 [MyInterceptor:80] - [POST] http://localhost:8080/@%7B/sendmail%7D
-[INFO ] 24-10-29 15:56:51 [MyInterceptor:88] - (param) <-- sender-name = h
-[INFO ] 24-10-29 15:56:51 [MyInterceptor:88] - (param) <-- sender-email = hyeon970315@gmail.com
-[INFO ] 24-10-29 15:56:51 [MyInterceptor:88] - (param) <-- receiver-name = hyeon
-[INFO ] 24-10-29 15:56:51 [MyInterceptor:88] - (param) <-- receiver-email = hyeon970315@gmail.com
-[INFO ] 24-10-29 15:56:51 [MyInterceptor:88] - (param) <-- subject = hhhh
-[INFO ] 24-10-29 15:56:51 [MyInterceptor:88] - (param) <-- content = <p>dfvsdvdfgeagerg</p>
-[INFO ] 24-10-29 15:56:51 [MyInterceptor:99] - - REFERER : time=11373, url=http://localhost:8080/mail_form
-[INFO ] 24-10-29 15:57:14 [MyInterceptor:47] - ---------- new client connect ----------
-[INFO ] 24-10-29 15:57:14 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
-[INFO ] 24-10-29 15:57:14 [MyInterceptor:80] - [POST] http://localhost:8080/@%7B/sendmail%7D
-[INFO ] 24-10-29 15:57:14 [MyInterceptor:88] - (param) <-- sender-name = h
-[INFO ] 24-10-29 15:57:14 [MyInterceptor:88] - (param) <-- sender-email = hyeon970315@gmail.com
-[INFO ] 24-10-29 15:57:14 [MyInterceptor:88] - (param) <-- receiver-name = hyeon
-[INFO ] 24-10-29 15:57:14 [MyInterceptor:88] - (param) <-- receiver-email = hyeon97315@naver.com
-[INFO ] 24-10-29 15:57:14 [MyInterceptor:88] - (param) <-- subject = hhhh
-[INFO ] 24-10-29 15:57:14 [MyInterceptor:88] - (param) <-- content = <p>dfvsdvdfgeagerg</p>
-[INFO ] 24-10-29 15:57:14 [MyInterceptor:99] - - REFERER : time=34408, url=http://localhost:8080/mail_form
-[INFO ] 24-10-29 15:58:45 [MyInterceptor:47] - ---------- new client connect ----------
-[INFO ] 24-10-29 15:58:45 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
-[INFO ] 24-10-29 15:58:45 [MyInterceptor:80] - [POST] http://localhost:8080/@%7B/sendmail%7D
-[INFO ] 24-10-29 15:58:45 [MyInterceptor:88] - (param) <-- sender-name = h
-[INFO ] 24-10-29 15:58:45 [MyInterceptor:88] - (param) <-- sender-email = hyeon970315@gmail.com
-[INFO ] 24-10-29 15:58:45 [MyInterceptor:88] - (param) <-- receiver-name = hyeon
-[INFO ] 24-10-29 15:58:45 [MyInterceptor:88] - (param) <-- receiver-email = hyeon97315@naver.com
-[INFO ] 24-10-29 15:58:45 [MyInterceptor:88] - (param) <-- subject = hhhh
-[INFO ] 24-10-29 15:58:45 [MyInterceptor:88] - (param) <-- content = <p>dfvsdvdfgeagerg</p>
-[INFO ] 24-10-29 15:58:45 [MyInterceptor:99] - - REFERER : time=124986, url=http://localhost:8080/mail_form
-[INFO ] 24-10-29 15:59:59 [MyInterceptor:47] - ---------- new client connect ----------
-[INFO ] 24-10-29 16:00:00 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
-[INFO ] 24-10-29 16:00:00 [MyInterceptor:80] - [GET] http://localhost:8080/mail_form
-[INFO ] 24-10-29 16:00:00 [MyInterceptor:125] - running time : 124(ms)
-[INFO ] 24-10-29 16:00:11 [MyInterceptor:47] - ---------- new client connect ----------
-[INFO ] 24-10-29 16:00:11 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
-[INFO ] 24-10-29 16:00:11 [MyInterceptor:80] - [GET] http://localhost:8080/mail_form
-[INFO ] 24-10-29 16:00:11 [MyInterceptor:125] - running time : 25(ms)
-[INFO ] 24-10-29 16:00:19 [MyInterceptor:47] - ---------- new client connect ----------
-[INFO ] 24-10-29 16:00:19 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
-[INFO ] 24-10-29 16:00:19 [MyInterceptor:80] - [POST] http://localhost:8080/sendmail
-[INFO ] 24-10-29 16:00:19 [MyInterceptor:88] - (param) <-- sender-name = h
-[INFO ] 24-10-29 16:00:19 [MyInterceptor:88] - (param) <-- sender-email = hyeon970315@gmail.com
-[INFO ] 24-10-29 16:00:19 [MyInterceptor:88] - (param) <-- receiver-name = hyeon
-[INFO ] 24-10-29 16:00:19 [MyInterceptor:88] - (param) <-- receiver-email = hyeon970315@gmail.com
-[INFO ] 24-10-29 16:00:19 [MyInterceptor:88] - (param) <-- subject = 
-[INFO ] 24-10-29 16:00:19 [MyInterceptor:88] - (param) <-- content = <p>sdfafasfs</p>
-[INFO ] 24-10-29 16:00:19 [MyInterceptor:99] - - REFERER : time=7863, url=http://localhost:8080/mail_form
-[DEBUG] 24-10-29 16:00:19 [SimpleRestfulController:126] - ------------------------------
-[DEBUG] 24-10-29 16:00:19 [SimpleRestfulController:127] - SenderName : h
-[DEBUG] 24-10-29 16:00:19 [SimpleRestfulController:128] - SenderEmail : hyeon970315@gmail.com
-[DEBUG] 24-10-29 16:00:19 [SimpleRestfulController:129] - ReceiverName : hyeon
-[DEBUG] 24-10-29 16:00:19 [SimpleRestfulController:130] - ReceiverEmail : hyeon970315@gmail.com
-[DEBUG] 24-10-29 16:00:19 [SimpleRestfulController:131] - Subject : 
-[DEBUG] 24-10-29 16:00:19 [SimpleRestfulController:132] - Content : <p>sdfafasfs</p>
-[DEBUG] 24-10-29 16:00:19 [SimpleRestfulController:133] - ------------------------------
-[INFO ] 24-10-29 16:00:23 [MyInterceptor:125] - running time : 3817(ms)
-[INFO ] 24-10-29 16:01:37 [MyInterceptor:47] - ---------- new client connect ----------
-[INFO ] 24-10-29 16:01:37 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
-[INFO ] 24-10-29 16:01:37 [MyInterceptor:80] - [POST] http://localhost:8080/sendmail
-[INFO ] 24-10-29 16:01:37 [MyInterceptor:88] - (param) <-- sender-name = h
-[INFO ] 24-10-29 16:01:37 [MyInterceptor:88] - (param) <-- sender-email = hyeon970315@gmail.com
-[INFO ] 24-10-29 16:01:37 [MyInterceptor:88] - (param) <-- receiver-name = hyeon
-[INFO ] 24-10-29 16:01:37 [MyInterceptor:88] - (param) <-- receiver-email = hyeon970315@gmail.com
-[INFO ] 24-10-29 16:01:37 [MyInterceptor:88] - (param) <-- subject = dcdcd
-[INFO ] 24-10-29 16:01:37 [MyInterceptor:88] - (param) <-- content = <h2><strong>[공식발표] '빅게임 피처 변신' 임찬규, PS 3승 찍고 태극마크…"원태인 대체 선수 필요" 대표팀 발탁</strong></h2><p>입력<i>2024.10.29. 오후 2:26</i></p><p><a href="https://www.spotvnews.co.kr/news/articleView.html?idxno=712168">기사원문</a></p><p>공감29</p><p>텍스트 음성 변환 서비스</p><p>글자 크기 변경</p><p>공유하기</p><p><img src="https://imgnews.pstatic.net/image/477/2024/10/29/0000519474_001_20241029142612049.jpg?type=w647" alt=""></p>
-[INFO ] 24-10-29 16:01:37 [MyInterceptor:99] - - REFERER : time=74052, url=http://localhost:8080/mail_form
-[DEBUG] 24-10-29 16:01:37 [SimpleRestfulController:126] - ------------------------------
-[DEBUG] 24-10-29 16:01:37 [SimpleRestfulController:127] - SenderName : h
-[DEBUG] 24-10-29 16:01:37 [SimpleRestfulController:128] - SenderEmail : hyeon970315@gmail.com
-[DEBUG] 24-10-29 16:01:37 [SimpleRestfulController:129] - ReceiverName : hyeon
-[DEBUG] 24-10-29 16:01:37 [SimpleRestfulController:130] - ReceiverEmail : hyeon970315@gmail.com
-[DEBUG] 24-10-29 16:01:37 [SimpleRestfulController:131] - Subject : dcdcd
-[DEBUG] 24-10-29 16:01:37 [SimpleRestfulController:132] - Content : <h2><strong>[공식발표] '빅게임 피처 변신' 임찬규, PS 3승 찍고 태극마크…"원태인 대체 선수 필요" 대표팀 발탁</strong></h2><p>입력<i>2024.10.29. 오후 2:26</i></p><p><a href="https://www.spotvnews.co.kr/news/articleView.html?idxno=712168">기사원문</a></p><p>공감29</p><p>텍스트 음성 변환 서비스</p><p>글자 크기 변경</p><p>공유하기</p><p><img src="https://imgnews.pstatic.net/image/477/2024/10/29/0000519474_001_20241029142612049.jpg?type=w647" alt=""></p>
-[DEBUG] 24-10-29 16:01:37 [SimpleRestfulController:133] - ------------------------------
-[INFO ] 24-10-29 16:01:40 [MyInterceptor:125] - running time : 3649(ms)
-[INFO ] 24-10-29 16:26:47 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 18204 (D:\hyeon\08_Spring\09_restfulapi\bin\main started by user in D:\hyeon\08_Spring\09_restfulapi)
-[DEBUG] 24-10-29 16:26:47 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
-[INFO ] 24-10-29 16:26:47 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
-[DEBUG] 24-10-29 16:26:49 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-[WARN ] 24-10-29 16:26:49 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[com.hyeon.restfulapi]' package. Please check your configuration.
-[INFO ] 24-10-29 16:26:50 [RestfulapiApplication:56] - Started RestfulapiApplication in 3.542 seconds (process running for 4.317)
-[INFO ] 24-10-29 16:26:53 [MyInterceptor:47] - ---------- new client connect ----------
-[INFO ] 24-10-29 16:26:53 [MyInterceptor:66] - [Client] 127.0.0.1, Other, Other, null, Other, null
-[INFO ] 24-10-29 16:26:53 [MyInterceptor:80] - [GET] http://localhost:8080/my_calc?x=123&y=345
-[INFO ] 24-10-29 16:26:53 [MyInterceptor:88] - (param) <-- x = 123,123
-[INFO ] 24-10-29 16:26:53 [MyInterceptor:88] - (param) <-- y = 234,345
-[INFO ] 24-10-29 16:26:53 [MyInterceptor:125] - running time : 213(ms)
-[INFO ] 24-10-29 16:27:09 [MyInterceptor:47] - ---------- new client connect ----------
-[INFO ] 24-10-29 16:27:09 [MyInterceptor:66] - [Client] 127.0.0.1, Other, Other, null, Other, null
-[INFO ] 24-10-29 16:27:09 [MyInterceptor:80] - [POST] http://localhost:8080/my_calc?x=123&y=345
-[INFO ] 24-10-29 16:27:09 [MyInterceptor:88] - (param) <-- x = 123,123
-[INFO ] 24-10-29 16:27:09 [MyInterceptor:88] - (param) <-- y = 234,345
-[INFO ] 24-10-29 16:27:09 [MyInterceptor:125] - running time : 48(ms)
-[INFO ] 24-10-29 16:27:14 [MyInterceptor:47] - ---------- new client connect ----------
-[INFO ] 24-10-29 16:27:14 [MyInterceptor:66] - [Client] 127.0.0.1, Other, Other, null, Other, null
-[INFO ] 24-10-29 16:27:14 [MyInterceptor:80] - [PUT] http://localhost:8080/my_calc?x=123&y=345
-[INFO ] 24-10-29 16:27:14 [MyInterceptor:88] - (param) <-- x = 123,123
-[INFO ] 24-10-29 16:27:14 [MyInterceptor:88] - (param) <-- y = 234,345
-[INFO ] 24-10-29 16:27:14 [MyInterceptor:125] - running time : 46(ms)
-[INFO ] 24-10-29 16:27:21 [MyInterceptor:47] - ---------- new client connect ----------
-[INFO ] 24-10-29 16:27:21 [MyInterceptor:66] - [Client] 127.0.0.1, Other, Other, null, Other, null
-[INFO ] 24-10-29 16:27:21 [MyInterceptor:80] - [DELETE] http://localhost:8080/my_calc?x=123&y=345
-[INFO ] 24-10-29 16:27:21 [MyInterceptor:88] - (param) <-- x = 123,123
-[INFO ] 24-10-29 16:27:21 [MyInterceptor:88] - (param) <-- y = 234,345
-[INFO ] 24-10-29 16:27:21 [MyInterceptor:125] - running time : 45(ms)
-[INFO ] 24-10-29 16:27:31 [MyInterceptor:47] - ---------- new client connect ----------
-[INFO ] 24-10-29 16:27:31 [MyInterceptor:66] - [Client] 127.0.0.1, Other, Other, null, Other, null
-[INFO ] 24-10-29 16:27:31 [MyInterceptor:80] - [DELETE] http://localhost:8080/my_calc?x=123&y=345
-[INFO ] 24-10-29 16:27:31 [MyInterceptor:88] - (param) <-- x = 123,123
-[INFO ] 24-10-29 16:27:31 [MyInterceptor:88] - (param) <-- y = 0,345
-[INFO ] 24-10-29 16:27:31 [MyInterceptor:125] - running time : 45(ms)
-[INFO ] 24-10-29 16:27:43 [MyInterceptor:47] - ---------- new client connect ----------
-[INFO ] 24-10-29 16:27:43 [MyInterceptor:66] - [Client] 127.0.0.1, Other, Other, null, Other, null
-[INFO ] 24-10-29 16:27:43 [MyInterceptor:80] - [GET] http://localhost:8080/my_calc?x=123&y=345
-[INFO ] 24-10-29 16:27:43 [MyInterceptor:88] - (param) <-- x = 123,123
-[INFO ] 24-10-29 16:27:43 [MyInterceptor:88] - (param) <-- y = 0,345
-[INFO ] 24-10-29 16:27:43 [MyInterceptor:125] - running time : 36(ms)
-[INFO ] 24-10-29 16:28:21 [MyInterceptor:47] - ---------- new client connect ----------
-[INFO ] 24-10-29 16:28:21 [MyInterceptor:66] - [Client] 127.0.0.1, Other, Other, null, Other, null
-[INFO ] 24-10-29 16:28:21 [MyInterceptor:80] - [POST] http://localhost:8080/my_calc?x=123&y=345
-[INFO ] 24-10-29 16:28:21 [MyInterceptor:88] - (param) <-- x = 123,123
-[INFO ] 24-10-29 16:28:21 [MyInterceptor:88] - (param) <-- y = 0,345
-[INFO ] 24-10-29 16:28:21 [MyInterceptor:125] - running time : 22(ms)
-[INFO ] 24-10-29 16:28:49 [MyInterceptor:47] - ---------- new client connect ----------
-[INFO ] 24-10-29 16:28:49 [MyInterceptor:66] - [Client] 127.0.0.1, Other, Other, null, Other, null
-[INFO ] 24-10-29 16:28:49 [MyInterceptor:80] - [POST] http://localhost:8080/my_calc?x=123&y=345
-[INFO ] 24-10-29 16:28:49 [MyInterceptor:88] - (param) <-- x = 123,123
-[INFO ] 24-10-29 16:28:49 [MyInterceptor:88] - (param) <-- y = 234,345
-[INFO ] 24-10-29 16:28:49 [MyInterceptor:125] - running time : 22(ms)
-[INFO ] 24-10-29 16:29:17 [MyInterceptor:47] - ---------- new client connect ----------
-[INFO ] 24-10-29 16:29:17 [MyInterceptor:66] - [Client] 127.0.0.1, Other, Other, null, Other, null
-[INFO ] 24-10-29 16:29:17 [MyInterceptor:80] - [PUT] http://localhost:8080/my_calc?x=123&y=345
-[INFO ] 24-10-29 16:29:17 [MyInterceptor:88] - (param) <-- x = 123,123
-[INFO ] 24-10-29 16:29:17 [MyInterceptor:88] - (param) <-- y = 234,345
-[INFO ] 24-10-29 16:29:17 [MyInterceptor:125] - running time : 25(ms)
-[INFO ] 24-10-29 16:29:46 [MyInterceptor:47] - ---------- new client connect ----------
-[INFO ] 24-10-29 16:29:46 [MyInterceptor:66] - [Client] 127.0.0.1, Other, Other, null, Other, null
-[INFO ] 24-10-29 16:29:46 [MyInterceptor:80] - [DELETE] http://localhost:8080/my_calc?x=123&y=345
-[INFO ] 24-10-29 16:29:46 [MyInterceptor:88] - (param) <-- x = 123,123
-[INFO ] 24-10-29 16:29:46 [MyInterceptor:88] - (param) <-- y = 234,345
-[INFO ] 24-10-29 16:29:46 [MyInterceptor:125] - running time : 26(ms)
-[INFO ] 24-10-29 16:30:10 [MyInterceptor:47] - ---------- new client connect ----------
-[INFO ] 24-10-29 16:30:10 [MyInterceptor:66] - [Client] 127.0.0.1, Other, Other, null, Other, null
-[INFO ] 24-10-29 16:30:10 [MyInterceptor:80] - [DELETE] http://localhost:8080/my_calc?x=123&y=345
-[INFO ] 24-10-29 16:30:10 [MyInterceptor:88] - (param) <-- x = 123,123
-[INFO ] 24-10-29 16:30:10 [MyInterceptor:88] - (param) <-- y = 0,345
-[INFO ] 24-10-29 16:30:10 [MyInterceptor:125] - running time : 21(ms)
-[INFO ] 24-10-29 16:30:35 [MyInterceptor:47] - ---------- new client connect ----------
-[INFO ] 24-10-29 16:30:35 [MyInterceptor:66] - [Client] 127.0.0.1, Other, Other, null, Other, null
-[INFO ] 24-10-29 16:30:35 [MyInterceptor:80] - [GET] http://localhost:8080/my_calc?x=123&y=345
-[INFO ] 24-10-29 16:30:35 [MyInterceptor:88] - (param) <-- x = 123,123
-[INFO ] 24-10-29 16:30:35 [MyInterceptor:88] - (param) <-- y = 0,345
-[INFO ] 24-10-29 16:30:35 [MyInterceptor:125] - running time : 21(ms)
-[INFO ] 24-10-29 16:31:55 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 11152 (D:\hyeon\08_Spring\09_restfulapi\bin\main started by user in D:\hyeon\08_Spring\09_restfulapi)
-[DEBUG] 24-10-29 16:31:55 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
-[INFO ] 24-10-29 16:31:55 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
-[DEBUG] 24-10-29 16:31:57 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-[WARN ] 24-10-29 16:31:57 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[com.hyeon.restfulapi]' package. Please check your configuration.
-[INFO ] 24-10-29 16:31:58 [RestfulapiApplication:56] - Started RestfulapiApplication in 3.614 seconds (process running for 4.411)
-[INFO ] 24-10-29 16:31:59 [MyInterceptor:47] - ---------- new client connect ----------
-[INFO ] 24-10-29 16:31:59 [MyInterceptor:66] - [Client] 127.0.0.1, Other, Other, null, Other, null
-[INFO ] 24-10-29 16:31:59 [MyInterceptor:80] - [GET] http://localhost:8080/my_calc?x=123&y=345
-[INFO ] 24-10-29 16:31:59 [MyInterceptor:88] - (param) <-- x = 123,123
-[INFO ] 24-10-29 16:31:59 [MyInterceptor:88] - (param) <-- y = 0,345
-[INFO ] 24-10-29 16:31:59 [MyInterceptor:125] - running time : 208(ms)
-[INFO ] 24-10-29 16:32:11 [MyInterceptor:47] - ---------- new client connect ----------
-[INFO ] 24-10-29 16:32:11 [MyInterceptor:66] - [Client] 127.0.0.1, Other, Other, null, Other, null
-[INFO ] 24-10-29 16:32:11 [MyInterceptor:80] - [GET] http://localhost:8080/my_calc?x=123&y=345
-[INFO ] 24-10-29 16:32:11 [MyInterceptor:88] - (param) <-- x = 123,123
-[INFO ] 24-10-29 16:32:11 [MyInterceptor:88] - (param) <-- y = 234,345
-[INFO ] 24-10-29 16:32:11 [MyInterceptor:125] - running time : 47(ms)
-[INFO ] 24-10-29 16:32:18 [MyInterceptor:47] - ---------- new client connect ----------
-[INFO ] 24-10-29 16:32:18 [MyInterceptor:66] - [Client] 127.0.0.1, Other, Other, null, Other, null
-[INFO ] 24-10-29 16:32:18 [MyInterceptor:80] - [GET] http://localhost:8080/my_calc?x=123&y=234
-[INFO ] 24-10-29 16:32:18 [MyInterceptor:88] - (param) <-- x = 123,123
-[INFO ] 24-10-29 16:32:18 [MyInterceptor:88] - (param) <-- y = 234,234
-[INFO ] 24-10-29 16:32:18 [MyInterceptor:125] - running time : 47(ms)
+[INFO ] 24-10-30 13:08:54 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 11720 (D:\HYEON\08_Spring\09_restfulapi\build\classes\java\main started by user in D:\HYEON\08_Spring\09_restfulapi)
+[DEBUG] 24-10-30 13:08:54 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 13:08:54 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-30 13:08:56 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-30 13:08:56 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[com.hyeon.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 13:08:59 [RestfulapiApplication:56] - Started RestfulapiApplication in 5.745 seconds (process running for 6.748)
+[INFO ] 24-10-30 13:09:43 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 13:09:43 [MyInterceptor:66] - [Client] 127.0.0.1, Other, Other, null, Other, null
+[INFO ] 24-10-30 13:09:43 [MyInterceptor:80] - [GET] http://localhost:8080/my_calc?x=-1
+[INFO ] 24-10-30 13:09:43 [MyInterceptor:88] - (param) <-- x = -1
+[INFO ] 24-10-30 13:09:43 [MyInterceptor:125] - running time : 368(ms)
+[INFO ] 24-10-30 13:12:24 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 13:12:24 [MyInterceptor:66] - [Client] 127.0.0.1, Other, Other, null, Other, null
+[INFO ] 24-10-30 13:12:24 [MyInterceptor:80] - [GET] http://localhost:8080/my_calc
+[INFO ] 24-10-30 13:12:24 [MyInterceptor:125] - running time : 66(ms)
+[INFO ] 24-10-30 13:14:15 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 13:14:15 [MyInterceptor:66] - [Client] 127.0.0.1, Other, Other, null, Other, null
+[INFO ] 24-10-30 13:14:15 [MyInterceptor:80] - [GET] http://localhost:8080/my_calc
+[INFO ] 24-10-30 13:14:15 [MyInterceptor:125] - running time : 64(ms)
+[INFO ] 24-10-30 13:14:28 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 13:14:28 [MyInterceptor:66] - [Client] 127.0.0.1, Other, Other, null, Other, null
+[INFO ] 24-10-30 13:14:28 [MyInterceptor:80] - [GET] http://localhost:8080/my_calc
+[INFO ] 24-10-30 13:14:28 [MyInterceptor:125] - running time : 66(ms)
+[INFO ] 24-10-30 13:14:44 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 11720 (D:\HYEON\08_Spring\09_restfulapi\build\classes\java\main started by user in D:\HYEON\08_Spring\09_restfulapi)
+[DEBUG] 24-10-30 13:14:44 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 13:14:44 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 24-10-30 13:14:45 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[com.hyeon.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 13:14:46 [RestfulapiApplication:56] - Started RestfulapiApplication in 2.287 seconds (process running for 353.75)
+[INFO ] 24-10-30 13:14:47 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 11720 (D:\HYEON\08_Spring\09_restfulapi\build\classes\java\main started by user in D:\HYEON\08_Spring\09_restfulapi)
+[DEBUG] 24-10-30 13:14:47 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 13:14:47 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 24-10-30 13:14:48 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[com.hyeon.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 13:14:48 [RestfulapiApplication:56] - Started RestfulapiApplication in 0.958 seconds (process running for 356.237)
+[INFO ] 24-10-30 13:15:24 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 11720 (D:\HYEON\08_Spring\09_restfulapi\build\classes\java\main started by user in D:\HYEON\08_Spring\09_restfulapi)
+[DEBUG] 24-10-30 13:15:24 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 13:15:24 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 24-10-30 13:15:25 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[com.hyeon.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 13:15:25 [RestfulapiApplication:56] - Started RestfulapiApplication in 1.34 seconds (process running for 393.204)
+[INFO ] 24-10-30 13:15:27 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 11720 (D:\HYEON\08_Spring\09_restfulapi\build\classes\java\main started by user in D:\HYEON\08_Spring\09_restfulapi)
+[DEBUG] 24-10-30 13:15:27 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 13:15:27 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 24-10-30 13:15:28 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[com.hyeon.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 13:15:28 [RestfulapiApplication:56] - Started RestfulapiApplication in 0.959 seconds (process running for 395.828)
+[INFO ] 24-10-30 14:12:57 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 16612 (D:\HYEON\08_Spring\09_restfulapi\build\classes\java\main started by user in D:\HYEON\08_Spring\09_restfulapi)
+[DEBUG] 24-10-30 14:12:57 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 14:12:57 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-30 14:13:01 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-30 14:13:01 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[com.hyeon.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 14:13:06 [RestfulapiApplication:56] - Started RestfulapiApplication in 10.813 seconds (process running for 11.754)
+[INFO ] 24-10-30 14:14:23 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 14:14:24 [MyInterceptor:66] - [Client] 127.0.0.1, Other, Other, null, Other, null
+[INFO ] 24-10-30 14:14:24 [MyInterceptor:80] - [GET] http://localhost:8080/my_calc
+[INFO ] 24-10-30 14:14:24 [MyInterceptor:88] - (param) <-- 1 = 
+[INFO ] 24-10-30 14:14:24 [MyInterceptor:125] - running time : 434(ms)
+[INFO ] 24-10-30 14:14:37 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 14:14:37 [MyInterceptor:66] - [Client] 127.0.0.1, Other, Other, null, Other, null
+[INFO ] 24-10-30 14:14:37 [MyInterceptor:80] - [GET] http://localhost:8080/my_calc
+[INFO ] 24-10-30 14:14:37 [MyInterceptor:88] - (param) <-- x = 0.23
+[INFO ] 24-10-30 14:14:37 [MyInterceptor:88] - (param) <-- y = 4.56
+[WARN ] 24-10-30 14:14:37 [DefaultHandlerExceptionResolver:247] - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'x': Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "0.23"]
+[INFO ] 24-10-30 15:05:35 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 12168 (D:\HYEON\08_Spring\09_restfulapi\build\classes\java\main started by user in D:\HYEON\08_Spring\09_restfulapi)
+[DEBUG] 24-10-30 15:05:35 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 15:05:35 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-30 15:05:36 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-30 15:05:36 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[com.hyeon.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 15:05:38 [RestfulapiApplication:56] - Started RestfulapiApplication in 3.668 seconds (process running for 4.427)
+[INFO ] 24-10-30 15:06:25 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 12168 (D:\HYEON\08_Spring\09_restfulapi\build\classes\java\main started by user in D:\HYEON\08_Spring\09_restfulapi)
+[DEBUG] 24-10-30 15:06:25 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 15:06:25 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 24-10-30 15:06:27 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[com.hyeon.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 15:06:28 [RestfulapiApplication:56] - Started RestfulapiApplication in 3.457 seconds (process running for 54.934)
+[INFO ] 24-10-30 15:06:29 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 15:06:29 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 15:06:29 [MyInterceptor:80] - [GET] http://localhost:8080/calc
+[INFO ] 24-10-30 15:06:29 [MyInterceptor:125] - running time : 572(ms)
+[INFO ] 24-10-30 15:14:49 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 10544 (D:\HYEON\08_Spring\09_restfulapi\build\classes\java\main started by user in D:\HYEON\08_Spring\09_restfulapi)
+[DEBUG] 24-10-30 15:14:49 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 15:14:49 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-30 15:14:50 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-30 15:14:50 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[com.hyeon.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 15:14:52 [RestfulapiApplication:56] - Started RestfulapiApplication in 3.306 seconds (process running for 4.103)
+[INFO ] 24-10-30 15:14:58 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 15:14:58 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 15:14:58 [MyInterceptor:80] - [GET] http://localhost:8080/calc
+[INFO ] 24-10-30 15:14:58 [MyInterceptor:125] - running time : 172(ms)
+[INFO ] 24-10-30 15:15:19 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 10544 (D:\HYEON\08_Spring\09_restfulapi\build\classes\java\main started by user in D:\HYEON\08_Spring\09_restfulapi)
+[DEBUG] 24-10-30 15:15:19 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 15:15:19 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 24-10-30 15:15:19 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[com.hyeon.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 15:15:20 [RestfulapiApplication:56] - Started RestfulapiApplication in 1.518 seconds (process running for 32.405)
+[INFO ] 24-10-30 15:15:36 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 10544 (D:\HYEON\08_Spring\09_restfulapi\build\classes\java\main started by user in D:\HYEON\08_Spring\09_restfulapi)
+[DEBUG] 24-10-30 15:15:36 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 15:15:36 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 24-10-30 15:15:39 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[com.hyeon.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 15:15:40 [RestfulapiApplication:56] - Started RestfulapiApplication in 3.774 seconds (process running for 52.175)
+[INFO ] 24-10-30 15:15:46 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 15:15:46 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 15:15:46 [MyInterceptor:80] - [GET] http://localhost:8080/calc
+[INFO ] 24-10-30 15:15:46 [MyInterceptor:125] - running time : 45(ms)
+[INFO ] 24-10-30 15:15:50 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 15:15:50 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 15:15:50 [MyInterceptor:80] - [GET] http://localhost:8080/calc
+[INFO ] 24-10-30 15:15:50 [MyInterceptor:125] - running time : 40(ms)
+[INFO ] 24-10-30 15:16:24 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 10544 (D:\HYEON\08_Spring\09_restfulapi\build\classes\java\main started by user in D:\HYEON\08_Spring\09_restfulapi)
+[DEBUG] 24-10-30 15:16:24 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 15:16:24 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 24-10-30 15:16:24 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[com.hyeon.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 15:16:25 [RestfulapiApplication:56] - Started RestfulapiApplication in 1.117 seconds (process running for 97.071)
+[INFO ] 24-10-30 15:16:38 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 15:16:38 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 15:16:38 [MyInterceptor:80] - [GET] http://localhost:8080/calc
+[INFO ] 24-10-30 15:16:38 [MyInterceptor:125] - running time : 86(ms)
+[INFO ] 24-10-30 15:16:58 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 15:16:58 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 15:16:58 [MyInterceptor:80] - [GET] http://localhost:8080/calc
+[INFO ] 24-10-30 15:16:58 [MyInterceptor:125] - running time : 30(ms)
+[INFO ] 24-10-30 15:18:08 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 10544 (D:\HYEON\08_Spring\09_restfulapi\build\classes\java\main started by user in D:\HYEON\08_Spring\09_restfulapi)
+[DEBUG] 24-10-30 15:18:08 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 15:18:08 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 24-10-30 15:18:08 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[com.hyeon.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 15:18:08 [RestfulapiApplication:56] - Started RestfulapiApplication in 0.939 seconds (process running for 200.705)
+[INFO ] 24-10-30 15:18:34 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 18184 (D:\HYEON\08_Spring\09_restfulapi\build\classes\java\main started by user in D:\HYEON\08_Spring\09_restfulapi)
+[DEBUG] 24-10-30 15:18:34 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 15:18:34 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-30 15:18:38 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-30 15:18:38 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[com.hyeon.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 15:18:42 [RestfulapiApplication:56] - Started RestfulapiApplication in 8.897 seconds (process running for 11.325)
+[INFO ] 24-10-30 15:19:01 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 15:19:02 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 15:19:02 [MyInterceptor:80] - [GET] http://localhost:8080/calc
+[INFO ] 24-10-30 15:19:02 [MyInterceptor:125] - running time : 549(ms)
+[INFO ] 24-10-30 15:19:06 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 15:19:06 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 15:19:06 [MyInterceptor:80] - [GET] http://localhost:8080/calc
+[INFO ] 24-10-30 15:19:06 [MyInterceptor:125] - running time : 89(ms)
+[INFO ] 24-10-30 15:21:43 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 10568 (D:\HYEON\08_Spring\09_restfulapi\build\classes\java\main started by user in D:\HYEON\08_Spring\09_restfulapi)
+[DEBUG] 24-10-30 15:21:43 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 15:21:43 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-30 15:21:44 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-30 15:21:44 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[com.hyeon.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 15:21:46 [RestfulapiApplication:56] - Started RestfulapiApplication in 3.303 seconds (process running for 4.091)
+[INFO ] 24-10-30 15:21:52 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 15:21:53 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 15:21:53 [MyInterceptor:80] - [GET] http://localhost:8080/calc
+[INFO ] 24-10-30 15:21:53 [MyInterceptor:125] - running time : 188(ms)
+[INFO ] 24-10-30 15:22:59 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 10732 (D:\HYEON\08_Spring\09_restfulapi\build\classes\java\main started by user in D:\HYEON\08_Spring\09_restfulapi)
+[DEBUG] 24-10-30 15:22:59 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 15:22:59 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-30 15:23:00 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-30 15:23:00 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[com.hyeon.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 15:23:01 [RestfulapiApplication:56] - Started RestfulapiApplication in 3.251 seconds (process running for 3.967)
+[INFO ] 24-10-30 15:23:08 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 15:23:08 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 15:23:08 [MyInterceptor:80] - [GET] http://localhost:8080/calc
+[INFO ] 24-10-30 15:23:08 [MyInterceptor:125] - running time : 188(ms)
+[INFO ] 24-10-30 15:26:48 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 15:26:48 [MyInterceptor:66] - [Client] 127.0.0.1, Other, Windows, 10, Electron, 30.5
+[INFO ] 24-10-30 15:26:48 [MyInterceptor:80] - [GET] http://127.0.0.1:8080/calc?vscodeBrowserReqId=1730269608386
+[INFO ] 24-10-30 15:26:48 [MyInterceptor:88] - (param) <-- vscodeBrowserReqId = 1730269608386
+[INFO ] 24-10-30 15:26:48 [MyInterceptor:125] - running time : 56(ms)
+[INFO ] 24-10-30 15:30:19 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 10732 (D:\HYEON\08_Spring\09_restfulapi\build\classes\java\main started by user in D:\HYEON\08_Spring\09_restfulapi)
+[DEBUG] 24-10-30 15:30:19 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 15:30:19 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 24-10-30 15:30:19 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[com.hyeon.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 15:30:20 [RestfulapiApplication:56] - Started RestfulapiApplication in 1.244 seconds (process running for 442.579)
+[INFO ] 24-10-30 15:31:08 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 15:31:08 [MyInterceptor:66] - [Client] 127.0.0.1, Other, Windows, 10, Electron, 30.5
+[INFO ] 24-10-30 15:31:08 [MyInterceptor:80] - [GET] http://127.0.0.1:8080/calc?vscodeBrowserReqId=1730269868597
+[INFO ] 24-10-30 15:31:08 [MyInterceptor:88] - (param) <-- vscodeBrowserReqId = 1730269868597
+[INFO ] 24-10-30 15:31:08 [MyInterceptor:125] - running time : 181(ms)
+[INFO ] 24-10-30 15:31:44 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 15:31:44 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 15:31:44 [MyInterceptor:80] - [GET] http://localhost:8080/calc
+[INFO ] 24-10-30 15:31:44 [MyInterceptor:125] - running time : 109(ms)
+[INFO ] 24-10-30 15:33:02 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 15:33:02 [MyInterceptor:66] - [Client] 192.168.10.185, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 15:33:02 [MyInterceptor:80] - [GET] http://192.168.10.185:8080/calc
+[INFO ] 24-10-30 15:33:02 [MyInterceptor:125] - running time : 119(ms)
+[INFO ] 24-10-30 15:36:45 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 10732 (D:\HYEON\08_Spring\09_restfulapi\build\classes\java\main started by user in D:\HYEON\08_Spring\09_restfulapi)
+[DEBUG] 24-10-30 15:36:45 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 15:36:45 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 24-10-30 15:36:46 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[com.hyeon.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 15:36:48 [RestfulapiApplication:56] - Started RestfulapiApplication in 3.542 seconds (process running for 830.637)
+[INFO ] 24-10-30 15:46:04 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 14272 (D:\HYEON\08_Spring\09_restfulapi\build\classes\java\main started by user in D:\HYEON\08_Spring\09_restfulapi)
+[DEBUG] 24-10-30 15:46:04 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 15:46:04 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-30 15:46:05 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-30 15:46:05 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[com.hyeon.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 15:46:07 [RestfulapiApplication:56] - Started RestfulapiApplication in 3.426 seconds (process running for 4.416)
+[INFO ] 24-10-30 15:46:12 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 15:46:13 [MyInterceptor:66] - [Client] 192.168.10.185, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 15:46:13 [MyInterceptor:80] - [GET] http://192.168.10.185:8080/calc
+[INFO ] 24-10-30 15:46:13 [MyInterceptor:125] - running time : 173(ms)
+[INFO ] 24-10-30 15:46:47 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 5752 (D:\HYEON\08_Spring\09_restfulapi\build\classes\java\main started by user in D:\HYEON\08_Spring\09_restfulapi)
+[DEBUG] 24-10-30 15:46:47 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 15:46:47 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-30 15:46:48 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-30 15:46:48 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[com.hyeon.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 15:46:50 [RestfulapiApplication:56] - Started RestfulapiApplication in 3.695 seconds (process running for 5.021)
+[INFO ] 24-10-30 15:46:54 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 15:46:54 [MyInterceptor:66] - [Client] 192.168.10.185, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 15:46:54 [MyInterceptor:80] - [GET] http://192.168.10.185:8080/calc
+[INFO ] 24-10-30 15:46:54 [MyInterceptor:125] - running time : 183(ms)
+[INFO ] 24-10-30 15:47:35 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 16696 (D:\HYEON\08_Spring\09_restfulapi\build\classes\java\main started by user in D:\HYEON\08_Spring\09_restfulapi)
+[DEBUG] 24-10-30 15:47:35 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 15:47:35 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-30 15:47:37 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-30 15:47:37 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[com.hyeon.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 15:47:39 [RestfulapiApplication:56] - Started RestfulapiApplication in 3.937 seconds (process running for 5.353)
+[INFO ] 24-10-30 15:47:40 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 15:47:40 [MyInterceptor:66] - [Client] 192.168.10.185, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 15:47:40 [MyInterceptor:80] - [GET] http://192.168.10.185:8080/calc
+[INFO ] 24-10-30 15:47:41 [MyInterceptor:125] - running time : 384(ms)
+[INFO ] 24-10-30 15:48:36 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 16696 (D:\HYEON\08_Spring\09_restfulapi\build\classes\java\main started by user in D:\HYEON\08_Spring\09_restfulapi)
+[DEBUG] 24-10-30 15:48:36 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 15:48:36 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 24-10-30 15:48:37 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[com.hyeon.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 15:48:38 [RestfulapiApplication:56] - Started RestfulapiApplication in 1.65 seconds (process running for 64.18)
+[INFO ] 24-10-30 15:49:02 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 16696 (D:\HYEON\08_Spring\09_restfulapi\build\classes\java\main started by user in D:\HYEON\08_Spring\09_restfulapi)
+[DEBUG] 24-10-30 15:49:02 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 15:49:02 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 24-10-30 15:49:02 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[com.hyeon.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 15:49:03 [RestfulapiApplication:56] - Started RestfulapiApplication in 1.434 seconds (process running for 89.612)
+[INFO ] 24-10-30 15:49:25 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 16696 (D:\HYEON\08_Spring\09_restfulapi\build\classes\java\main started by user in D:\HYEON\08_Spring\09_restfulapi)
+[DEBUG] 24-10-30 15:49:25 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 15:49:25 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 24-10-30 15:49:26 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[com.hyeon.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 15:49:27 [RestfulapiApplication:56] - Started RestfulapiApplication in 3.042 seconds (process running for 114.033)
+[INFO ] 24-10-30 15:49:30 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 15:49:30 [MyInterceptor:66] - [Client] 192.168.10.185, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 15:49:30 [MyInterceptor:80] - [GET] http://192.168.10.185:8080/calc
+[INFO ] 24-10-30 15:49:30 [MyInterceptor:125] - running time : 336(ms)
+[INFO ] 24-10-30 16:14:12 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 7444 (D:\HYEON\08_Spring\09_restfulapi\build\classes\java\main started by user in D:\HYEON\08_Spring\09_restfulapi)
+[DEBUG] 24-10-30 16:14:12 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 16:14:12 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-30 16:14:14 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-30 16:14:14 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[com.hyeon.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 16:14:16 [RestfulapiApplication:56] - Started RestfulapiApplication in 4.296 seconds (process running for 5.271)
+[INFO ] 24-10-30 16:14:20 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 16:14:20 [MyInterceptor:66] - [Client] 192.168.10.185, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 16:14:20 [MyInterceptor:80] - [GET] http://192.168.10.185:8080/calc
+[INFO ] 24-10-30 16:14:20 [MyInterceptor:125] - running time : 165(ms)
+[INFO ] 24-10-30 16:15:19 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 8688 (D:\HYEON\08_Spring\09_restfulapi\build\classes\java\main started by user in D:\HYEON\08_Spring\09_restfulapi)
+[DEBUG] 24-10-30 16:15:19 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 16:15:19 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-30 16:15:21 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-30 16:15:21 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[com.hyeon.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 16:15:23 [RestfulapiApplication:56] - Started RestfulapiApplication in 4.095 seconds (process running for 5.273)
+[INFO ] 24-10-30 16:15:52 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 16:15:52 [MyInterceptor:66] - [Client] 192.168.10.185, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 16:15:52 [MyInterceptor:80] - [GET] http://192.168.10.185:8080/calc
+[INFO ] 24-10-30 16:15:52 [MyInterceptor:125] - running time : 188(ms)
+[INFO ] 24-10-30 16:16:31 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 17168 (D:\HYEON\08_Spring\09_restfulapi\build\classes\java\main started by user in D:\HYEON\08_Spring\09_restfulapi)
+[DEBUG] 24-10-30 16:16:31 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 16:16:31 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-30 16:16:33 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-30 16:16:33 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[com.hyeon.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 16:16:34 [RestfulapiApplication:56] - Started RestfulapiApplication in 3.697 seconds (process running for 4.43)
+[INFO ] 24-10-30 16:16:37 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 16:16:37 [MyInterceptor:66] - [Client] 192.168.10.185, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 16:16:37 [MyInterceptor:80] - [GET] http://192.168.10.185:8080/calc
+[INFO ] 24-10-30 16:16:38 [MyInterceptor:125] - running time : 313(ms)
+[INFO ] 24-10-30 16:17:14 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 1820 (D:\HYEON\08_Spring\09_restfulapi\build\classes\java\main started by user in D:\HYEON\08_Spring\09_restfulapi)
+[DEBUG] 24-10-30 16:17:14 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 16:17:14 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-30 16:17:15 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-30 16:17:15 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[com.hyeon.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 16:17:17 [RestfulapiApplication:56] - Started RestfulapiApplication in 3.449 seconds (process running for 4.212)
+[INFO ] 24-10-30 16:17:28 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 16:17:28 [MyInterceptor:66] - [Client] 192.168.10.185, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 16:17:28 [MyInterceptor:80] - [GET] http://192.168.10.185:8080/calc
+[INFO ] 24-10-30 16:17:28 [MyInterceptor:125] - running time : 184(ms)
+[INFO ] 24-10-30 16:24:23 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 15368 (D:\HYEON\08_Spring\09_restfulapi\build\classes\java\main started by user in D:\HYEON\08_Spring\09_restfulapi)
+[DEBUG] 24-10-30 16:24:23 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 16:24:23 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-30 16:24:25 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-30 16:24:25 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[com.hyeon.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 16:24:27 [RestfulapiApplication:56] - Started RestfulapiApplication in 3.773 seconds (process running for 4.52)
+[INFO ] 24-10-30 16:24:34 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 16:24:34 [MyInterceptor:66] - [Client] 192.168.10.185, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 16:24:34 [MyInterceptor:80] - [GET] http://192.168.10.185:8080/calc
+[INFO ] 24-10-30 16:24:34 [MyInterceptor:125] - running time : 204(ms)
+[INFO ] 24-10-30 16:24:39 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 16:24:39 [MyInterceptor:66] - [Client] 192.168.10.185, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 16:24:39 [MyInterceptor:80] - [GET] http://192.168.10.185:8080/my_calc?x=&calc=%2B&y=
+[INFO ] 24-10-30 16:24:39 [MyInterceptor:88] - (param) <-- x = 
+[INFO ] 24-10-30 16:24:39 [MyInterceptor:88] - (param) <-- calc = +
+[INFO ] 24-10-30 16:24:39 [MyInterceptor:88] - (param) <-- y = 
+[INFO ] 24-10-30 16:24:39 [MyInterceptor:99] - - REFERER : time=4701, url=http://192.168.10.185:8080/calc
+[INFO ] 24-10-30 16:24:39 [MyInterceptor:125] - running time : 73(ms)
+[INFO ] 24-10-30 16:24:43 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 16:24:43 [MyInterceptor:66] - [Client] 192.168.10.185, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 16:24:43 [MyInterceptor:80] - [POST] http://192.168.10.185:8080/my_calc
+[INFO ] 24-10-30 16:24:43 [MyInterceptor:88] - (param) <-- x = 
+[INFO ] 24-10-30 16:24:43 [MyInterceptor:88] - (param) <-- calc = -
+[INFO ] 24-10-30 16:24:43 [MyInterceptor:88] - (param) <-- y = 
+[INFO ] 24-10-30 16:24:43 [MyInterceptor:99] - - REFERER : time=3930, url=http://192.168.10.185:8080/calc
+[INFO ] 24-10-30 16:24:43 [MyInterceptor:125] - running time : 46(ms)
+[INFO ] 24-10-30 16:24:44 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 16:24:44 [MyInterceptor:66] - [Client] 192.168.10.185, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 16:24:44 [MyInterceptor:80] - [POST] http://192.168.10.185:8080/my_calc
+[INFO ] 24-10-30 16:24:44 [MyInterceptor:88] - (param) <-- x = 
+[INFO ] 24-10-30 16:24:44 [MyInterceptor:88] - (param) <-- calc = -
+[INFO ] 24-10-30 16:24:44 [MyInterceptor:88] - (param) <-- y = 
+[INFO ] 24-10-30 16:24:44 [MyInterceptor:99] - - REFERER : time=946, url=http://192.168.10.185:8080/calc
+[INFO ] 24-10-30 16:24:44 [MyInterceptor:125] - running time : 54(ms)
+[INFO ] 24-10-30 16:24:45 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 16:24:45 [MyInterceptor:66] - [Client] 192.168.10.185, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 16:24:45 [MyInterceptor:80] - [POST] http://192.168.10.185:8080/my_calc
+[INFO ] 24-10-30 16:24:45 [MyInterceptor:88] - (param) <-- x = 
+[INFO ] 24-10-30 16:24:45 [MyInterceptor:88] - (param) <-- calc = -
+[INFO ] 24-10-30 16:24:45 [MyInterceptor:88] - (param) <-- y = 
+[INFO ] 24-10-30 16:24:45 [MyInterceptor:99] - - REFERER : time=374, url=http://192.168.10.185:8080/calc
+[INFO ] 24-10-30 16:24:45 [MyInterceptor:125] - running time : 42(ms)
+[INFO ] 24-10-30 16:24:48 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 16:24:48 [MyInterceptor:66] - [Client] 192.168.10.185, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 16:24:48 [MyInterceptor:80] - [PUT] http://192.168.10.185:8080/my_calc
+[INFO ] 24-10-30 16:24:48 [MyInterceptor:88] - (param) <-- x = 
+[INFO ] 24-10-30 16:24:48 [MyInterceptor:88] - (param) <-- calc = x
+[INFO ] 24-10-30 16:24:48 [MyInterceptor:88] - (param) <-- y = 
+[INFO ] 24-10-30 16:24:48 [MyInterceptor:99] - - REFERER : time=2912, url=http://192.168.10.185:8080/calc
+[INFO ] 24-10-30 16:24:48 [MyInterceptor:125] - running time : 33(ms)
+[INFO ] 24-10-30 16:24:50 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 16:24:50 [MyInterceptor:66] - [Client] 192.168.10.185, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 16:24:50 [MyInterceptor:80] - [DELETE] http://192.168.10.185:8080/my_calc
+[INFO ] 24-10-30 16:24:50 [MyInterceptor:88] - (param) <-- x = 
+[INFO ] 24-10-30 16:24:50 [MyInterceptor:88] - (param) <-- calc = /
+[INFO ] 24-10-30 16:24:50 [MyInterceptor:88] - (param) <-- y = 
+[INFO ] 24-10-30 16:24:50 [MyInterceptor:99] - - REFERER : time=2337, url=http://192.168.10.185:8080/calc
+[INFO ] 24-10-30 16:24:50 [MyInterceptor:125] - running time : 29(ms)
+[INFO ] 24-10-30 16:25:02 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 16:25:02 [MyInterceptor:66] - [Client] 192.168.10.185, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 16:25:02 [MyInterceptor:80] - [GET] http://192.168.10.185:8080/my_calc?x=1&calc=%2B&y=2
+[INFO ] 24-10-30 16:25:02 [MyInterceptor:88] - (param) <-- x = 1
+[INFO ] 24-10-30 16:25:02 [MyInterceptor:88] - (param) <-- calc = +
+[INFO ] 24-10-30 16:25:02 [MyInterceptor:88] - (param) <-- y = 2
+[INFO ] 24-10-30 16:25:02 [MyInterceptor:99] - - REFERER : time=11737, url=http://192.168.10.185:8080/calc
+[INFO ] 24-10-30 16:25:02 [MyInterceptor:125] - running time : 28(ms)
+[INFO ] 24-10-30 16:25:03 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 16:25:03 [MyInterceptor:66] - [Client] 192.168.10.185, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 16:25:03 [MyInterceptor:80] - [GET] http://192.168.10.185:8080/my_calc?x=1&calc=%2B&y=2
+[INFO ] 24-10-30 16:25:03 [MyInterceptor:88] - (param) <-- x = 1
+[INFO ] 24-10-30 16:25:03 [MyInterceptor:88] - (param) <-- calc = +
+[INFO ] 24-10-30 16:25:03 [MyInterceptor:88] - (param) <-- y = 2
+[INFO ] 24-10-30 16:25:03 [MyInterceptor:99] - - REFERER : time=924, url=http://192.168.10.185:8080/calc
+[INFO ] 24-10-30 16:25:03 [MyInterceptor:125] - running time : 24(ms)
+[INFO ] 24-10-30 16:25:03 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 16:25:03 [MyInterceptor:66] - [Client] 192.168.10.185, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 16:25:03 [MyInterceptor:80] - [GET] http://192.168.10.185:8080/my_calc?x=1&calc=%2B&y=2
+[INFO ] 24-10-30 16:25:03 [MyInterceptor:88] - (param) <-- x = 1
+[INFO ] 24-10-30 16:25:03 [MyInterceptor:88] - (param) <-- calc = +
+[INFO ] 24-10-30 16:25:03 [MyInterceptor:88] - (param) <-- y = 2
+[INFO ] 24-10-30 16:25:03 [MyInterceptor:99] - - REFERER : time=140, url=http://192.168.10.185:8080/calc
+[INFO ] 24-10-30 16:25:03 [MyInterceptor:125] - running time : 23(ms)
+[INFO ] 24-10-30 16:26:12 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 1572 (D:\HYEON\08_Spring\09_restfulapi\build\classes\java\main started by user in D:\HYEON\08_Spring\09_restfulapi)
+[DEBUG] 24-10-30 16:26:12 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 16:26:12 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-30 16:26:13 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-30 16:26:13 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[com.hyeon.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 16:26:15 [RestfulapiApplication:56] - Started RestfulapiApplication in 4.11 seconds (process running for 4.94)
+[INFO ] 24-10-30 16:26:17 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 16:26:17 [MyInterceptor:66] - [Client] 192.168.10.185, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 16:26:17 [MyInterceptor:80] - [GET] http://192.168.10.185:8080/my_calc?x=1&calc=%2B&y=2
+[INFO ] 24-10-30 16:26:17 [MyInterceptor:88] - (param) <-- x = 1
+[INFO ] 24-10-30 16:26:17 [MyInterceptor:88] - (param) <-- calc = +
+[INFO ] 24-10-30 16:26:17 [MyInterceptor:88] - (param) <-- y = 2
+[INFO ] 24-10-30 16:26:17 [MyInterceptor:125] - running time : 213(ms)
+[INFO ] 24-10-30 16:26:24 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 16:26:24 [MyInterceptor:66] - [Client] 192.168.10.185, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 16:26:24 [MyInterceptor:80] - [GET] http://192.168.10.185:8080/calc
+[INFO ] 24-10-30 16:26:24 [MyInterceptor:125] - running time : 55(ms)
+[INFO ] 24-10-30 16:26:24 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 16:26:24 [MyInterceptor:66] - [Client] 192.168.10.185, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 16:26:24 [MyInterceptor:80] - [GET] http://192.168.10.185:8080/calc
+[INFO ] 24-10-30 16:26:24 [MyInterceptor:125] - running time : 54(ms)
+[INFO ] 24-10-30 16:26:27 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 16:26:27 [MyInterceptor:66] - [Client] 192.168.10.185, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 16:26:27 [MyInterceptor:80] - [GET] http://192.168.10.185:8080/my_calc?x=&calc=%2B&y=
+[INFO ] 24-10-30 16:26:27 [MyInterceptor:88] - (param) <-- x = 
+[INFO ] 24-10-30 16:26:27 [MyInterceptor:88] - (param) <-- calc = +
+[INFO ] 24-10-30 16:26:27 [MyInterceptor:88] - (param) <-- y = 
+[INFO ] 24-10-30 16:26:27 [MyInterceptor:99] - - REFERER : time=2839, url=http://192.168.10.185:8080/calc
+[INFO ] 24-10-30 16:26:27 [MyInterceptor:125] - running time : 54(ms)
+[INFO ] 24-10-30 16:26:30 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 16:26:30 [MyInterceptor:66] - [Client] 192.168.10.185, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 16:26:30 [MyInterceptor:80] - [PUT] http://192.168.10.185:8080/my_calc
+[INFO ] 24-10-30 16:26:30 [MyInterceptor:88] - (param) <-- x = 
+[INFO ] 24-10-30 16:26:30 [MyInterceptor:88] - (param) <-- calc = x
+[INFO ] 24-10-30 16:26:30 [MyInterceptor:88] - (param) <-- y = 
+[INFO ] 24-10-30 16:26:30 [MyInterceptor:99] - - REFERER : time=3094, url=http://192.168.10.185:8080/calc
+[INFO ] 24-10-30 16:26:30 [MyInterceptor:125] - running time : 47(ms)
+[INFO ] 24-10-30 16:26:32 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 16:26:32 [MyInterceptor:66] - [Client] 192.168.10.185, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 16:26:32 [MyInterceptor:80] - [DELETE] http://192.168.10.185:8080/my_calc
+[INFO ] 24-10-30 16:26:32 [MyInterceptor:88] - (param) <-- x = 
+[INFO ] 24-10-30 16:26:32 [MyInterceptor:88] - (param) <-- calc = /
+[INFO ] 24-10-30 16:26:33 [MyInterceptor:88] - (param) <-- y = 
+[INFO ] 24-10-30 16:26:33 [MyInterceptor:99] - - REFERER : time=2061, url=http://192.168.10.185:8080/calc
+[INFO ] 24-10-30 16:26:33 [MyInterceptor:125] - running time : 44(ms)
+[INFO ] 24-10-30 16:48:02 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 19684 (D:\HYEON\08_Spring\09_restfulapi\build\classes\java\main started by user in D:\HYEON\08_Spring\09_restfulapi)
+[DEBUG] 24-10-30 16:48:02 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 16:48:02 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-30 16:48:03 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-30 16:48:03 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[com.hyeon.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 16:48:05 [RestfulapiApplication:56] - Started RestfulapiApplication in 3.287 seconds (process running for 4.047)
+[INFO ] 24-10-30 16:48:20 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 16:48:20 [MyInterceptor:66] - [Client] 192.168.10.185, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 16:48:20 [MyInterceptor:80] - [GET] http://192.168.10.185:8080/calc
+[INFO ] 24-10-30 16:48:20 [MyInterceptor:125] - running time : 163(ms)
+[INFO ] 24-10-30 16:48:26 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 16:48:26 [MyInterceptor:66] - [Client] 192.168.10.185, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 16:48:26 [MyInterceptor:80] - [GET] http://192.168.10.185:8080/my_calc?x=123&calc=%2B&y=234
+[INFO ] 24-10-30 16:48:26 [MyInterceptor:88] - (param) <-- x = 123
+[INFO ] 24-10-30 16:48:26 [MyInterceptor:88] - (param) <-- calc = +
+[INFO ] 24-10-30 16:48:26 [MyInterceptor:88] - (param) <-- y = 234
+[INFO ] 24-10-30 16:48:26 [MyInterceptor:99] - - REFERER : time=5641, url=http://192.168.10.185:8080/calc
+[INFO ] 24-10-30 16:48:26 [MyInterceptor:125] - running time : 65(ms)
+[INFO ] 24-10-30 16:48:28 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 16:48:28 [MyInterceptor:66] - [Client] 192.168.10.185, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 16:48:28 [MyInterceptor:80] - [GET] http://192.168.10.185:8080/my_calc?x=123&calc=%2B&y=234
+[INFO ] 24-10-30 16:48:28 [MyInterceptor:88] - (param) <-- x = 123
+[INFO ] 24-10-30 16:48:28 [MyInterceptor:88] - (param) <-- calc = +
+[INFO ] 24-10-30 16:48:28 [MyInterceptor:88] - (param) <-- y = 234
+[INFO ] 24-10-30 16:48:28 [MyInterceptor:99] - - REFERER : time=2603, url=http://192.168.10.185:8080/calc
+[INFO ] 24-10-30 16:48:28 [MyInterceptor:125] - running time : 49(ms)
+[INFO ] 24-10-30 16:48:31 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 16:48:31 [MyInterceptor:66] - [Client] 192.168.10.185, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 16:48:31 [MyInterceptor:80] - [POST] http://192.168.10.185:8080/my_calc
+[INFO ] 24-10-30 16:48:31 [MyInterceptor:88] - (param) <-- x = 123
+[INFO ] 24-10-30 16:48:31 [MyInterceptor:88] - (param) <-- calc = -
+[INFO ] 24-10-30 16:48:31 [MyInterceptor:88] - (param) <-- y = 234
+[INFO ] 24-10-30 16:48:31 [MyInterceptor:99] - - REFERER : time=2353, url=http://192.168.10.185:8080/calc
+[INFO ] 24-10-30 16:48:31 [MyInterceptor:125] - running time : 39(ms)
+[INFO ] 24-10-30 16:48:32 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 16:48:32 [MyInterceptor:66] - [Client] 192.168.10.185, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 16:48:32 [MyInterceptor:80] - [PUT] http://192.168.10.185:8080/my_calc
+[INFO ] 24-10-30 16:48:32 [MyInterceptor:88] - (param) <-- x = 123
+[INFO ] 24-10-30 16:48:32 [MyInterceptor:88] - (param) <-- calc = x
+[INFO ] 24-10-30 16:48:32 [MyInterceptor:88] - (param) <-- y = 234
+[INFO ] 24-10-30 16:48:32 [MyInterceptor:99] - - REFERER : time=1755, url=http://192.168.10.185:8080/calc
+[INFO ] 24-10-30 16:48:32 [MyInterceptor:125] - running time : 39(ms)
+[INFO ] 24-10-30 16:48:34 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 16:48:34 [MyInterceptor:66] - [Client] 192.168.10.185, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 16:48:34 [MyInterceptor:80] - [DELETE] http://192.168.10.185:8080/my_calc
+[INFO ] 24-10-30 16:48:34 [MyInterceptor:88] - (param) <-- x = 123
+[INFO ] 24-10-30 16:48:34 [MyInterceptor:88] - (param) <-- calc = /
+[INFO ] 24-10-30 16:48:34 [MyInterceptor:88] - (param) <-- y = 234
+[INFO ] 24-10-30 16:48:34 [MyInterceptor:99] - - REFERER : time=1843, url=http://192.168.10.185:8080/calc
+[INFO ] 24-10-30 16:48:34 [MyInterceptor:125] - running time : 35(ms)
+[INFO ] 24-10-30 16:48:40 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 16:48:40 [MyInterceptor:66] - [Client] 192.168.10.185, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 16:48:40 [MyInterceptor:80] - [DELETE] http://192.168.10.185:8080/my_calc
+[INFO ] 24-10-30 16:48:40 [MyInterceptor:88] - (param) <-- x = 123
+[INFO ] 24-10-30 16:48:40 [MyInterceptor:88] - (param) <-- calc = /
+[INFO ] 24-10-30 16:48:40 [MyInterceptor:88] - (param) <-- y = 0
+[INFO ] 24-10-30 16:48:40 [MyInterceptor:99] - - REFERER : time=5671, url=http://192.168.10.185:8080/calc
+[INFO ] 24-10-30 16:48:40 [MyInterceptor:125] - running time : 35(ms)
+[INFO ] 24-10-30 16:52:09 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 19684 (D:\HYEON\08_Spring\09_restfulapi\build\classes\java\main started by user in D:\HYEON\08_Spring\09_restfulapi)
+[DEBUG] 24-10-30 16:52:09 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 16:52:09 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 24-10-30 16:52:10 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[com.hyeon.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 16:52:10 [RestfulapiApplication:56] - Started RestfulapiApplication in 1.947 seconds (process running for 249.475)
+[INFO ] 24-10-30 16:52:12 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 19684 (D:\HYEON\08_Spring\09_restfulapi\build\classes\java\main started by user in D:\HYEON\08_Spring\09_restfulapi)
+[DEBUG] 24-10-30 16:52:12 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 16:52:12 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 24-10-30 16:52:13 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[com.hyeon.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 16:52:14 [RestfulapiApplication:56] - Started RestfulapiApplication in 1.75 seconds (process running for 252.748)
+[INFO ] 24-10-30 16:52:19 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 16:52:19 [MyInterceptor:66] - [Client] 192.168.10.185, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 16:52:19 [MyInterceptor:80] - [GET] http://192.168.10.185:8080/calc
+[INFO ] 24-10-30 16:52:19 [MyInterceptor:125] - running time : 56(ms)
+[INFO ] 24-10-30 16:52:25 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 16:52:25 [MyInterceptor:66] - [Client] 192.168.10.185, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 16:52:25 [MyInterceptor:80] - [DELETE] http://192.168.10.185:8080/my_calc
+[INFO ] 24-10-30 16:52:25 [MyInterceptor:88] - (param) <-- x = 123
+[INFO ] 24-10-30 16:52:25 [MyInterceptor:88] - (param) <-- calc = /
+[INFO ] 24-10-30 16:52:25 [MyInterceptor:88] - (param) <-- y = 0
+[INFO ] 24-10-30 16:52:25 [MyInterceptor:99] - - REFERER : time=6207, url=http://192.168.10.185:8080/calc
+[INFO ] 24-10-30 16:52:25 [MyInterceptor:125] - running time : 82(ms)
+[INFO ] 24-10-30 16:52:41 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 7300 (D:\HYEON\08_Spring\09_restfulapi\build\classes\java\main started by user in D:\HYEON\08_Spring\09_restfulapi)
+[DEBUG] 24-10-30 16:52:42 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 16:52:42 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-30 16:52:45 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-30 16:52:45 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[com.hyeon.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 16:52:50 [RestfulapiApplication:56] - Started RestfulapiApplication in 10.781 seconds (process running for 13.047)
+[INFO ] 24-10-30 16:52:56 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 16:52:56 [MyInterceptor:66] - [Client] 192.168.10.185, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 16:52:56 [MyInterceptor:80] - [GET] http://192.168.10.185:8080/calc
+[INFO ] 24-10-30 16:52:56 [MyInterceptor:125] - running time : 345(ms)
+[INFO ] 24-10-30 16:54:00 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 18692 (D:\HYEON\08_Spring\09_restfulapi\build\classes\java\main started by user in D:\HYEON\08_Spring\09_restfulapi)
+[DEBUG] 24-10-30 16:54:00 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 16:54:00 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-30 16:54:02 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-30 16:54:02 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[com.hyeon.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 16:54:05 [RestfulapiApplication:56] - Started RestfulapiApplication in 6.043 seconds (process running for 8.741)
+[INFO ] 24-10-30 16:54:58 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 17660 (D:\HYEON\08_Spring\09_restfulapi\build\classes\java\main started by user in D:\HYEON\08_Spring\09_restfulapi)
+[DEBUG] 24-10-30 16:54:58 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 16:54:58 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-30 16:55:00 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-30 16:55:00 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[com.hyeon.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 16:55:01 [RestfulapiApplication:56] - Started RestfulapiApplication in 3.458 seconds (process running for 4.392)
+[INFO ] 24-10-30 16:55:09 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 16:55:10 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 16:55:10 [MyInterceptor:80] - [GET] http://localhost:8080/calc
+[INFO ] 24-10-30 16:55:10 [MyInterceptor:125] - running time : 316(ms)
+[INFO ] 24-10-30 16:55:16 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 16:55:16 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 16:55:16 [MyInterceptor:80] - [DELETE] http://localhost:8080/my_calc
+[INFO ] 24-10-30 16:55:16 [MyInterceptor:88] - (param) <-- x = 123
+[INFO ] 24-10-30 16:55:16 [MyInterceptor:88] - (param) <-- calc = /
+[INFO ] 24-10-30 16:55:16 [MyInterceptor:88] - (param) <-- y = 0
+[INFO ] 24-10-30 16:55:16 [MyInterceptor:99] - - REFERER : time=6478, url=http://localhost:8080/calc
+[INFO ] 24-10-30 16:55:16 [MyInterceptor:125] - running time : 73(ms)
+[INFO ] 24-10-30 17:02:24 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 12020 (D:\HYEON\08_Spring\09_restfulapi\build\classes\java\main started by user in D:\HYEON\08_Spring\09_restfulapi)
+[DEBUG] 24-10-30 17:02:24 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 17:02:24 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-30 17:02:25 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-30 17:02:25 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[com.hyeon.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 17:02:27 [RestfulapiApplication:56] - Started RestfulapiApplication in 4.135 seconds (process running for 5.301)
+[INFO ] 24-10-30 17:02:27 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 17:02:28 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 17:02:28 [MyInterceptor:80] - [GET] http://localhost:8080/calc
+[INFO ] 24-10-30 17:02:28 [MyInterceptor:125] - running time : 193(ms)
+[INFO ] 24-10-30 17:02:30 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 17:02:30 [MyInterceptor:66] - [Client] 127.0.0.1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 17:02:30 [MyInterceptor:80] - [DELETE] http://localhost:8080/my_calc
+[INFO ] 24-10-30 17:02:30 [MyInterceptor:88] - (param) <-- x = 123
+[INFO ] 24-10-30 17:02:30 [MyInterceptor:88] - (param) <-- calc = /
+[INFO ] 24-10-30 17:02:30 [MyInterceptor:88] - (param) <-- y = 0
+[INFO ] 24-10-30 17:02:30 [MyInterceptor:99] - - REFERER : time=2241, url=http://localhost:8080/calc
+[INFO ] 24-10-30 17:02:30 [MyInterceptor:125] - running time : 87(ms)
+[INFO ] 24-10-30 17:02:34 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 17:02:34 [MyInterceptor:66] - [Client] 127.0.0.1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 17:02:34 [MyInterceptor:80] - [DELETE] http://localhost:8080/my_calc
+[INFO ] 24-10-30 17:02:34 [MyInterceptor:88] - (param) <-- x = 123
+[INFO ] 24-10-30 17:02:34 [MyInterceptor:88] - (param) <-- calc = /
+[INFO ] 24-10-30 17:02:34 [MyInterceptor:88] - (param) <-- y = 123
+[INFO ] 24-10-30 17:02:34 [MyInterceptor:99] - - REFERER : time=3708, url=http://localhost:8080/calc
+[INFO ] 24-10-30 17:02:34 [MyInterceptor:125] - running time : 54(ms)
+[INFO ] 24-10-30 17:02:41 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 17:02:41 [MyInterceptor:66] - [Client] 127.0.0.1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 17:02:41 [MyInterceptor:80] - [POST] http://localhost:8080/my_calc
+[INFO ] 24-10-30 17:02:41 [MyInterceptor:88] - (param) <-- x = 123
+[INFO ] 24-10-30 17:02:41 [MyInterceptor:88] - (param) <-- calc = -
+[INFO ] 24-10-30 17:02:41 [MyInterceptor:88] - (param) <-- y = 123
+[INFO ] 24-10-30 17:02:41 [MyInterceptor:99] - - REFERER : time=7281, url=http://localhost:8080/calc
+[INFO ] 24-10-30 17:02:41 [MyInterceptor:125] - running time : 48(ms)
+[INFO ] 24-10-30 17:06:25 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 17:06:25 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 17:06:25 [MyInterceptor:80] - [POST] http://localhost:8080/my_calc
+[INFO ] 24-10-30 17:06:25 [MyInterceptor:88] - (param) <-- x = 123
+[INFO ] 24-10-30 17:06:25 [MyInterceptor:88] - (param) <-- calc = -
+[INFO ] 24-10-30 17:06:25 [MyInterceptor:88] - (param) <-- y = 0
+[INFO ] 24-10-30 17:06:25 [MyInterceptor:99] - - REFERER : time=223526, url=http://localhost:8080/calc
+[INFO ] 24-10-30 17:06:25 [MyInterceptor:125] - running time : 44(ms)
+[INFO ] 24-10-30 17:06:28 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 17:06:28 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 17:06:28 [MyInterceptor:80] - [DELETE] http://localhost:8080/my_calc
+[INFO ] 24-10-30 17:06:28 [MyInterceptor:88] - (param) <-- x = 123
+[INFO ] 24-10-30 17:06:28 [MyInterceptor:88] - (param) <-- calc = /
+[INFO ] 24-10-30 17:06:28 [MyInterceptor:88] - (param) <-- y = 0
+[INFO ] 24-10-30 17:06:28 [MyInterceptor:99] - - REFERER : time=3668, url=http://localhost:8080/calc
+[INFO ] 24-10-30 17:06:28 [MyInterceptor:125] - running time : 39(ms)
+[INFO ] 24-10-30 17:07:58 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 12020 (D:\HYEON\08_Spring\09_restfulapi\build\classes\java\main started by user in D:\HYEON\08_Spring\09_restfulapi)
+[DEBUG] 24-10-30 17:07:58 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 17:07:58 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 24-10-30 17:07:59 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[com.hyeon.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 17:08:00 [RestfulapiApplication:56] - Started RestfulapiApplication in 1.944 seconds (process running for 338.143)
+[INFO ] 24-10-30 17:08:02 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 12020 (D:\HYEON\08_Spring\09_restfulapi\build\classes\java\main started by user in D:\HYEON\08_Spring\09_restfulapi)
+[DEBUG] 24-10-30 17:08:02 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 17:08:02 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[WARN ] 24-10-30 17:08:03 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[com.hyeon.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 17:08:04 [RestfulapiApplication:56] - Started RestfulapiApplication in 1.864 seconds (process running for 341.69)
+[INFO ] 24-10-30 17:08:22 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 8676 (D:\HYEON\08_Spring\09_restfulapi\build\classes\java\main started by user in D:\HYEON\08_Spring\09_restfulapi)
+[DEBUG] 24-10-30 17:08:22 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 17:08:22 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-30 17:08:23 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-30 17:08:23 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[com.hyeon.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 17:08:25 [RestfulapiApplication:56] - Started RestfulapiApplication in 3.598 seconds (process running for 4.855)
+[INFO ] 24-10-30 17:08:34 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 17:08:34 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 17:08:34 [MyInterceptor:80] - [GET] http://localhost:8080/calc
+[INFO ] 24-10-30 17:08:34 [MyInterceptor:125] - running time : 174(ms)
+[INFO ] 24-10-30 17:08:39 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 17:08:39 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 17:08:39 [MyInterceptor:80] - [DELETE] http://localhost:8080/my_calc
+[INFO ] 24-10-30 17:08:39 [MyInterceptor:88] - (param) <-- x = 123
+[INFO ] 24-10-30 17:08:39 [MyInterceptor:88] - (param) <-- calc = /
+[INFO ] 24-10-30 17:08:39 [MyInterceptor:88] - (param) <-- y = 0
+[INFO ] 24-10-30 17:08:39 [MyInterceptor:99] - - REFERER : time=4945, url=http://localhost:8080/calc
+[INFO ] 24-10-30 17:08:39 [MyInterceptor:125] - running time : 71(ms)
+[INFO ] 24-10-30 17:16:53 [RestfulapiApplication:50] - Starting RestfulapiApplication using Java 17.0.2 with PID 16996 (D:\HYEON\08_Spring\09_restfulapi\build\classes\java\main started by user in D:\HYEON\08_Spring\09_restfulapi)
+[DEBUG] 24-10-30 17:16:53 [RestfulapiApplication:51] - Running with Spring Boot v3.3.5, Spring v6.1.14
+[INFO ] 24-10-30 17:16:53 [RestfulapiApplication:654] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 24-10-30 17:16:55 [LogFactory:109] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 24-10-30 17:16:55 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[com.hyeon.restfulapi]' package. Please check your configuration.
+[INFO ] 24-10-30 17:16:57 [RestfulapiApplication:56] - Started RestfulapiApplication in 4.07 seconds (process running for 4.936)
+[INFO ] 24-10-30 17:17:00 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 17:17:00 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 17:17:00 [MyInterceptor:80] - [GET] http://localhost:8080/calc
+[INFO ] 24-10-30 17:17:00 [MyInterceptor:125] - running time : 197(ms)
+[INFO ] 24-10-30 17:17:08 [MyInterceptor:47] - ---------- new client connect ----------
+[INFO ] 24-10-30 17:17:08 [MyInterceptor:66] - [Client] 0:0:0:0:0:0:0:1, Other, Windows, 10, Chrome, 130.0
+[INFO ] 24-10-30 17:17:08 [MyInterceptor:80] - [DELETE] http://localhost:8080/my_calc
+[INFO ] 24-10-30 17:17:08 [MyInterceptor:88] - (param) <-- x = 123
+[INFO ] 24-10-30 17:17:08 [MyInterceptor:88] - (param) <-- calc = /
+[INFO ] 24-10-30 17:17:08 [MyInterceptor:88] - (param) <-- y = 0
+[INFO ] 24-10-30 17:17:08 [MyInterceptor:99] - - REFERER : time=7817, url=http://localhost:8080/calc
+[INFO ] 24-10-30 17:17:08 [MyInterceptor:125] - running time : 89(ms)
