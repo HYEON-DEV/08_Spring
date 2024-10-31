@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+         #loading {
+            width: 100px;
+            height: 100px;
+            background: url(img/loading.gif) no-repeat center/cover;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            z-index: 9999;
+            display: none;
+        }
+        #loading .active {
+            display: block;
+        }
+
+        body {
+            font-family: Arial;
+            padding-top: 200px;
+        }
+
+        #header {
+            position: fixed;
+            background-color: white;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 0 10px 5px 10px;
+            box-sizing: border-box;
+        }
+
+        /* * { margin: 0; padding: 0; box-sizing: border-box;} */
+
+        ul { list-style-type: none; }
+
+        .list {
+            padding-left: 0;
+            li {
+                border-bottom: 1px dotted #000;
+
+                &:first-child {
+                    border-top: 1px dotted #000;
+                }
+                &:hover {
+                    background-color: rgba(0,255,0,0.2);
+                    /*background-color: #0f03;*/
+                }
+
+                a {
+                    display: block;
+                    width: auto;
+                    padding: 10px;
+                    color: #222;
+                    text-decoration: none;
+
+                    position: relative;             /*  */
+
+                    .thumb {
+                        width: 80px; height: 80px;
+                        display: block;
+
+                        img {
+                            width: 100%; height: 100%;
+                        }
+                    }
+                    
+                    .text {
+                        display: block;
+                        width: 100%;
+                        position: absolute;       /*   */                 
+                        left: 0px;
+                        top: 20px;
+                        padding-left: 100px;
+                        padding-right: 20px;
+                        
+                        span {
+                            display: block;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+
+                            &.title {
+                                font-size: 17px;
+                                font-weight: bold;
+                                line-height: 150%;
+                            }
+                            &.desc {
+                                font-size: 14px;
+                                line-height: 150%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="loading"></div>
+
+    <div id="header">
+        <h1> Kakao Blog/Cafe Search </h1>
+
+        <form id="searchForm">
+            <fieldset>
+                <select id="search-name">
+                    <option value="blog"> 블로그 검색 </option>
+                    <option value="cafe"> 카페 검색 </option>
+                </select>
+                <input type="search" id="query" placeholder="Search..." />
+                <button type="submit"> 검색 </button>
+            </fieldset>
+        </form>
+    </div>
+
+        <ul class="list">
+            <li>
+                <a href="#">
+                    <span class="thumb">
+                        <img src="img/noimage.jpg" alt="이미지1" />
+                    </span>
+                    <span class="text">
+                        <span class="title"> 바다여행에서의 피부관리 노하우 </span>
+                        <span class="desc"> 자외선 걱정없이 바다여행 즐기기 노하우 자외선 걱정없이 바다여행 즐기기 노하우 </span>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="thumb">
+                        <img src="img/noimage.jpg" alt="이미지1" />
+                    </span>
+                    <span class="text">
+                        <span class="title"> 바다여행에서의 피부관리 노하우 </span>
+                        <span class="desc"> 자외선 걱정없이 바다여행 즐기기 노하우 자외선 걱정없이 바다여행 즐기기 노하우 자외선 걱정없이 바다여행 즐기기 노하우 자외선 걱정없이 바다여행 즐기기 노하우 </span>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="thumb">
+                        <img src="img/noimage.jpg" alt="이미지1" />
+                    </span>
+                    <span class="text">
+                        <span class="title"> 바다여행에서의 피부관리 노하우 </span>
+                        <span class="desc"> 자외선 걱정없이 바다여행 즐기기 노하우 자외선 걱정없이 바다여행 즐기기 노하우 자외선 걱정없이 바다여행 즐기기 노하우 자외선 걱정없이 바다여행 즐기기 노하우 </span>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="thumb">
+                        <img src="img/noimage.jpg" alt="이미지1" />
+                    </span>
+                    <span class="text">
+                        <span class="title"> 바다여행에서의 피부관리 노하우 </span>
+                        <span class="desc"> 자외선 걱정없이 바다여행 즐기기 노하우 자외선 걱정없이 바다여행 즐기기 노하우 자외선 걱정없이 바다여행 즐기기 노하우 자외선 걱정없이 바다여행 즐기기 노하우 </span>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="thumb">
+                        <img src="img/noimage.jpg" alt="이미지1" />
+                    </span>
+                    <span class="text">
+                        <span class="title"> 바다여행에서의 피부관리 노하우 </span>
+                        <span class="desc"> 자외선 걱정없이 바다여행 즐기기 노하우 자외선 걱정없이 바다여행 즐기기 노하우 자외선 걱정없이 바다여행 즐기기 노하우 자외선 걱정없이 바다여행 즐기기 노하우 </span>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="thumb">
+                        <img src="img/noimage.jpg" alt="이미지1" />
+                    </span>
+                    <span class="text">
+                        <span class="title"> 바다여행에서의 피부관리 노하우 </span>
+                        <span class="desc"> 자외선 걱정없이 바다여행 즐기기 노하우 자외선 걱정없이 바다여행 즐기기 노하우 자외선 걱정없이 바다여행 즐기기 노하우 자외선 걱정없이 바다여행 즐기기 노하우 </span>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="thumb">
+                        <img src="img/noimage.jpg" alt="이미지1" />
+                    </span>
+                    <span class="text">
+                        <span class="title"> 바다여행에서의 피부관리 노하우 </span>
+                        <span class="desc"> 자외선 걱정없이 바다여행 즐기기 노하우 자외선 걱정없이 바다여행 즐기기 노하우 자외선 걱정없이 바다여행 즐기기 노하우 자외선 걱정없이 바다여행 즐기기 노하우 </span>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="thumb">
+                        <img src="img/noimage.jpg" alt="이미지1" />
+                    </span>
+                    <span class="text">
+                        <span class="title"> 바다여행에서의 피부관리 노하우 </span>
+                        <span class="desc"> 자외선 걱정없이 바다여행 즐기기 노하우 자외선 걱정없이 바다여행 즐기기 노하우 자외선 걱정없이 바다여행 즐기기 노하우 자외선 걱정없이 바다여행 즐기기 노하우 </span>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="thumb">
+                        <img src="img/noimage.jpg" alt="이미지1" />
+                    </span>
+                    <span class="text">
+                        <span class="title"> 바다여행에서의 피부관리 노하우 </span>
+                        <span class="desc"> 자외선 걱정없이 바다여행 즐기기 노하우 자외선 걱정없이 바다여행 즐기기 노하우 자외선 걱정없이 바다여행 즐기기 노하우 자외선 걱정없이 바다여행 즐기기 노하우 </span>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="thumb">
+                        <img src="img/noimage.jpg" alt="이미지1" />
+                    </span>
+                    <span class="text">
+                        <span class="title"> 바다여행에서의 피부관리 노하우 </span>
+                        <span class="desc"> 자외선 걱정없이 바다여행 즐기기 노하우 자외선 걱정없이 바다여행 즐기기 노하우 자외선 걱정없이 바다여행 즐기기 노하우 자외선 걱정없이 바다여행 즐기기 노하우 </span>
+                    </span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <span class="thumb">
+                        <img src="img/noimage.jpg" alt="이미지1" />
+                    </span>
+                    <span class="text">
+                        <span class="title"> 바다여행에서의 피부관리 노하우 </span>
+                        <span class="desc"> 자외선 걱정없이 바다여행 즐기기 노하우 자외선 걱정없이 바다여행 즐기기 노하우 자외선 걱정없이 바다여행 즐기기 노하우 자외선 걱정없이 바다여행 즐기기 노하우 </span>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="thumb">
+                        <img src="img/noimage.jpg" alt="이미지1" />
+                    </span>
+                    <span class="text">
+                        <span class="title"> 바다여행에서의 피부관리 노하우 </span>
+                        <span class="desc"> 자외선 걱정없이 바다여행 즐기기 노하우 자외선 걱정없이 바다여행 즐기기 노하우 자외선 걱정없이 바다여행 즐기기 노하우 자외선 걱정없이 바다여행 즐기기 노하우 </span>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="thumb">
+                        <img src="img/noimage.jpg" alt="이미지1" />
+                    </span>
+                    <span class="text">
+                        <span class="title"> 바다여행에서의 피부관리 노하우 </span>
+                        <span class="desc"> 자외선 걱정없이 바다여행 즐기기 노하우 자외선 걱정없이 바다여행 즐기기 노하우 자외선 걱정없이 바다여행 즐기기 노하우 자외선 걱정없이 바다여행 즐기기 노하우 </span>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="thumb">
+                        <img src="img/noimage.jpg" alt="이미지1" />
+                    </span>
+                    <span class="text">
+                        <span class="title"> 바다여행에서의 피부관리 노하우 </span>
+                        <span class="desc"> 자외선 걱정없이 바다여행 즐기기 노하우 자외선 걱정없이 바다여행 즐기기 노하우 자외선 걱정없이 바다여행 즐기기 노하우 자외선 걱정없이 바다여행 즐기기 노하우 </span>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="thumb">
+                        <img src="img/noimage.jpg" alt="이미지1" />
+                    </span>
+                    <span class="text">
+                        <span class="title"> 바다여행에서의 피부관리 노하우 </span>
+                        <span class="desc"> 자외선 걱정없이 바다여행 즐기기 노하우 자외선 걱정없이 바다여행 즐기기 노하우 자외선 걱정없이 바다여행 즐기기 노하우 자외선 걱정없이 바다여행 즐기기 노하우 </span>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="thumb">
+                        <img src="img/noimage.jpg" alt="이미지1" />
+                    </span>
+                    <span class="text">
+                        <span class="title"> 바다여행에서의 피부관리 노하우 </span>
+                        <span class="desc"> 자외선 걱정없이 바다여행 즐기기 노하우 자외선 걱정없이 바다여행 즐기기 노하우 자외선 걱정없이 바다여행 즐기기 노하우 자외선 걱정없이 바다여행 즐기기 노하우 </span>
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</body>
+</html>

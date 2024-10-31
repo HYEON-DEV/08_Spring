@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.hyeon.restfulapi.helpers.RestHelper_2;
+import com.hyeon.restfulapi.helpers.RestHelper;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -26,7 +26,7 @@ import lombok.extern.slf4j.Slf4j;
 public class CalcRestfulController {
 
     @Autowired
-    private RestHelper_2 restHelper;
+    private RestHelper restHelper;
 
     
     @GetMapping("/my_calc")

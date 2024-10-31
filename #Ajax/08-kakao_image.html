@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #loading {
+            width: 100px;
+            height: 100px;
+            background: url(img/loading.gif) no-repeat center/cover;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            z-index: 9999;
+            display: none;
+        }
+        #loading .active {
+            display: block;
+        }
+
+        body {
+            font-family: Arial;
+            padding-top: 127px;
+        }
+
+        #header {
+            position: fixed;
+            background-color: white;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 0 10px 5px 10px;
+            box-sizing: border-box;
+        }
+
+        #list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+        }
+
+        #list li {
+            width: 150px;
+            margin: 10px;
+        }
+
+        #list li a {
+            display: block;
+            text-decoration: none;
+            color: black;
+        }
+
+        #list li a img {
+            display: block;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        #list li span {
+            display: block;
+            font-size: 14px;
+            margin: 5px auto;
+            height: 30px;
+            padding: 0 10px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="loading"></div>
+
+    <div id="header">
+        <h1> Kakao Image Search </h1>
+
+        <form id="searchForm">
+            <fieldset>
+                <input type="search" id="query" placeholder="Search..." />
+                <button type="submit"> 검색 </button>
+            </fieldset>
+        </form>
+    </div>
+
+    <!-- 검색 결과가 표시될 목록 -->
+     <ul id="list">
+        <!-- <li>
+            <a href="#" target="_blank" title="제목">
+                <img src="img/noimage.jpg" />
+                <span> 제목이 위치할 곳 </span>
+            </a>
+        </li>
+        <li>
+            <a href="#" target="_blank" title="제목">
+                <img src="img/noimage.jpg" />
+                <span> 제목이 위치할 곳 </span>
+            </a>
+        </li>
+        <li>
+            <a href="#" target="_blank" title="제목">
+                <img src="img/noimage.jpg" />
+                <span> 제목이 위치할 곳 </span>
+            </a>
+        </li> -->
+     </ul>
+
+     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+     <script>
+        const KAKAO_REST_KEY = '91480ede95433d75873494d4be45e74e';
+        let currentPage = 1;
+        let queryKeyword = null;
+        let isEnd = false;
+
+        document.querySelector('#searchForm').addEventListener( 'submit', e => {
+            e.preventDefault();
+
+            const queryField = document.querySelector('#query');
+            queryKeyword = queryField.value.trim();
+
+            if ( !queryKeyword ) {
+                alert( '검색어를 입력하세요' );
+                queryField.focus();
+                return;
+            }
+
+            currentPage = 1;
+            get_image_search();
+        } );
+
+        window.addEventListener( 'scroll', e => {
+            if ( isEnd || document.querySelector('#loading').classList.contains('active') ) {
+                return;
+            }
+
+            const scrollTop = window.scrollY;
+            const windowHeight = window.screen.availHeight;
+            const documentHeight = document.body.scrollHeight;
+/* 
+            console.log(`스크롤이 발생하고 있음: scrollTop= ${scrollTop}, documentHeight= ${documentHeight}, windowHeight= ${windowHeight}`);
+ */
+            if ( scrollTop + windowHeight >= documentHeight ) {
+                currentPage++;
+                get_image_search();
+            }
+/* 
+            const scrollTop = window.scrollY;
+            const windowHeight = window.screen.availHeight; //  브라우저 창의 크기므로 값 고정
+            const docHeight = document.body.scrollHeight;
+
+            console.log(`스크롤이 발생하고 있음: scrollTop= ${scrollTop}, documentHeight= ${docHeight}, windowHeight= ${windowHeight}`);
+
+            if ( scrollTop+windowHeight >= docHeight ) {
+                console.log("스크롤이 맨 끝에 도착");
+                const container = document.querySelector("#container");
+                container.innerHTML += '<div class="box1"></div>';
+            }
+             */
+        } );
+
+        async function get_image_search() {
+            const loading = document.querySelector('#loading');
+            loading.classList.add('active');
+            
+            const list = document.querySelector('#list');
+
+            if ( currentPage == 1 ) {
+                Array.from( list.getElementsByTagName('li') ).forEach( (v,i) => {
+                    list.removeChild(v);
+                } );
+            }
+
+            let response = null;
+
+            try{
+                response = await axios.get( 'https://dapi.kakao.com/v2/search/image', {
+                    params: {
+                        query: queryKeyword,
+                        page: currentPage
+                    },
+                    headers: {
+                        Authorization: `KakaoAK ${KAKAO_REST_KEY}`
+                    }
+                });
+                console.log(response.data);
+            } catch (error) {
+                console.error( `[Error Code] ${error.code}` );
+                console.error( `[Error Message] ${error.message}` );
+                let alertMsg = error.message;
+                
+                if ( error.response !== undefined ) {
+                    const errorMsg = `${error.response.status} error - ${error.response.statusText}`;
+                    console.error( `[HTTP Status] ${errorMsg}` );
+                    alertMsg += `\n${errorMsg}`;
+                }
+
+                alert( alertMsg );
+                return;
+            } finally {
+                loading.classList.remove('active');
+            }
+
+            isEnd = response.data.meta.is_end;
+
+            response.data.documents.forEach( (v,i) => {
+                const li = document.createElement('li');
+                
+                const a = document.createElement('a');
+                a.setAttribute( 'href', v.doc_url );
+                a.setAttribute( 'target', '_blank' );
+                a.setAttribute( 'title', v.display_sitename );
+
+                const img = document.createElement('img');
+                img.setAttribute( 'src', v.thumbnail_url );
+
+                const span = document.createElement('span');
+                span.innerHTML = v.display_sitename;
+
+                a.appendChild(img);
+                a.appendChild(span);
+                
+                li.appendChild(a);
+                list.appendChild(li);
+            } );
+        }
+
+     </script>
+</body>
+</html>

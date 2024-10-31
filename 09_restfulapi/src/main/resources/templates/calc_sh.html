@@ -12,21 +12,23 @@
 
         <input type="number" name="x" placeholder="x" />
 
-        <select name="op">
+        <select name="calc" class="calc">
             <option value=""> 연산 선택 </option>
-            <option value="+"> + </option>
-            <option value="-"> - </option>
-            <option value="x"> x </option>
-            <option value="/"> / </option>
+            <option name="op" value="+"> + </option>
+            <option name="op" value="-"> - </option>
+            <option name="op" value="x"> * </option>
+            <option name="op" value="/"> / </option>
         </select>
 
         <input type="number" name="y" placeholder="y" />
 
-        <button type="submit" value="계산"></button>
+        <button type="submit"> 계산 </button>
 
     </form>
 
-    <ul id="result"> </ul>
+    <ul class="result">
+        <!--<li> </li>-->
+    </ul>
 
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
@@ -37,14 +39,14 @@
             e.preventDefault();
             const form = e.currentTarget;
 
-            // 백엔드 주소
             const backend = form.getAttribute("action");
 
-            // 응답결과가 저장될 객체
             let response = null;
 
             // 선택된 연산자만 추출
-            const op = form.querySelector("select[name=op]").value;
+            const option = form.querySelector('.calc');
+            const op = option.options[option.selectedIndex].value;
+            console.log(op);
             
             // 가상의 Form 데이터를 생성해 Axios 전송
             const formData = new FormData(form);
@@ -78,12 +80,10 @@
                 let alertMsg = null;
                 console.log(error);
                 
-                // SpringBoot로부터 전달받은 에러메시지가 있다면
                 if ( error.response?.data ) {
                     const data = error.response.data;
                     alertMsg = data.message;
 
-                    // 백엔드에서 발생한 상세 에러내용을 브라우저 콘솔에 출력
                     console.error("Error occurred in the backend server.");
                     console.error( `[${data.status}] ${data.error}` );
                     console.error(data.trace);
@@ -99,11 +99,11 @@
                 return;
             }
 
-            const result = response.data;
-
+            //const ul = document.querySelector('.result');
             const li = document.createElement('li');
-            li.textContent = `${result.x} ${op} ${result.y} = ${result.result}`;
-            document.querySelector("#result").appendChild(li);
+            li.innerHTML = response.data.x + ' ' + op + ' ' + response.data.y + ' = ' + response.data.result;
+            
+            document.querySelector(".result").appendChild(li);
             
         });
 
