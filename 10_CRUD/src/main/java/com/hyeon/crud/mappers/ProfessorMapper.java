@@ -100,6 +100,7 @@ public interface ProfessorMapper {
         "FROM professor p " +
         "INNER JOIN department d ON p.deptno = d.deptno " +
         "<where> " +
+        "<if test='deptno != 0'> p.deptno = #{deptno} </if>" +
         "<if test = 'name != null'> name LIKE concat('%', #{name}, '%') </if> " +
         "<if test = 'userid != null'> OR userid LIKE concat('%', #{userid}, '%') </if> " +
         "</where> " +

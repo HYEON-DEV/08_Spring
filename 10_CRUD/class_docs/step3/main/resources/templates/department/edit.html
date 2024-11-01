@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>학과관리 ::: MySchool</title>
+        <link rel="stylesheet" th:href="@{/assets/css/style.css}" />
+    </head>
+
+    <body>
+        <div class="container">
+            <!-- header -->
+            <header>
+                <h1>학과관리</h1>
+                <hr />
+            </header>
+            <!-- body -->
+            <section>
+                <form name="form" id="department-form">
+                    <!-- 수정할 대상에 대한 일련번호값을 포함해야 하므로 hidden 필드로 처리한다. -->
+                    <input type="hidden" name="deptNo" id="deptNo" th:value="${department.deptNo}" />
+
+                    <div class="form-group">
+                        <label for="dname"> 학과이름 <span class="text-danger">*</span> </label>
+                        <div>
+                            <input type="text" name="dname" id="dname" th:value="${department.dname}" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="loc"> 학과위치</label>
+                        <div>
+                            <input type="text" name="loc" id="loc" th:value="${department.loc}" />
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="text-center">
+                        <button type="submit">수정하기</button>
+                        <button type="reset">다시작성</button>
+                    </div>
+                </form>
+            </section>
+            <!-- footer -->
+            <footer>
+                <hr />
+                <address>copyright&copy;2024. megastudy</address>
+            </footer>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script th:src="@{/assets/js/axios-helper.js}"></script>
+        <script type="text/javascript">
+            /** 수정 버튼의 submit 이벤트 */
+            document.querySelector('#department-form').addEventListener('submit', async (e) => {
+                e.preventDefault();
+
+                // 입력값 받아오기
+                const formData = new FormData(e.currentTarget);
+
+                // 입력값에 대한 유효성 검사 진행.... (이 예제에서는 생략)
+
+                const data = await axios.put(`[[@{/api/department}]]/[[${deptNo}]]`, formData);
+
+                if (data) {
+                    alert("수정되었습니다.");
+                    window.location = `[[@{/department/view}]]/[[${deptNo}]]`;
+                }
+            });
+        </script>
+    </body>
+</html>

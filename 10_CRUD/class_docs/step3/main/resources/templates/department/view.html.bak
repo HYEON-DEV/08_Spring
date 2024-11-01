@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>학과관리 ::: MySchool</title>
+        <link rel="stylesheet" th:href="@{/assets/css/style.css}" />
+    </head>
+
+    <body>
+        <div class="container">
+            <!-- header -->
+            <header>
+                <h1>학과관리</h1>
+                <hr />
+            </header>
+            <!-- body -->
+            <section>
+                <dl>
+                    <dt>학과번호</dt>
+                    <dd class="deptNo"></dd>
+                    <dt>학과명</dt>
+                    <dd class="dname"></dd>
+                    <dt>학과위치</dt>
+                    <dd class="loc"></dd>
+                </dl>
+                <a th:href="@{/department}">목록보기</a> |
+                <a href="#" class="btn-edit">수정하기</a> |
+                <a href="#" class="btn-delete">삭제하기</a>
+            </section>
+            <!-- footer -->
+            <footer>
+                <hr />
+                <address>copyright&copy;2024. megastudy</address>
+            </footer>
+        </div>
+
+        <script th:src="@{https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js}"></script>
+        <script th:src="@{/assets/js/axios-helper.js}"></script>
+        <script>
+            // 페이지가 실행되면서 자동으로 동작해야 하므로 즉시실행함수로 구현.
+            (async () => {
+                /** Controller에서 넘어온 변수 받기 */
+                const deptNo = [[${deptNo}]];
+
+                /** Ajax요청 */
+                let data = await axiosHelper.get(`/api/department/${deptNo}`);
+
+                if (data) {
+                    document.querySelector('.deptNo').innerHTML = data.item.deptNo;
+                    document.querySelector('.dname').innerHTML = data.item.dname;
+                    document.querySelector('.loc').innerHTML = data.item.loc;
+
+                    // 가져온 데이터의 일련번호를 사용하여 어떤 대상을 수정할지에 대한 링크 URL 구성
+                    document.querySelector('.btn-edit').setAttribute('href', `/department/edit/${data.item.deptNo}`);
+
+                    // 가져온 데이터의 일련번호를 사용하여 어떤 대상을 삭제할지에 대한 dataset 구성
+                    const btnDelete = document.querySelector('.btn-delete');
+                    btnDelete.dataset.deptNo = data.item.deptNo;
+                    btnDelete.dataset.dname = data.item.dname;
+                }
+            })();
+
+            /** 삭제 버튼에 대한 클릭 이벤트 */
+            document.querySelector('.btn-delete').addEventListener('click', async (e) => {
+                e.preventDefault();
+
+                const current = e.currentTarget;
+                const deptNo = current.dataset.deptNo;
+                const dname = current.dataset.dname;
+
+                if (confirm(`정말 ${dname}(을)를 삭제하시겠습니까?`)) {
+                    const data = await axiosHelper.delete(`/api/department/${deptNo}`);
+
+                    if (data) {
+                        alert('삭제되었습니다.');
+                        window.location = "[[@{/department}]]";
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>

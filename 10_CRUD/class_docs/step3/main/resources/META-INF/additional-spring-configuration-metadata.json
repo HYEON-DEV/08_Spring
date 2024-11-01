@@ -1,0 +1,14 @@
+{
+    "properties": [
+        {
+            "name": "mailhelper.sender.email",
+            "type": "java.lang.String",
+            "description": "A description for 'mailhelper.sender.email'"
+        },
+        {
+            "name": "mailhelper.sender.name",
+            "type": "java.lang.String",
+            "description": "A description for 'mailhelper.sender.name'"
+        }
+    ]
+}

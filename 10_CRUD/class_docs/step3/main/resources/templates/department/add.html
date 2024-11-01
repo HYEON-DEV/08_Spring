@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>학과관리 ::: MySchool</title>
+        <link rel="stylesheet" th:href="@{/assets/css/style.css}" />
+    </head>
+
+    <body>
+        <div class="container">
+            <!-- header -->
+            <header>
+                <h1>학과관리</h1>
+                <hr />
+            </header>
+            <!-- body -->
+            <section>
+                <form name="form" id="department-form">
+                    <div class="form-group">
+                        <label for="dname"> 학과이름 <span class="text-danger">*</span> </label>
+                        <div>
+                            <input type="text" name="dname" id="dname" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="loc"> 학과위치</label>
+                        <div>
+                            <input type="text" name="loc" id="loc" />
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="text-center">
+                        <button type="submit">저장하기</button>
+                        <button type="reset">다시작성</button>
+                    </div>
+                </form>
+            </section>
+            <!-- footer -->
+            <footer>
+                <hr />
+                <address>copyright&copy;2024. megastudy</address>
+            </footer>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script th:src="@{/assets/js/axios-helper.js}"></script>
+        <script>
+            document.querySelector('#department-form').addEventListener('submit', async (e) => {
+                e.preventDefault();
+
+                // 입력값 받아오기
+                const dname = document.querySelector('#dname').value;
+                const loc = document.querySelector('#loc').value;
+
+                /**
+                 * 입력값에 대한 유효성 검사 진행.... (이 예제에서는 생략)
+                 */
+
+                // 1) 직접 FormData 만들기
+                // const formData = new FormData();
+                // formData.append('dname', dname);
+                // formData.append('loc', loc);
+
+                // 2) form 태그를 이용하여 FormData 만들기
+                // 이 때는, input 태그의 name 속성값을 key로, value를 value로 자동으로 매핑한다.
+                const formData = new FormData(e.currentTarget);
+
+                let data = await axiosHelper.post('[[@{/api/department}]]', formData);
+
+                // 백엔드에서 데이터 저장에 대한 응답으로 보낸 JSON에는 생성된 신규 항목에 대한 일련번호가 포함되어 있다.
+                // 이 값을 활용하여 상세 페이지로 이동해야 한다.
+                // 이 때, 어떤 대상을 열람할 것인지에 대한 GET 파라미터를 구성한다.
+                window.location = `[[@{/department/view}]]/${data.item.deptNo}`;
+            });
+
+        </script>
+    </body>
+</html>

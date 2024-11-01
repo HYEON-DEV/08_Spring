@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Spring</title>
+    <link rel="stylesheet" th:href="@{/assets/css/common.css}" />
+</head>
+<body>
+    <h2>학과관리</h2>
+    <hr />
+    <table class="mytable">
+        <colgroup>
+            <col width="150" />
+            <col />
+        </colgroup>
+        <tbody>
+            <tr>
+                <th>학과번호</th>
+                <td class="text-left" th:text="${department.deptNo}"></td>
+            </tr>
+            <tr>
+                <th>학과이름</th>
+                <td class="text-left" th:text="${department.dname}"></td>
+            </tr>
+            <tr>
+                <th>학과위치</th>
+                <td class="text-left" th:text="${department.loc}"></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="button-container">
+        <a class="mybutton green" th:href="@{/department}">목록보기</a>
+        <a class="mybutton blue" th:href="@{/department/edit/{deptNo}(deptNo=${department.deptNo})}">수정</a>
+        <a class="mybutton red" th:href="@{/department/delete/{deptNo}(deptNo=${department.deptNo})}">삭제</a>
+    </div>
+
+
+
+    <table class="mytable">
+        <thead>
+            <tr>
+                <th>번호</th>
+                <th>이름</th>
+                <th>아이디</th>
+                <th>직급</th>
+                <th>급여</th>
+                <th>입사일</th>
+                <th>보직수당</th>
+                <th>소속학과</th>
+                <th>-</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="professor : ${professors}">
+                <td th:text="${professor.profno}"></td>
+                <td><a th:href="@{/professor/detail/{profno}(profno=${professor.profno})}"
+                        th:text="${professor.name}" /></td>
+                <td th:text="${professor.userid}"></td>
+                <td th:text="${professor.position}"></td>
+                <td th:text="${#numbers.formatInteger(professor.sal, 1, 'COMMA')}"></td>
+                <td th:text="${professor.hiredate}"></td>
+                <td th:text="${#numbers.formatInteger(professor.comm, 1, 'COMMA')}"></td>
+                <td th:text="${professor.dname}"></td>
+                <td>
+                    <a th:href="@{/professor/edit/{profno}(profno=${professor.profno})}">수정</a>
+                    <a th:href="@{/professor/delete/{profno}(profno=${professor.profno})}">삭제</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Spring</title>
+    <link rel="stylesheet" th:href="@{/assets/css/common.css}" />
+</head>
+<body>
+    <h2>학과관리</h2>
+    <hr />
+    <div class="button-container search-field">
+        <!-- 검색폼 -->
+        <!-- 1) 검색어는 GET방식으로 전송 -->
+        <!-- 2) 검색 결과 페이지가 별도로 없는 경우 action은 자기 스스로를 지정 -->
+        <!-- 3) submit은 컨트롤러에게 검색어를 전송한다. -->
+        <!-- 4) 컨트롤러는 전송받은 검색어를 다시 View에게 전달하여 자동완성 시켜야 한다. -->
+        <form method="get" th:action="@{/department}">
+            <input type="search" name="keyword" placeholder="학과명 or 위치 검색" th:value="${keyword}"/>
+            <button type="submit" class="mybutton gray">검색</button>
+        </form>
+        <a class="mybutton blue" th:href="@{/department/add}">새 학과 등록</a>
+    </div>
+    <table class="mytable">
+        <thead>
+            <tr>
+                <th>학과번호</th>
+                <th>학과이름</th>
+                <th>학과위치</th>
+                <th>-</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="department : ${departments}">
+                <td th:text="${department.deptNo}"></td>
+                <!--
+                    QueryString 파라미터 설정
+                    @{/hello/(param1=${변수1}, param2=${변수2})}
+                    => /hello/?param1=변수1&param2=변수2
+
+                    path 파라미터 설정
+                    @{/hello/{param1}/{param2}(param1=${변수1}, param2=${변수2})}
+                    => /hello/변수1/변수2
+
+                    path 파라미터 + 쿼리 파라미터가 포함된 URL
+                    @{/hello/{param1}(param1=${변수1}, param2=${변수2})}
+                    => /hello/변수1?param2=변수2
+                -->
+                <td><a th:href="@{/department/view/{deptNo}(deptNo=${department.deptNo})}"
+                        th:text="${department.dname}" /></td>
+                <td th:text="${department.loc}"></td>
+                <td>
+                    <a th:href="@{/department/edit/{deptNo}(deptNo=${department.deptNo})}">수정</a>
+                    <a th:href="@{/department/delete/{deptNo}(deptNo=${department.deptNo})}">삭제</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- 페이지 번호 -->
+    <ul class="pagination">
+        <!-- 이전 페이지 그룹 이동 버튼 -->
+        <li th:if="${pagination.prevPage > 0}">
+            <a th:href="@{/department(keyword=${keyword}, page=${pagination.prevPage})}">&laquo;</a>
+        </li>
+        <li th:unless= "${pagination.prevPage > 0}"><a>&laquo;</a></li>
+
+        <!-- 페이지 번호 링크 -->
+        <li th:each="i : ${#numbers.sequence(pagination.startPage, pagination.endPage)}">
+            <a th:if="${i == pagination.nowPage}" class="active" th:text="${i}" />
+            <a th:unless="${i == pagination.nowPage}" th:text="${i}"
+                th:href="@{/department(keyword=${keyword}, page=${i})}"  />
+        </li>
+
+        <!-- 다음 페이지 그룹 이동 버튼 -->
+        <li th:if="${pagination.nextPage > 0}">
+            <a th:href="@{/department(keyword=${keyword}, page=${pagination.nextPage})}">&raquo;</a>
+        </li>
+        <li th:unless= "${pagination.nextPage > 0}"><a>&raquo;</a></li>
+    </ul>
+</body>
+</html>
