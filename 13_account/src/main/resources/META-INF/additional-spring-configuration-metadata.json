@@ -1,0 +1,37 @@
+{"properties": [
+  {
+    "name": "mailhelper.sender.email",
+    "type": "java.lang.String",
+    "description": "A description for 'mailhelper.sender.email'"
+  },
+  {
+    "name": "mailhelper.sender.name",
+    "type": "java.lang.String",
+    "description": "A description for 'mailhelper.sender.name'"
+  },
+  {
+    "name": "upload.url",
+    "type": "java.lang.String",
+    "description": "A description for 'upload.url'"
+  },
+  {
+    "name": "upload.dir",
+    "type": "java.lang.String",
+    "description": "A description for 'upload.dir'"
+  },
+  {
+    "name": "thumbnail.width",
+    "type": "java.lang.String",
+    "description": "A description for 'thumbnail.width'"
+  },
+  {
+    "name": "thumbnail.height",
+    "type": "java.lang.String",
+    "description": "A description for 'thumbnail.height'"
+  },
+  {
+    "name": "thumbnail.crop",
+    "type": "java.lang.String",
+    "description": "A description for 'thumbnail.crop'"
+  }
+]}
