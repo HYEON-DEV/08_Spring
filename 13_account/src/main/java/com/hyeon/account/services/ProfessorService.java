@@ -1,8 +1,8 @@
-package com.hyeon.crud.services;
+package com.hyeon.account.services;
 
 import java.util.List;
 
-import com.hyeon.crud.models.Professor;
+import com.hyeon.account.models.Professor;
 
 
 public interface ProfessorService {

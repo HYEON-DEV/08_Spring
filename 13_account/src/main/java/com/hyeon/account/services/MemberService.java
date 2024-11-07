@@ -1,9 +1,9 @@
-package com.hyeon.crud.services;
+package com.hyeon.account.services;
 
 import java.util.List;
 
-import com.hyeon.crud.exceptions.ServiceNoResultException;
-import com.hyeon.crud.models.Member;
+import com.hyeon.account.exceptions.ServiceNoResultException;
+import com.hyeon.account.models.Member;
 
 
 public interface MemberService {
@@ -46,4 +46,10 @@ public interface MemberService {
      * @throws ServiceNoResultException
      */
     public List<Member> getList(Member input) throws ServiceNoResultException, Exception;
+
+
+    public void isUniqueUserId(String userId) throws Exception;
+
+    
+    public void isUniqueEmail(String email) throws Exception;
 }

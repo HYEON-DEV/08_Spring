@@ -1,4 +1,4 @@
-package com.hyeon.crud.exceptions;
+package com.hyeon.account.exceptions;
 /**
  * ServiceNoResultException에 부합하지 않음을 의미하는 예외 상황을 처리
  */

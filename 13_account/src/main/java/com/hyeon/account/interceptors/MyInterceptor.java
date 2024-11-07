@@ -1,4 +1,4 @@
-package com.hyeon.crud.interceptors;
+package com.hyeon.account.interceptors;
 
 import java.util.Map;
 
@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.hyeon.crud.helpers.WebHelper;
+import com.hyeon.account.helpers.WebHelper;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;

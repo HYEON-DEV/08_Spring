@@ -1,4 +1,4 @@
-package com.hyeon.crud.models;
+package com.hyeon.account.models;
 
 import lombok.Data;
 import lombok.Getter;

@@ -1,4 +1,4 @@
-package com.hyeon.crud.mappers;
+package com.hyeon.account.mappers;
 
 import java.util.List;
 
@@ -12,7 +12,7 @@ import org.apache.ibatis.annotations.Result;
 import org.apache.ibatis.annotations.ResultMap;
 import org.apache.ibatis.annotations.Results;
 
-import com.hyeon.crud.models.Department;
+import com.hyeon.account.models.Department;
 
 @Mapper
 public interface DepartmentMapper {

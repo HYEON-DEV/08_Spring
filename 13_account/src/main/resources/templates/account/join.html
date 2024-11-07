@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>회원가입</title>
+    <th:block th:replace="~{_fragments/_head :: my-head('회원가입')}" />
     <link rel="stylesheet" th:href="@{/assets/css/account.css}">
 </head>
 <body>
@@ -14,7 +12,8 @@
             <!-- 아이디 -->
             <div class="input-container">
                 <input type="text" id="user_id" class="input-field" placeholder="아이디" required />
-                <button type="button" class="inline-btn">중복 검사</button>
+                <button type="button" class="inline-btn" id="id-unique-check">중복 검사</button>
+                <input type="hidden" id="id-check" value="N" />
             </div>
 
             <!-- 비밀번호 -->
@@ -30,7 +29,8 @@
             <!-- 이메일 -->
             <div class="input-container">
                 <input type="email" id="email" class="input-field" placeholder="이메일" required />
-                <button type="button" class="inline-btn">중복 검사</button>
+                <button type="button" class="inline-btn" id="email-unique-check">중복 검사</button>
+                <input type="hidden" id="email-check" value="N" />
             </div>
 
             <!-- 전화번호 -->
@@ -58,13 +58,13 @@
 
             <!-- 우편번호 -->
             <div class="input-container">
-                <input type="text" id="postcode" class="input-field" placeholder="우편번호" required />
-                <button type="button" class="inline-btn">우편번호 찾기</button>
+                <input type="text" id="postcode" class="input-field" placeholder="우편번호" required readonly />
+                <button type="button" class="inline-btn" id="find-postcode">우편번호 찾기</button>
             </div>
 
             <!-- 주소 -->
             <div class="input-container">
-                <input type="text" id="addr1" class="input-field" placeholder="주소" required />
+                <input type="text" id="addr1" class="input-field" placeholder="주소" required readonly />
             </div>
             <div class="input-container">
                 <input type="text" id="addr2" class="input-field" placeholder="상세 주소" />
@@ -84,11 +84,83 @@
         </div>
     </div>
 
+    <th:block th:replace="~{_fragments/_scripts :: my-scripts}" />
+
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+
     <script>
-        document.getElementById('signup-form').addEventListener('submit', function(event) {
+        document.querySelector('#find-postcode').addEventListener('click', e => {
+            e.preventDefault();
+            utilHelper.findPostCode();
+        })
+
+
+        document.querySelector('#id-unique-check').addEventListener('click', async e => {
+            e.preventDefault();
+
+            try {
+                regexHelper.value("#user_id", "아이디를 입력하세요");
+            } catch (e) {
+                await utilHelper.alertDanger(e.message);
+                return;
+            }
+
+            const userId = document.querySelector('#user_id').value;
+            const data = await axiosHelper.get(`/api/account/id_unique_check`, {user_id: userId});
+            
+            if (data) {
+                await utilHelper.alertSuccess("사용 가능한 아이디 입니다.");
+                document.querySelector('#id-check').value = "Y";
+            }
+        });
+
+        document.querySelector("#user_id").addEventListener('change', e => {
+                document.querySelector('#id-check').value = 'N';
+        });
+
+
+        document.querySelector('#email-unique-check').addEventListener('click', async e => {
+            e.preventDefault();
+
+            try {
+                regexHelper.value("#email", "이메일을 입력하세요");
+            } catch (e) {
+                await utilHelper.alertDanger(e.message);
+                return;
+            }
+
+            const email = document.querySelector('#email').value;
+            const data = await axiosHelper.get(`/api/account/email_unique_check`, {email: email});
+            
+            if (data) {
+                await utilHelper.alertSuccess("사용 가능한 이메일 입니다.");
+                document.querySelector('#email-check').value = "Y";
+            }
+        });
+
+        document.querySelector("#email").addEventListener('change', e => {
+            document.querySelector('#email-check').value = 'N';
+        });
+
+        
+        document.getElementById('signup-form').addEventListener('submit', async event => {
             event.preventDefault();
+
+            const idCheck = document.querySelector('#id-check').value;
+            const emailCheck = document.querySelector('#email-check').value;
+
+            if (idCheck === 'N') {
+                utilHelper.alertWarning('아이디 중복 검사를 진행해주세요');
+                return;
+            }
+            if (emailCheck === 'N') {
+                utilHelper.alertWarning('이메일 중복 검사를 진행해주세요');
+                return;
+            }
+            
             alert('회원가입 처리 기능이 실행됩니다.');
         });
+
     </script>
 
 </body>

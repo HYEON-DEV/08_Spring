@@ -42,4 +42,10 @@ public class AccountController {
     public String resetPw() {
         return "account/reset_pw";
     }
+
+
+    @GetMapping("/account/join")
+    public String join() {
+        return "account/join";
+    }
 }

@@ -1,18 +1,18 @@
-package com.hyeon.crud.services.impl;
+package com.hyeon.account.services.impl;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.hyeon.crud.exceptions.ServiceNoResultException;
-import com.hyeon.crud.mappers.DepartmentMapper;
-import com.hyeon.crud.mappers.ProfessorMapper;
-import com.hyeon.crud.mappers.StudentMapper;
-import com.hyeon.crud.models.Department;
-import com.hyeon.crud.models.Professor;
-import com.hyeon.crud.models.Student;
-import com.hyeon.crud.services.DepartmentService;
+import com.hyeon.account.exceptions.ServiceNoResultException;
+import com.hyeon.account.mappers.DepartmentMapper;
+import com.hyeon.account.mappers.ProfessorMapper;
+import com.hyeon.account.mappers.StudentMapper;
+import com.hyeon.account.models.Department;
+import com.hyeon.account.models.Professor;
+import com.hyeon.account.models.Student;
+import com.hyeon.account.services.DepartmentService;
 
 
 @Service

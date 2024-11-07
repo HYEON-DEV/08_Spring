@@ -1,16 +1,19 @@
-package com.hyeon.crud.services.impl;
+package com.hyeon.account.services.impl;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.hyeon.crud.exceptions.ServiceNoResultException;
-import com.hyeon.crud.mappers.MemberMapper;
-import com.hyeon.crud.models.Member;
-import com.hyeon.crud.services.MemberService;
+import com.hyeon.account.exceptions.ServiceNoResultException;
+import com.hyeon.account.mappers.MemberMapper;
+import com.hyeon.account.models.Member;
+import com.hyeon.account.services.MemberService;
+
+import lombok.extern.slf4j.Slf4j;
 
 
+@Slf4j
 @Service
 public class MemberServiceImpl implements MemberService {
 
@@ -71,6 +74,47 @@ public class MemberServiceImpl implements MemberService {
     @Override
     public List<Member> getList(Member input) throws ServiceNoResultException, Exception {
         return memberMapper.selectList(input);
+    }
+
+
+    @Override
+    public void isUniqueUserId(String userId) throws Exception {
+        Member input = new Member();
+        input.setUserId(userId);
+
+        int output = 0;
+
+        try {
+            output = memberMapper.selectCount(input);
+
+            if (output > 0) {
+                throw new Exception("사용할 수 없는 아이디 입니다.");
+            }
+        } catch (Exception e) {
+            log.error("아이디 중복검사에 실패했습니다.", e);
+            throw e;
+        }
+        
+    }
+
+
+    @Override
+    public void isUniqueEmail(String email) throws Exception {
+        Member input = new Member();
+        input.setEmail(email);
+
+        int output = 0;
+
+        try {
+            output = memberMapper.selectCount(input);
+
+            if (output > 0) {
+                throw new Exception("사용할 수 없는 이메일 입니다.");
+            }
+        } catch (Exception e) {
+            log.error("아이디 중복검사에 실패했습니다.", e);
+            throw e;
+        }
     }
     
 }

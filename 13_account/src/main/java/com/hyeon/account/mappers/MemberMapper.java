@@ -1,4 +1,4 @@
-package com.hyeon.crud.mappers;
+package com.hyeon.account.mappers;
 
 import java.util.List;
 
@@ -12,7 +12,7 @@ import org.apache.ibatis.annotations.Result;
 import org.apache.ibatis.annotations.ResultMap;
 import org.apache.ibatis.annotations.Results;
 
-import com.hyeon.crud.models.Member;
+import com.hyeon.account.models.Member;
 
 @Mapper
 public interface MemberMapper {
@@ -87,4 +87,13 @@ public interface MemberMapper {
     @ResultMap("membersMap")
     public List<Member> selectList(Member input);
 
+
+    @Select("<script>" +
+            "SELECT COUNT(*) FROM members " +
+            "<where> " +
+            "<if test='userId != null'> user_id = #{userId} </if> " +
+            "<if test='email != null'> email = #{email} </if> " +
+            "</where> " +
+            "</script>")
+    public int selectCount(Member input);
 }

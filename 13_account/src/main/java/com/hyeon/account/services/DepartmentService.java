@@ -1,9 +1,9 @@
-package com.hyeon.crud.services;
+package com.hyeon.account.services;
 
 import java.util.List;
 
-import com.hyeon.crud.exceptions.ServiceNoResultException;
-import com.hyeon.crud.models.Department;
+import com.hyeon.account.exceptions.ServiceNoResultException;
+import com.hyeon.account.models.Department;
 
 /**
  * 학과 관리 기능과 관련된 MyBatis Mappper를 간접적으로 호출하기 위한 기능 명세
