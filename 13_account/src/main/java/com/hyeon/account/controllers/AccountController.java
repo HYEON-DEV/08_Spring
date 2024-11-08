@@ -48,4 +48,9 @@ public class AccountController {
     public String join() {
         return "account/join";
     }
+
+    @GetMapping("/account/join_result")
+    public String joinResult() {
+        return "account/join_result";
+    }
 }

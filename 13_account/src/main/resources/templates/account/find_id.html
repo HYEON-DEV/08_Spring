@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html lang="ko" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>아이디 찾기</title>
+    <th:block th:replace="~{_fragments/_head :: my-head('아이디 찾기')}" />
     <link rel="stylesheet" th:href="@{/assets/css/account.css}">
+
+    <style>
+        .find-result {
+            display: none;
+            font-size: 18px;
+            margin-top: 20px;
+            text-align: center;
+
+            .user-name {
+                font-weight: bold;
+                color: #06f;
+            }
+
+            .user-id {
+                font-weight: bold;
+                color: #df1b1b;
+            }
+        }
+    </style>
 </head>
 <body>
 
@@ -13,13 +30,15 @@
         <form id="find-id-form">
             <!-- 이름 -->
             <div class="input-container">
-                <input type="text" id="user_name" class="input-field" placeholder="이름" required />
+                <input type="text" name="user_name" id="user_name" class="input-field" placeholder="이름" required />
             </div>
 
             <!-- 이메일 -->
             <div class="input-container">
-                <input type="email" id="email" class="input-field" placeholder="이메일" required />
+                <input type="email" name="email" id="email" class="input-field" placeholder="이메일" required />
             </div>
+
+            <p class="find-result"> <span class="user-name"></span> 님의 아이디는 <span class="user-id"></span> 입니다 </p>
 
             <!-- 아이디 찾기 버튼 -->
             <button type="submit" class="btn">아이디 찾기</button>
@@ -31,11 +50,33 @@
         </div>
     </div>
 
+    <th:block th:replace="~{_fragments/_scripts :: my-scripts}" />
+
     <script>
-        document.getElementById('find-id-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-            alert('아이디 찾기 기능이 실행됩니다.');
-        });
+        document.getElementById('find-id-form').addEventListener('submit', async e => {
+            e.preventDefault();
+
+            try {
+                regexHelper.value('#user_name', '이름을 입력하세요');
+                regexHelper.value('#email', '이메일 주소를 입력하세요');
+            } catch (error) {
+                await utilHelper.alertDanger(error.message);
+                setTimeout( () => error.element.focus(), 1 );
+                return;
+            }
+
+            const data = await axiosHelper.post('[[@{/api/account/find_id}]]', new FormData(e.currentTarget) );
+
+            if (data) {
+                const userName = document.querySelector('#user_name').value;
+                const userId = data.item;
+
+                document.querySelector('.user-name').innerHTML = userName;
+                document.querySelector('.user-id').innerHTML = userId;
+
+                document.querySelector('.find-result').style.display = 'block';
+            }
+        } );
     </script>
 
 </body>

@@ -20,4 +20,5 @@ public class Member {
     private String loginDate;
     private String regDate;
     private String editDate;
+    private String photo;
 }

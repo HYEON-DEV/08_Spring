@@ -23,7 +23,7 @@ public interface MemberMapper {
      * @param input - 입력할 회원 정보에 대한 모델 객체
      * @return 입력된 데이터 수
      */
-    @Insert("INSERT INTO members (user_id, user_pw, user_name, email, phone, birthday, gender, postcode, addr1, addr2, is_out, is_admin, login_date, reg_date, edit_date) VALUES (#{userId}, MD5(#{userPw}), #{userName}, #{email}, #{phone}, #{birthday}, #{gender}, #{postcode}, #{addr1}, #{addr2}, 'N', 'N', null, now(), now())")
+    @Insert("INSERT INTO members (user_id, user_pw, user_name, email, phone, birthday, gender, postcode, addr1, addr2, photo, is_out, is_admin, login_date, reg_date, edit_date) VALUES (#{userId}, MD5(#{userPw}), #{userName}, #{email}, #{phone}, #{birthday}, #{gender}, #{postcode}, #{addr1}, #{addr2}, #{photo}, 'N', 'N', null, now(), now())")
     /**
      *  INSERT문에서 필요한 PK에 대한 옵션 정의
      * => useGeneratedKeys: AUTO_INCREMENT가 적용된 테이블인 경우 사용
@@ -39,7 +39,7 @@ public interface MemberMapper {
      * @param input - 수정할 데이터에 대한 모델 객체
      * @return 수정된 데이터 수
      */
-    @Update("UPDATE members SET user_id=#{userId}, user_pw=MD5(#{userPw}), user_name=#{userName}, email=#{email}, phone=#{phone}, birthday=#{birthday}, gender=#{gender}, postcode=#{postcode}, addr1=#{addr1}, addr2=#{addr2}, edit_date=now() WHERE id=#{id}")
+    @Update("UPDATE members SET user_id=#{userId}, user_pw=MD5(#{userPw}), user_name=#{userName}, email=#{email}, phone=#{phone}, birthday=#{birthday}, gender=#{gender}, postcode=#{postcode}, addr1=#{addr1}, addr2=#{addr2}, photo=#{photo}, edit_date=now() WHERE id=#{id}")
     public int update(Member input);
 
 
@@ -52,7 +52,7 @@ public interface MemberMapper {
     public int delete(Member input);
 
 
-    @Select("SELECT id, user_id, user_pw, user_name, email, phone, DATE_FORMAT(birthday,'%Y-%m-%d') AS birthday, gender, postcode, addr1, addr2, is_out, is_admin, login_date, reg_date, edit_date FROM members WHERE id=#{id}")
+    @Select("SELECT id, user_id, user_pw, user_name, email, phone, DATE_FORMAT(birthday,'%Y-%m-%d') AS birthday, gender, postcode, addr1, addr2, photo, is_out, is_admin, login_date, reg_date, edit_date FROM members WHERE id=#{id}")
     /**
      * 조회 결과와 리턴할 MODEL 객체를 연결하기 위한 규칙 정의
      * => property : MODEL 객체의 멤버변수 이름
@@ -72,6 +72,7 @@ public interface MemberMapper {
         @Result(property="postcode", column="postcode"),
         @Result(property="addr1", column="addr1"),
         @Result(property="addr2", column="addr2"),
+        @Result(property="photo", column="photo"),
         @Result(property="isOut", column="is_out"),
         @Result(property="isAdmin", column="is_admin"),
         @Result(property="loginDate", column="login_date"),
@@ -81,7 +82,7 @@ public interface MemberMapper {
     public Member selectItem(Member input);
 
     
-    @Select("SELECT id, user_id, user_pw, user_name, email, phone, DATE_FORMAT(birthday, '%Y-%m-%d') AS birthday, gender, postcode, addr1, addr2, is_out, is_admin, login_date, reg_date, edit_date FROM members")
+    @Select("SELECT id, user_id, user_pw, user_name, email, phone, DATE_FORMAT(birthday, '%Y-%m-%d') AS birthday, gender, postcode, addr1, addr2, photo, is_out, is_admin, login_date, reg_date, edit_date FROM members")
     // 조회 결과와 MODEL의 맵핑이 이전 규칙과 동일한 경우 id값으로 이전 규칙 재사용
     // @Results 에 id 를 설정하면 다른 조회 메서드에서도 설정한 id 를 통해 @Results를 재사용할 수 있다.
     @ResultMap("membersMap")
@@ -96,4 +97,12 @@ public interface MemberMapper {
             "</where> " +
             "</script>")
     public int selectCount(Member input);
+
+
+    @Select(
+        "SELECT user_id FROM members " +
+        "WHERE user_name = #{userName} AND email = #{email}" 
+    )
+    @ResultMap("membersMap")
+    public Member findId(Member input);
 }
