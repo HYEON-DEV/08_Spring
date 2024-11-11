@@ -135,5 +135,23 @@ public class MemberServiceImpl implements MemberService {
 
         return output;
     }
+
+
+    @Override
+    public void resetPw(Member input) throws Exception {
+        int rows = 0;
+
+        try {
+            rows = memberMapper.resetPw(input);
+
+            if(rows==0) {
+                throw new Exception("아이디와 이메일을 확인하세요.");
+            }
+        } catch (Exception e) {
+            log.error("Member 데이터 수정에 실패했습니다.", e);
+            throw e;
+        }
+
+    }
     
 }

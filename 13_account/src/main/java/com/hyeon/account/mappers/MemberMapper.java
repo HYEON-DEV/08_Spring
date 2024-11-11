@@ -105,4 +105,9 @@ public interface MemberMapper {
     )
     @ResultMap("membersMap")
     public Member findId(Member input);
+
+
+    @Update("UPDATE members SET user_pw = MD5(#{userPw})" + 
+            "WHERE user_id = #{userId} AND email = #{email}")
+    public int resetPw(Member input);
 }
