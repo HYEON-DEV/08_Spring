@@ -51,6 +51,11 @@ dependencies {
 
 	// https://mvnrepository.com/artifact/net.coobird/thumbnailator
 	implementation group: 'net.coobird', name: 'thumbnailator', version: '0.4.20'
+
+	/** Spring Session */
+	// https://mvnrepository.com/artifact/org.springframework.session/spring-session-jdbc
+	implementation 'org.springframework.session:spring-session-jdbc:3.3.2'
+
  
 }
 

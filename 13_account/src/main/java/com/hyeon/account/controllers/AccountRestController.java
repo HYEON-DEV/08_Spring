@@ -21,6 +21,9 @@ import com.hyeon.account.models.Member;
 import com.hyeon.account.models.UploadItem;
 import com.hyeon.account.services.MemberService;
 
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpSession;
+
 
 @RestController
 public class AccountRestController {
@@ -213,6 +216,49 @@ public class AccountRestController {
         } catch (Exception e) {
             return restHelper.serverError(e);
         }
+
+        return restHelper.sendJson();
+    }
+
+
+    @PostMapping("/api/account/login")
+    public Map<String, Object> login (
+        // 세션을 사용해야 하므로 request 객체 필요
+        HttpServletRequest request,
+        @RequestParam("user_id") String user_id,
+        @RequestParam("user_pw") String user_pw
+    ) {
+
+        /** 1) 입력값에 대한 유효성 검사 */
+
+        /** 2) 입력값을 Beans 객체에 저장 */
+        Member input = new Member();
+        input.setUserId(user_id);
+        input.setUserPw(user_pw);
+
+        /** 3) 로그인 시도 */
+        Member output = null;
+
+        try {
+            output = memberService.login(input);
+            // 프로필 사진의 경로를 URL로 변환
+            output.setPhoto(fileHelper.getUrl(output.getPhoto()));
+        } catch (Exception e) {
+            return restHelper.serverError(e);
+        }
+
+        /** 4) 로그인에 성공했다면 회원 정보를 세션에 저장한다 */
+        HttpSession session = request.getSession();
+        session.setAttribute("memberInfo", output);
+
+        return restHelper.sendJson();
+    } 
+
+
+    @GetMapping("/account/logout")
+    public Map<String,Object> logout(HttpServletRequest request) {
+        HttpSession session = request.getSession();
+        session.invalidate();
 
         return restHelper.sendJson();
     }

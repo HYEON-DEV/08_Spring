@@ -105,4 +105,17 @@ public class MemberMapperTest {
         
         log.debug("output: " + output);
     }
+
+
+    @Test
+    @DisplayName("로그인 테스트")
+    void login() {
+        Member input = new Member();
+        input.setUserId("elly");
+        input.setUserPw("1234qwer");
+
+        Member output = memberMapper.login(input);
+
+        log.debug(("output : " + output.toString()));
+    }
 }

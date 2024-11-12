@@ -390,4 +390,22 @@ public class FileHelper {
         return uploadList;
     }
 
+
+    /**
+     * 파일 경로 앞에 URL prefix 덧붙여 리턴
+     * @param path - 파일 경로
+     * @return 웹 상에 노출 가능한 절대 경로
+     */
+    public String getUrl (String path) {
+        if (path == null) {
+            return null;
+        }
+
+        StringBuilder builder = new StringBuilder();
+        builder.append(this.uploadUrl);     // '/files'
+        builder.append(path.trim());        // '/2024/11/12/photo.png'
+
+        return builder.toString();
+    }
+
 }
