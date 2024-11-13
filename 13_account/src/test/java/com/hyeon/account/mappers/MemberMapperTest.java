@@ -118,4 +118,39 @@ public class MemberMapperTest {
 
         log.debug(("output : " + output.toString()));
     }
+
+
+    @Test
+    @DisplayName("로그아웃 테스트")
+    void logout() {
+        Member input = new Member();
+        input.setId(13);
+        input.setUserPw("1234qwer");
+        input.setIsOut("N");
+
+        int output = memberMapper.out(input);
+
+        log.debug("output : " + output);
+    }
+
+
+    @Test
+    @DisplayName("탈퇴한 회원 프로필 사진 조회")
+    void selectOutMembersPhoto() {
+        List<Member> output = memberMapper.selectOutMembersPhoto();
+
+        for (Member item : output) {
+            log.debug("output: " + item.toString());
+        }
+    }
+
+
+    @Test
+    @DisplayName("탈퇴한 회원 삭제")
+    void deleteMemberTest() {
+        
+        int output = memberMapper.deleteOutMembers();
+        
+        log.debug("output: " + output);
+    }
 }

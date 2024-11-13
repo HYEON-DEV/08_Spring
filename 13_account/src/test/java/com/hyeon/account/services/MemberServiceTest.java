@@ -170,5 +170,24 @@ public class MemberServiceTest {
             log.debug("output : " + output.toString());
         }
     }
+
+    @Test
+    @DisplayName("탈퇴한 회원 삭제 테스트")
+    void processOutMembersTest() throws Exception {
+        List<Member> output = null;
+
+        try {
+            output = memberService.processOutMembers();
+        } catch (Exception e) {
+            log.error("---------- 서비스 구현 에러 ----------", e);
+            throw e;
+        }
+
+        if (output != null) {
+            for(Member item : output) {
+                log.debug("output : " + item.toString());
+            }
+        }
+    }
  
 }

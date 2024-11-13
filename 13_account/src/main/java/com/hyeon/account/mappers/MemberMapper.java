@@ -99,30 +99,79 @@ public interface MemberMapper {
     public int selectCount(Member input);
 
 
+
+    /**
+     * 아이디 찾기
+     */
     @Select(
         "SELECT user_id FROM members " +
-        "WHERE user_name = #{userName} AND email = #{email}" 
+        "WHERE user_name = #{userName} AND email = #{email} AND is_out='N'" 
     )
     @ResultMap("membersMap")
     public Member findId(Member input);
 
 
+    /**
+     * 비밀번호 수정
+     */
     @Update("UPDATE members SET user_pw = MD5(#{userPw})" + 
-            "WHERE user_id = #{userId} AND email = #{email}")
+            "WHERE user_id = #{userId} AND email = #{email} AND is_out='N'")
     public int resetPw(Member input);
 
 
+    /**
+     * 로그인
+     */
     @Select(
         "SELECT " +
         "id, user_id, user_pw, user_name, email, phone, " +
         "birthday, gender, postcode, addr1, addr2, photo, " +
         "is_out, is_admin, login_date, reg_date, edit_date " +
         "FROM members " +
-        "WHERE user_id=#{userId} AND user_pw=MD5(#{userPw})")
+        "WHERE user_id=#{userId} AND user_pw=MD5(#{userPw}) AND is_out='N'")
     @ResultMap("membersMap")
     public Member login(Member input);
 
 
-    @Update("UPDATE members SET login_date=NOW() WHERE id=#{id}")
+    /**
+     * 로그인 날짜 업데이트
+     */
+    @Update("UPDATE members SET login_date=NOW() WHERE id=#{id} AND is_out='N'")
     public int updateLoginDate(Member input);
+
+
+    /**
+     * 회원 탈퇴
+     */
+    @Update("UPDATE members \n" + 
+    "SET is_out='Y', edit_date=NOW() \n" +
+    "WHERE id=#{id} AND user_pw=MD5(#{userPw}) AND is_out='N'")
+    public int out(Member input);
+    /* 
+    UPDATE members SET is_out='N', edit_date=NOW() 
+    WHERE id=13 AND user_pw=MD5('1234qwer');
+    */
+
+
+    /**
+     * 탈퇴하고 특정 시간이 지난 회원의 photo 조회
+     */
+    @Select("SELECT photo FROM members \n" +
+            "WHERE is_out='Y' AND \n" +
+                "edit_date < DATE_ADD( NOW(), interval -30 second ) AND \n" +
+                "photo IS NOT NULL")
+    @ResultMap("membersMap")
+    public List<Member> selectOutMembersPhoto();
+
+    /*
+    UPDATE members SET is_out='Y', edit_date=NOW() WHERE id=11;
+     */
+
+    /**
+     * 탈퇴한 회원 삭제
+     */
+    @Delete ("DELETE FROM members \n" +
+        "WHERE is_out='Y' AND \n" +
+        "edit_date < DATE_ADD( NOW(), interval -30 second )")
+    public int deleteOutMembers();
 }

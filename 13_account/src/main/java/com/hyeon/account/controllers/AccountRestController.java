@@ -6,11 +6,13 @@ import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ClassPathResource;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.SessionAttribute;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.hyeon.account.helpers.FileHelper;
@@ -257,6 +259,30 @@ public class AccountRestController {
 
     @GetMapping("/account/logout")
     public Map<String,Object> logout(HttpServletRequest request) {
+        HttpSession session = request.getSession();
+        session.invalidate();
+
+        return restHelper.sendJson();
+    }
+
+
+    @DeleteMapping("/api/account/out")
+    public Map<String, Object> out (
+        HttpServletRequest request,
+        @SessionAttribute("memberInfo") Member memberInfo,
+        @RequestParam("password") String password
+    ) {
+
+        // 세션으로부터 추출한 Member 객체에 입력받은 비밀번호를 넣어준다
+        memberInfo.setUserPw(password);
+
+        try {
+            memberService.out(memberInfo);
+        } catch (Exception e) {
+            return restHelper.serverError(e);
+        }
+
+        // 로그아웃을 위해 세션을 삭제한다
         HttpSession session = request.getSession();
         session.invalidate();
 

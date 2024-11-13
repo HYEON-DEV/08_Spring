@@ -11,7 +11,7 @@ class UtilHelper {
         danger: "#DC3545",
         warning: "#FFC107",
         info: "#0DCAF0",
-        light: "#F8F9FA",
+        light: "#ffc9af",
         dark: "#212529"
     }
 
