@@ -51,7 +51,7 @@ public interface MemberService {
     public void isUniqueUserId(String userId) throws Exception;
 
     
-    public void isUniqueEmail(String email) throws Exception;
+    public void isUniqueEmail(Member input) throws Exception;
 
     
     public Member findId(Member input) throws Exception;

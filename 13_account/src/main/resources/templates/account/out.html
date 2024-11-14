@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <th:block th:replace="~{_fragments/_head :: my-head('로그인 후')}" />
+    <th:block th:replace="~{_fragments/_head :: my-head('회원탈퇴')}" />
     <link rel="stylesheet" th:href="@{/assets/css/account.css}">
 </head>
 <body>
@@ -25,6 +25,8 @@
         </div>
     </div>
 
+    <th:block th:replace="~{_fragments/_scripts :: my-scripts}" />
+
     <script>
         document.getElementById('delete-account-form').addEventListener('submit', async e => {
             e.preventDefault();
@@ -40,8 +42,8 @@
 
             const result = await utilHelper.confirmWarning("탈퇴확인", "정말 탈퇴하시겠습니까? 탈퇴 후에는 복구할 수 없습니다.");
 
-            if (result.value) {     console.log(result.value);
-                const data = await axiosHelper.delete("[[@{/api/account/out}]]", new Formdata(current));
+            if (result.value) {     //console.log(result.value);  true
+                const data = await axiosHelper.delete("[[@{/api/account/out}]]", new FormData(current));
 
                 if (data) {
                     await utilHelper.alertSuccess("탈퇴가 완료되었습니다.");

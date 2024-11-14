@@ -190,4 +190,34 @@ public class MemberServiceTest {
         }
     }
  
+
+    @Test
+    @DisplayName("회원 수정 테스트")
+    void updateMemberNewPW() throws Exception {
+        Member input = new Member();
+        input.setId(5);
+        input.setUserName("홍창기");
+        input.setNewUserPw("qwe123");
+        input.setEmail("hh@h.com");
+        input.setPhone("01033335678");
+        input.setBirthday("19930501");
+        input.setGender("M");
+        input.setPostcode("78907");
+        input.setAddr1("서울특별시");
+        input.setAddr2("잠실동");
+        input.setUserPw("123qwe");
+
+        Member output = null;
+
+        try {
+            output = memberService.editItem(input);
+        } catch (Exception e) {
+            log.error("---------- 서비스 구현 에러 ----------", e);
+            throw e;
+        }
+
+        if (output != null) {
+            log.debug("output : " + output.toString());
+        }
+    }
 }

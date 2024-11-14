@@ -45,7 +45,8 @@ public class AccountScheduler {
      * http://www.cronmaker.com/
      */
     // @Scheduled(cron = "0 0 4 * * ?") // 매일 오전 4시에 자동 실행
-    @Scheduled(cron = "15 * * * * ?") // 매 분마다 15초에 실행
+    //@Scheduled(cron = "15 * * * * ?") // 매 분마다 15초에 실행
+    @Scheduled(cron = "0 0/30 * * * ?") // 매 0분, 30분마다 실행
     public void processOutMembers() throws InterruptedException {
         log.debug("탈퇴 회원 정리 시작");
         List<Member> outMembers = null;

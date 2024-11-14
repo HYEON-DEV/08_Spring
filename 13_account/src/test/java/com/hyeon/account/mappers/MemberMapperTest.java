@@ -1,5 +1,7 @@
 package com.hyeon.account.mappers;
 
+import static org.mockito.ArgumentMatchers.isNotNull;
+
 import java.util.List;
 
 import org.junit.jupiter.api.DisplayName;
@@ -150,6 +152,28 @@ public class MemberMapperTest {
     void deleteMemberTest() {
         
         int output = memberMapper.deleteOutMembers();
+        
+        log.debug("output: " + output);
+    }
+
+
+    @Test
+    @DisplayName("회원 정보 수정 테스트")
+    void updateMemberTest() {
+        Member input = new Member();
+        input.setId(5);
+        input.setUserName("홍창기");
+        input.setNewUserPw("123qwe");
+        input.setEmail("hh@h.com");
+        input.setPhone("01033335678");
+        input.setBirthday("19930501");
+        input.setGender("M");
+        input.setPostcode("78907");
+        input.setAddr1("서울특별시");
+        input.setAddr2("잠실동");
+        input.setUserPw("123qwe");
+        
+        int output = memberMapper.update(input);
         
         log.debug("output: " + output);
     }

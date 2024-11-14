@@ -2,6 +2,9 @@ package com.hyeon.account.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.SessionAttribute;
+
+import com.hyeon.account.models.Member;
 
 
 @Controller
@@ -58,5 +61,12 @@ public class AccountController {
     @GetMapping("/account")
     public String index() {
         return "account/index";
+    }
+
+    
+    @GetMapping("/account/edit")
+    public String edit(@SessionAttribute("memberInfo") Member memberInfo) {
+        System.out.println(memberInfo.toString());
+        return "account/edit";
     }
 }

@@ -39,7 +39,16 @@ public interface MemberMapper {
      * @param input - 수정할 데이터에 대한 모델 객체
      * @return 수정된 데이터 수
      */
-    @Update("UPDATE members SET user_id=#{userId}, user_pw=MD5(#{userPw}), user_name=#{userName}, email=#{email}, phone=#{phone}, birthday=#{birthday}, gender=#{gender}, postcode=#{postcode}, addr1=#{addr1}, addr2=#{addr2}, photo=#{photo}, edit_date=now() WHERE id=#{id}")
+    @Update("<script> " +
+        "UPDATE members \n" + 
+        "SET user_name=#{userName}, \n" +
+        "<if test='newUserPw != null and newUserPw != \"\"'> user_pw = MD5(#{newUserPw}), </if> \n"+
+        "email=#{email}, phone=#{phone}, \n" +
+        "birthday=#{birthday}, gender=#{gender}, postcode=#{postcode}, addr1=#{addr1}, addr2=#{addr2}, \n" + 
+        //"photo=#{photo}, \n" +
+        "edit_date=NOW() \n" + 
+        "WHERE id=#{id} AND user_pw = MD5(#{userPw}) \n" +
+        "</script>")
     public int update(Member input);
 
 
@@ -66,7 +75,7 @@ public interface MemberMapper {
         @Result(property="userPw", column="user_pw"),
         @Result(property="userName", column="user_name"),
         @Result(property="email", column="email"),
-        @Result(property="phone", column="phoen"),
+        @Result(property="phone", column="phone"),
         @Result(property="birthday", column="birthday"),
         @Result(property="gender", column="gender"),
         @Result(property="postcode", column="postcode"),
@@ -94,6 +103,7 @@ public interface MemberMapper {
             "<where> " +
             "<if test='userId != null'> user_id = #{userId} </if> " +
             "<if test='email != null'> email = #{email} </if> " +
+            "<if test='id != 0'> AND id != #{id} </if> " +
             "</where> " +
             "</script>")
     public int selectCount(Member input);
