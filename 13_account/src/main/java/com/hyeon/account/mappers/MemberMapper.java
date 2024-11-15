@@ -45,7 +45,7 @@ public interface MemberMapper {
         "<if test='newUserPw != null and newUserPw != \"\"'> user_pw = MD5(#{newUserPw}), </if> \n"+
         "email=#{email}, phone=#{phone}, \n" +
         "birthday=#{birthday}, gender=#{gender}, postcode=#{postcode}, addr1=#{addr1}, addr2=#{addr2}, \n" + 
-        //"photo=#{photo}, \n" +
+        "photo=#{photo}, \n" +
         "edit_date=NOW() \n" + 
         "WHERE id=#{id} AND user_pw = MD5(#{userPw}) \n" +
         "</script>")
