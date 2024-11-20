@@ -47,16 +47,16 @@ public class MemberMapperTest {
     void updateMember() {
         Member input = new Member();
         input.setId(12);
-        input.setUserId("hyn");
-        input.setUserPw("1234qwer");
-        input.setUserName("이름");
-        input.setEmail("hyeon970315@gmail.com");
+        input.setUserId("hhhh");
+        input.setUserPw("qwe123");
+        input.setUserName("희희희");
+        input.setEmail("hh@h.com");
         input.setPhone("010-3333-5678");
         input.setBirthday("19930501");
-        input.setGender("M");
+        input.setGender("F");
         input.setPostcode("78907");
-        input.setAddr1("서울특별시");
-        input.setAddr2("잠실동");
+        input.setAddr1("서울특별시 서대문구");
+        input.setAddr2("123");
         
         int output = memberMapper.update(input);
         

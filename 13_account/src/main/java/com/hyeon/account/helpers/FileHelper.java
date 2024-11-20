@@ -174,6 +174,7 @@ public class FileHelper {
 
         // 파일의 원본 이름 추출
         String originName = multipartFile.getOriginalFilename();
+        log.debug("originName = " + originName);
 
         if (originName != null && originName.isEmpty()) {
             NullPointerException e = new NullPointerException("업로드된 파일이 없습니다");
@@ -187,6 +188,7 @@ public class FileHelper {
         // 업로드 된 파일이 저장될 폴더의 이름을 "년/월/일" 형식으로 생성
         Calendar c = Calendar.getInstance();
         String targetDir = String.format("%s/%04d/%02d/%02d", uploadDir, c.get(Calendar.YEAR), c.get(Calendar.MONTH)+1, c.get(Calendar.DAY_OF_MONTH) );
+        log.debug("targetDir = " + targetDir);
 
         // 폴더가 존재하지 않는다면 생성한다
         File f = new File(targetDir);
@@ -207,8 +209,10 @@ public class FileHelper {
         while(true) {
             // 저장될 파일 이름 => 현재시각 + 카운트값 + 확장자
             fileName = String.format( "%d%d%s", System.currentTimeMillis(), count, ext );
+            log.debug("fileName = " + fileName);
             // 업로드 파일이 저장될 폴더 + 파일이름으로 파일객체 생성
             targetFile = new File(targetDir, fileName);
+            log.debug("targetFile = " + targetFile);
             
             // 동일한 이름의 파일이 없다면 반복 중단
             if (!targetFile.exists()) {
@@ -236,6 +240,7 @@ public class FileHelper {
         // => 운영체제 호환 (Windows => Linux) 을 위해 역슬래시를 슬래시로 변환한다
         // => C:/Users/hyeon/HYEON/upload/myphoto.jpg
         String absPath = targetFile.getAbsolutePath().replace("\\", "/");
+        log.debug("absPath = " + absPath);
 
         /** 업로드 된 파일의 절대경로(absPath)에서 환경설정 파일에 명시된 폴더까지의 위치는 삭제하여 
          * 환경설정 파일에 명시된 upload.dir 이후의 위치만 추출한다 (윈도우만)
@@ -249,10 +254,11 @@ public class FileHelper {
             // Windows용 경로처리 => 설정 파일에 명시한 첫 글자(/)를 제거해야 한다
             filePath = absPath.replace(uploadDir.substring(1), "");
         }
+        log.debug("filePath = " + filePath);
 
         // 업로드 경로를 웹 상에서 접근 가능한 경로 문자열로 변환하여  Beans에 추가한다
         String fileUrl = String.format("%s%s", uploadUrl, filePath);
-        
+        log.debug("fileUrl = " + fileUrl);
 
         /** 6) 업로드 결과를 Beans에 저장 */
         UploadItem item = new UploadItem();
@@ -262,6 +268,11 @@ public class FileHelper {
         item.setOriginName(originName);
         item.setFilePath(filePath);
         item.setFileUrl(fileUrl);
+
+        log.debug("FieldName(Name) = " + multipartFile.getName());
+        log.debug("OriginName = " + multipartFile.getName());
+        log.debug("FilePath = " + filePath);
+        log.debug("FileUrl = " + fileUrl);
 
 
         /** 7) 파일 유형이 이미지라면 썸네일 생성 */
