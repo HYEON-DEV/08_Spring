@@ -23,11 +23,20 @@ import com.hyeon.account.models.Member;
 import com.hyeon.account.models.UploadItem;
 import com.hyeon.account.services.MemberService;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.Parameter;
+import io.swagger.v3.oas.annotations.Parameters;
+import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.media.Schema;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
 
 
 @RestController
+@Tag(name="Account API", description="가입, 로그인, 정보수정, 탈퇴 등 회원 관련 API")
 public class AccountRestController {
     
     @Autowired
@@ -47,6 +56,18 @@ public class AccountRestController {
 
     
     @GetMapping("/api/account/id_unique_check")
+    @Operation(summary = "아이디 중복 검사", description = "파라미터로 받은 아이디의 중복 여부를 검사한다.")
+    @ApiResponses(value = {
+        @ApiResponse(responseCode = "200", description = "사용 가능한 아이디 입니다.", 
+                    content = @Content(mediaType = "application/json", 
+                    schema = @Schema(implementation = Map.class))),
+        @ApiResponse(responseCode = "400", description = "이미 사용중인 아이디 입니다.", 
+                    content = @Content(mediaType = "application/json", 
+                    schema = @Schema(implementation = Map.class)))
+    })
+    @Parameters({
+        @Parameter(name = "user_id", description = "검사할 아이디", schema = @Schema(type = "string"), required = true)
+    })
     public Map<String,Object> idUniqueCheck(@RequestParam("user_id") String userId) {
         try {
             memberService.isUniqueUserId(userId);
